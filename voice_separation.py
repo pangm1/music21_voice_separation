@@ -1,14 +1,13 @@
-from sys import argv, platform
+from sys import argv, platform, maxsize
 from music21 import *
 import random
 import string
-from queue import Queue
 
 PITCH_MAX = int(pitch.Pitch('B9').ps)
 PITCH_MIN = int(pitch.Pitch('C0').ps)
 
 def segmentContigs(part):
-    # TODO: fix
+    # TODO: fix for rests
     f = (note.Note,)
     timespans = part.asTimespans(classList=f)
     maxOverlap = timespans.maximumOverlap()
@@ -34,20 +33,105 @@ def segmentContigs(part):
     # print("maximal contigs: ", maxContigs)
     # part.show("t")
     # part.show()
+    
+    # generate dictionary of voices with streams and colors
+    partdict = {}
+    for i in range(maxOverlap):
+        if i not in partdict:
+            partdict[str(i)] = {"stream": stream.Part(), "color": ""}
+            newcolor = ''
+            while (True):
+                newcolor = f"#{''.join(random.choices(string.hexdigits, k=6))}"
+                if newcolor not in [k["color"] for k in partdict.values()]:
+                    break
+            partdict[str(i)]["color"] = newcolor
 
-    return maxContigs
+    return (maxContigs, partdict)
+
+# heuristic function
+# probably better to do generic intervals here
+def distance(f, t):
+    res = interval.Interval(f, t).generic.undirected
+    print(t, f, res)
+    return res
 
 # 
 def assignVoices(contig, dir):
+    # visiting contig
+    toAssign = []
+    # keep track of bin,group pairs assigned
+    assignedPairs = [[],[]]
     if dir == "l":
-        contig
-        pass
+        v = contig[0][1].previousVerticality
     if dir == "r":
-        contig
-        pass
+        v = contig[0][1].nextVerticality
+    for t in v.startAndOverlapTimespans:
+        element = t.element
+        if not len(element.groups): # unvisited
+            toAssign.append([element, []])  
+        else:
+            assignedPairs[0].append(element)
+            assignedPairs[1].append(element.groups[0])
+    # check if groups already assigned (contig visited already)
+    if not len(toAssign):
+        return
+    print("start")
+    
+    # current contig
+    toConnect = []
+    for t in contig[0][1].startAndOverlapTimespans:
+        if len(t.element.groups):
+            toConnect.append(t.element)
+            # print(f"appending1 {t.element} to toConnect with groups {t.element.groups}")
+    # when len(toAssign) > len(toConnect)?
+    # skip for now (TODO: handle outside this)
+    contigV = contig[0][1]
+    while True: # len(toAssign) > len(toConnect):
+        # crawl to contig in opposite direction
+        if dir == "l":
+            # if (not contigV) or contigV == contigV.nextVerticality:
+            #     break
+            contigV = contigV.nextVerticality
+        if dir == "r":
+            # if (not contigV) or contig == contigV.previousVerticality:
+            #     break
+            contigV = contigV.previousVerticality
+        if not contigV:
+            break
+        for e in [t.element for t in contigV.startAndOverlapTimespans if len(t.element.groups) and t.element.groups[0] not in [ce.groups[0] for ce in toConnect if len(ce.groups)]]:
+            # print(f"appending2 {e} to toConnect with groups {e.groups}")
+            toConnect.append(e)
+                
+    # if len(toAssign) > len(toConnect):
+    #     print("Problem at offset: ", contig[0][1].offset)
+            
+    print(f"Connecting {contig[0][1]} to {v}")
+    # enumerate all possible combinations (hash)
+    for a in toAssign:
+        for c in toConnect:
+            a[1].append((c.groups, distance(c, a[0])))
+
+    print("toConnect", toConnect)
+    print("toAssign", toAssign)
+    options = sorted([(a[0], g) for a in toAssign for g in a[1]], key=lambda t: t[1][1])
+    # select options with lowest penalty
+    for o in options:
+        if o[0] not in assignedPairs[0] and o[1][0] not in assignedPairs[1]:
+            o[0].groups = o[1][0]
+            print(f"assigning {o[0]} to group {o[1][0]} with distance of {o[1][1]} -> groups:{o[0].groups}")
+            assignedPairs[0].append(o[0])
+            assignedPairs[1].append(o[1][0])
+    # FIXME: there are unassigned notes (I think it might be all groups are already assigned to options)
+        # maybe just iterate the unassigned options and check 
+        # doesn't work for test cases (output, output2, output8)
+    print("assigned options:", [o for o in options if o[0] in assignedPairs[0] or o[1][0] in assignedPairs[1]])
+    if len([a for a in toAssign if not len(a[0].groups)]):
+        print("unassigned notes:", [a for a in toAssign if not len(a[0].groups)])
+        # assignVoices(contig, dir)
+    print("finish")
 
 # bfs
-def crawlScore(frontier, partdict, currid):
+def crawlScore(frontier, currid):
     id = currid
     while len(frontier):
         # for c in frontier:
@@ -57,7 +141,7 @@ def crawlScore(frontier, partdict, currid):
         if item[2] == "m":
             left = item[0][1].previousVerticality
             right = item[0][1].nextVerticality
-            print("m", item, left, right)
+            # print("m", item, left, right)
             if left:
                 assignVoices(item, "l")
                 frontier.append(([left.startAndOverlapTimespans, left], id, "l"))
@@ -69,7 +153,7 @@ def crawlScore(frontier, partdict, currid):
         # go left
         elif item[2] == "l":
             left = item[0][1].previousVerticality
-            print("l", item, left)
+            # print("l", item, left)
             if left:
                 assignVoices(item, "l")
                 frontier.append(([left.startAndOverlapTimespans, left], id, "l"))
@@ -77,33 +161,20 @@ def crawlScore(frontier, partdict, currid):
         # go right
         elif item[2] == "r":
             right = item[0][1].nextVerticality
-            print("r", item, right)
+            # print("r", item, right)
             if right:
                 assignVoices(item, "r")
                 frontier.append(([right.startAndOverlapTimespans, right], id, "r"))
                 id += 1
 
-def connectContigs(maxcontigs):
-    # generate colors
-    partdict = {}
-    for i in range(len(maxcontigs[0][0])):
-        # print(i, partdict)
-        if i not in partdict:
-            partdict[i] = {"stream": stream.Part(), "color": ""}
-            newcolor = ''
-            while (True):
-                newcolor = f"#{''.join(random.choices(string.hexdigits, k=6))}"
-                if newcolor not in [k["color"] for k in partdict.values()]:
-                    break
-            partdict[i]["color"] = newcolor
+def connectContigs(maxcontigs, partdict):
     # assign voices to maximal contigs
     for m in maxcontigs:
         # print(m)
         m[0] = sorted(m[0], key=lambda n: n.element.pitch)
         i = 0
         for n in m[0]:
-            n.element.groups.append(str(i))
-            n.element.style.color = partdict[i]["color"]
+            n.element.groups = [str(i)]
             # print(n.element.pitch, n.element.groups, n.element.style.color)
             i += 1
     # bfs (queue) initialized with maxcontigs 
@@ -112,12 +183,13 @@ def connectContigs(maxcontigs):
     for m in maxcontigs:
         frontier.append((m, id, "m"))
         id += 1
-    crawlScore(frontier, partdict, id)
+    crawlScore(frontier, id)
     
 def separateVoices(part):
-    maxcontigs = segmentContigs(part)
-    voices = connectContigs(maxcontigs)
-    return part
+    (maxcontigs, partdict) = segmentContigs(part)
+    connectContigs(maxcontigs, partdict)
+    # TODO: generate new part
+    return (part, partdict)
 
 # set up the environment
 if platform == 'win32':
@@ -158,7 +230,15 @@ else:
     for m in song.recurse(classFilter=(stream.Measure,)):
         m.makeVoices(inPlace=True)
     # TODO: recurse parts and clefs
-    reduced = separateVoices(song)
+    (reduced, partdict) = separateVoices(song)
+    print(partdict)
+    for n in reduced.recurse(classFilter=note.Note):
+        if len(n.groups) and n.groups[0] in partdict:
+            n.style.color = partdict[n.groups[0]]["color"]
+            n.lyric = n.groups
+        else:
+            print(n)
+
     # print("reduced score:")
     # reduced.show("t")
     # reduced.show()
