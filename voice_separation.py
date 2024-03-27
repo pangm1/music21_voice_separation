@@ -8,6 +8,8 @@ PITCH_MIN = int(pitch.Pitch('C0').ps)
 
 def segmentContigs(part):
     # TODO: fix for rests
+    # TODO: figure out how to recognize ties
+    # TODO: also actually make contigs instead of using verticalities
     f = (note.Note,)
     timespans = part.asTimespans(classList=f)
     maxOverlap = timespans.maximumOverlap()
@@ -50,6 +52,7 @@ def segmentContigs(part):
 
 # heuristic function
 # probably better to do generic intervals here
+# TODO: distance from the top and bottom of the ranges of two contigs (ex. jumping chords)
 def distance(f, t):
     res = interval.Interval(f, t).generic.undirected
     print(t, f, res)
@@ -169,6 +172,7 @@ def crawlScore(frontier, currid):
 
 def connectContigs(maxcontigs, partdict):
     # assign voices to maximal contigs
+    # TODO: experiment with sorting order (something to do with melody being high notes)
     for m in maxcontigs:
         # print(m)
         m[0] = sorted(m[0], key=lambda n: n.element.pitch)
@@ -178,6 +182,7 @@ def connectContigs(maxcontigs, partdict):
             # print(n.element.pitch, n.element.groups, n.element.style.color)
             i += 1
     # bfs (queue) initialized with maxcontigs 
+    # FIXME: also find and handle duplicate notes in group
     id = 0
     frontier = []
     for m in maxcontigs:
@@ -220,6 +225,7 @@ else:
         a.remove(c)
     # song.quantize((32,), recurse=True, inPlace=True)
     # remove grace notes 
+    # FIXME: Notation messed up for output8 (and maybe output7)
     graceNotes = []
     for n in song.recurse().notes:
         # n.quarterLength = n.quarterLength # and inexpressible durations (idk if this part works)
@@ -230,6 +236,7 @@ else:
     for m in song.recurse(classFilter=(stream.Measure,)):
         m.makeVoices(inPlace=True)
     # TODO: recurse parts and clefs
+    # TODO: as well as segments the song structure (where melodies and voicing change)
     (reduced, partdict) = separateVoices(song)
     print(partdict)
     for n in reduced.recurse(classFilter=note.Note):
@@ -242,6 +249,7 @@ else:
     # print("reduced score:")
     # reduced.show("t")
     # reduced.show()
+    reduced.write("musicxml", argv[2] + '_reduced.musicxml')
     
 
 
@@ -252,7 +260,7 @@ else:
 
         python3 ./voice_separation.py ./examples/fur_elise/before.mxl ./examples/fur_elise/before > output3
 
-        python3 ./voice_separation.py ./examples/moonlight_sonata/before.mxl ./examples/moonlight_sonata/before > output4
+        python3 ./voice_separation.py ./examples/moonlight/before.mxl ./examples/moonlight/before > output4
 
         python3 ./voice_separation.py ./examples/clair_de_lune/before.mxl ./examples/clair_de_lune/before > output5
 
@@ -260,7 +268,6 @@ else:
 
         python3 ./voice_separation.py ./examples/nutcracker/before.mxl ./examples/nutcracker/before > output7
 
-        python3 ./voice_separation.py ./examples/beethoven/before.mxl ./examples/beethoven/before > output8
     '''
     
 
