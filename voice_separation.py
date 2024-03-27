@@ -170,7 +170,7 @@ def crawlScore(frontier, currid):
 
 def connectContigs(maxcontigs, partdict):
     # assign voices to maximal contigs
-    # TODO: experiment with sorting order (something to do with melody being high notes)
+    # TODO: experiment with sorting order (something to do with melody being high notes, or soprano and bass notes varying more)
     for m in maxcontigs:
         # print(m)
         m[0] = sorted(m[0], key=lambda n: n.element.pitch)
@@ -180,7 +180,7 @@ def connectContigs(maxcontigs, partdict):
             # print(n.element.pitch, n.element.groups, n.element.style.color)
             i += 1
     # bfs (queue) initialized with maxcontigs 
-    # FIXME: also find and handle duplicate notes in group (notes get deleted from view)
+    # FIXME: also find and handle duplicate groups in verticalities
     id = 0
     frontier = []
     for m in maxcontigs:
@@ -224,6 +224,7 @@ else:
     # song.quantize((32,), recurse=True, inPlace=True)
     # remove grace notes 
     # FIXME: Notation messed up for output8 (and maybe output7)
+        # (notes(not chords or voices) get deleted from view when they fall on the same offset)
     graceNotes = []
     for n in song.recurse().notes:
         # n.quarterLength = n.quarterLength # and inexpressible durations (idk if this part works)
