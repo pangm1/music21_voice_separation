@@ -53,9 +53,10 @@ def segmentContigs(part):
 # heuristic function
 # probably better to do generic intervals here
 # TODO: distance from the top and bottom of the ranges of two contigs (ex. jumping chords)
+# TODO: average pitch in fragment
 def distance(f, t):
     res = interval.Interval(f, t).generic.undirected
-    print(t, f, res)
+    print(t.pitch, f.pitch, res)
     return res
 
 # 
@@ -86,8 +87,6 @@ def assignVoices(contig, dir):
         if len(t.element.groups):
             toConnect.append(t.element)
             # print(f"appending1 {t.element} to toConnect with groups {t.element.groups}")
-    # when len(toAssign) > len(toConnect)?
-    # skip for now (TODO: handle outside this)
     contigV = contig[0][1]
     while True: # len(toAssign) > len(toConnect):
         # crawl to contig in opposite direction
@@ -114,22 +113,21 @@ def assignVoices(contig, dir):
         for c in toConnect:
             a[1].append((c.groups, distance(c, a[0])))
 
-    print("toConnect", toConnect)
-    print("toAssign", toAssign)
+    print("toConnect", [(c.id, c.pitch.nameWithOctave, c.groups) for c in toConnect])
+    print("toAssign", [(a[0].id, a[0].pitch.nameWithOctave, a[1]) for a in toAssign])
     options = sorted([(a[0], g) for a in toAssign for g in a[1]], key=lambda t: t[1][1])
+    print("options:", [(o[0].id, o[0].pitch.nameWithOctave, o[1]) for o in options])
     # select options with lowest penalty
     for o in options:
-        if o[0] not in assignedPairs[0] and o[1][0] not in assignedPairs[1]:
+        if o[0].id not in [a.id for a in assignedPairs[0]] and o[1][0] not in assignedPairs[1]:
             o[0].groups = o[1][0]
-            print(f"assigning {o[0]} to group {o[1][0]} with distance of {o[1][1]} -> groups:{o[0].groups}")
+            print(f"assigning {o[0].pitch.nameWithOctave} <- {o[1][0]} distance: {o[1][1]} -> groups:{o[0].groups}")
             assignedPairs[0].append(o[0])
             assignedPairs[1].append(o[1][0])
-    # FIXME: there are unassigned notes (I think it might be all groups are already assigned to options)
-        # maybe just iterate the unassigned options and check 
-        # doesn't work for test cases (output, output2, output8)
-    print("assigned options:", [o for o in options if o[0] in assignedPairs[0] or o[1][0] in assignedPairs[1]])
+    print("assigned pairs:", [(n.pitch.nameWithOctave, g) for ni,n in enumerate(assignedPairs[0]) for gi,g in enumerate(assignedPairs[1]) if ni == gi])
+    print("assigned notes:", [[a[0].pitch.nameWithOctave] + a[1:] for a in toAssign if len(a[0].groups)])
     if len([a for a in toAssign if not len(a[0].groups)]):
-        print("unassigned notes:", [a for a in toAssign if not len(a[0].groups)])
+        print("unassigned notes:", [[a[0].pitch.nameWithOctave] + a[1:] for a in toAssign if not len(a[0].groups)])
         # assignVoices(contig, dir)
     print("finish")
 
@@ -182,7 +180,7 @@ def connectContigs(maxcontigs, partdict):
             # print(n.element.pitch, n.element.groups, n.element.style.color)
             i += 1
     # bfs (queue) initialized with maxcontigs 
-    # FIXME: also find and handle duplicate notes in group
+    # FIXME: also find and handle duplicate notes in group (notes get deleted from view)
     id = 0
     frontier = []
     for m in maxcontigs:
