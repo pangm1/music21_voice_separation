@@ -9,7 +9,7 @@ PITCH_MIN = int(pitch.Pitch('C0').ps)
 def segmentContigs(part):
     # TODO: fix for rests
     # TODO: figure out how to recognize ties
-    # TODO: also actually make contigs instead of using verticalities
+    # TODO: also actually make contigs instead of using verticalities (use chordify?)
     f = (note.Note,)
     timespans = part.asTimespans(classList=f)
     maxOverlap = timespans.maximumOverlap()
@@ -179,7 +179,7 @@ def connectContigs(maxcontigs, partdict):
             n.element.groups = [str(i)]
             # print(n.element.pitch, n.element.groups, n.element.style.color)
             i += 1
-    # bfs (queue) initialized with maxcontigs 
+    # bf (queue) initialized with maxcontigs 
     # FIXME: also find and handle duplicate groups in verticalities
     id = 0
     frontier = []
@@ -223,7 +223,7 @@ else:
         a.remove(c)
     # song.quantize((32,), recurse=True, inPlace=True)
     # remove grace notes 
-    # FIXME: Notation messed up for output8 (and maybe output7)
+    # FIXME: Notation messed up for output8 (and maybe output7, output6)
         # (notes(not chords or voices) get deleted from view when they fall on the same offset)
     graceNotes = []
     for n in song.recurse().notes:
@@ -231,7 +231,7 @@ else:
         if n.duration.isGrace:
             graceNotes.append(n)
             n.activeSite.remove(n, shiftOffsets=True)
-    # make it visible in musescore for Testing
+    # make it visible in musescore for Testing TODO: does this have any effect?
     for m in song.recurse(classFilter=(stream.Measure,)):
         m.makeVoices(inPlace=True)
     # TODO: recurse parts and clefs
@@ -248,6 +248,7 @@ else:
     # print("reduced score:")
     # reduced.show("t")
     # reduced.show()
+    # could also just show original score (object references intact)
     reduced.write("musicxml", argv[2] + '_reduced.musicxml')
     
 
