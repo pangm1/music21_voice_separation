@@ -10,6 +10,8 @@ def segmentContigs(part):
     # TODO: fix for rests
     # TODO: figure out how to recognize ties
     # TODO: also actually make contigs instead of using verticalities (use chordify?)
+        # step 1. go forwards and put boundaries at places where the number of overlaps changes
+        # step 2. go backwards, look at overlapping notes at the boundary, put another boundary at that note's start (if there isn't one there already)
     f = (note.Note,)
     timespans = part.asTimespans(classList=f)
     maxOverlap = timespans.maximumOverlap()
@@ -180,7 +182,6 @@ def connectContigs(maxcontigs, partdict):
             # print(n.element.pitch, n.element.groups, n.element.style.color)
             i += 1
     # bf (queue) initialized with maxcontigs 
-    # FIXME: also find and handle duplicate groups in verticalities
     id = 0
     frontier = []
     for m in maxcontigs:
@@ -191,8 +192,53 @@ def connectContigs(maxcontigs, partdict):
 def separateVoices(part):
     (maxcontigs, partdict) = segmentContigs(part)
     connectContigs(maxcontigs, partdict)
-    # TODO: generate new part
+    # FIXME: also find and handle duplicate groups in verticalities
+    groups = set()
+    timetree = part.asTimespans(classList=(note.Note,))
+    for o in timetree.allOffsets():
+        groups.clear()
+        for n in timetree.elementsStartingAt(o):
+            if n.element.groups[0] in groups:
+                print(f"duplicate {n.element.groups} for {n.element} in measure at offset {o}")
+            groups.add(n.element.groups[0])
+    # TODO: generate new parts
     return (part, partdict)
+
+def preprocessScore(song):
+    # dechordify
+    for m in song.recurse(classFilter=(stream.Measure, stream.Voice)):
+        for c in m.getElementsByClass(chord.Chord):
+            for n in c.notes:
+                d = duration.Duration(c.quarterLength)
+                n = note.Note(n.pitch)
+                n.duration = d
+                m.insert(c.getOffsetBySite(m), n)
+            m.remove(c)
+        m.makeVoices(inPlace=True)
+    # fix voices nested within other voices
+    for v in song.recurse(classFilter=(stream.Voice,)):
+        if v.hasVoices():
+            m = v.activeSite
+            flat = m.flatten()
+            voiced = flat.makeVoices()
+            m.activeSite.replace(m, voiced)
+    # song.quantize((32,), recurse=True, inPlace=True)
+    # remove grace notes
+    graceNotes = []
+    for n in song.recurse().notes:
+        # n.quarterLength = n.quarterLength # and inexpressible durations (idk if this part works)
+        if n.duration.isGrace:
+            graceNotes.append(n)
+            n.activeSite.remove(n, shiftOffsets=True)
+    # print(graceNotes)
+    # FIXME: Notation messed up for output4
+    
+    # fix notation? (idk what this does tbh)
+    # song.makeNotation(inPlace=True)
+        
+    song.write("musicxml", argv[2] + '_processed.musicxml')
+    # song.show("txt")
+    # exit()
 
 # set up the environment
 if platform == 'win32':
@@ -214,26 +260,10 @@ if argc < 3:
 else:
     # parse musicxml
     song = converter.parse(argv[1])
+    song.write("musicxml", argv[2] + '_music21.musicxml')
     # song.show()
-    # dechordify
-    for c in song.recurse(classFilter=(chord.Chord)):
-        for n in c.notes:
-            c.activeSite.insert(c.offset, n)
-        a = c.activeSite
-        a.remove(c)
-    # song.quantize((32,), recurse=True, inPlace=True)
-    # remove grace notes 
-    # FIXME: Notation messed up for output8 (and maybe output7, output6)
-        # (notes(not chords or voices) get deleted from view when they fall on the same offset)
-    graceNotes = []
-    for n in song.recurse().notes:
-        # n.quarterLength = n.quarterLength # and inexpressible durations (idk if this part works)
-        if n.duration.isGrace:
-            graceNotes.append(n)
-            n.activeSite.remove(n, shiftOffsets=True)
-    # make it visible in musescore for Testing TODO: does this have any effect?
-    for m in song.recurse(classFilter=(stream.Measure,)):
-        m.makeVoices(inPlace=True)
+    preprocessScore(song)
+    
     # TODO: recurse parts and clefs
     # TODO: as well as segments the song structure (where melodies and voicing change)
     (reduced, partdict) = separateVoices(song)

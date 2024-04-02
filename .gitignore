@@ -165,3 +165,6 @@ output*
 algorithm.py
 *midi
 before_music21.musicxml
+before_processed.musicxml
+before_processed_chordified.musicxml
+before_processed_parts.musicxml
