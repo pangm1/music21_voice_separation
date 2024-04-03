@@ -96,7 +96,8 @@ exit()
     # pitch ranges
 PITCH_MAX = int(pitch.Pitch('B9').ps)
 PITCH_MIN = int(pitch.Pitch('C0').ps)
-    # reduced score
+    # write scores
+song.write("musicxml", argv[2] + '_music21.musicxml')
 print("reduced score:")
 reduced.show("t")
 reduced.show()

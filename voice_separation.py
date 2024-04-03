@@ -3,66 +3,6 @@ from music21 import *
 import random
 import string
 
-# given a part/score return 
-    # contigs  [[verticalities], (startBoundary, endBoundary)]
-    # maximal contigs (contigs having maximal overlap)
-    # dictionary of voices (which will be separated into parts)
-# TODO: recognize rests
-# TODO: figure out how to recognize ties
-def segmentContigs(part):
-    f = (note.Note,) # music21 class filter
-    timespans = part.asTimespans(classList=f)
-    maxOverlap = timespans.maximumOverlap()
-    verticalities = list(timespans.iterateVerticalities())
-    maxContigs = []
-    contigs = []
-
-    # make contigs instead of using verticalities
-    ## step 1. put boundaries at places where the number of overlaps changes
-    boundaries = set()
-    i = 0
-    while i < len(verticalities):
-        refV = verticalities[i]
-        boundaries.add(refV.offset)
-        while i < len(verticalities) and (refV == verticalities[i] or len(verticalities[i].startAndOverlapTimespans) == len(refV.startAndOverlapTimespans)):
-            i += 1
-    ## step 2. look at notes overlapping boundaries, put another boundary at that note's start and end (where there aren't already boundaries)
-    for o in boundaries.intersection(set(timespans.overlapTimePoints(includeStopPoints=True))):
-        for e in timespans.elementsOverlappingOffset(o):
-            if e.offset not in boundaries: 
-                boundaries.add(e.offset)
-            if e.endTime not in boundaries: 
-                boundaries.add(e.endTime)
-    bList = sorted(boundaries)
-    ## populate contigs using boundaries as reference
-    vi = 0
-    bi = 1
-    while vi < len(verticalities) and bi < len(bList):
-        contigs.append([[], (bList[bi - 1], bList[bi])])
-        while vi < len(verticalities) and bi < len(bList) and verticalities[vi].offset < bList[bi]:
-            contigs[-1][0].append(verticalities[vi])
-            vi += 1
-        if not len(contigs[-1][0]):
-            contigs.pop()
-            bi += 1
-            continue
-        if len(contigs[-1][0][0].startAndOverlapTimespans) == maxOverlap:
-            maxContigs.append(contigs[-1])
-        bi += 1
-
-    # generate dictionary of voices with streams and colors
-    partdict = {}
-    for i in range(maxOverlap):
-        if i not in partdict:
-            partdict[str(i)] = {"stream": stream.Part(), "color": ""}
-            newcolor = ''
-            while (True):
-                newcolor = f"#{''.join(random.choices(string.hexdigits, k=6))}"
-                if newcolor not in [k["color"] for k in partdict.values()]:
-                    break
-            partdict[str(i)]["color"] = newcolor
-
-    return (maxContigs, contigs, partdict)
 
 # heuristic function for assigning voices
     # uses generic intervals so far
@@ -166,7 +106,9 @@ def groupFragments(contig, dir, maxContig):
                 i = (i + 1) % len(grouphash[0])
             n.groups = [str(i)]
             used.add(i)
-    elif dir == "l" or dir == "m":
+        startV = contig[0][0]
+        destV = contig[0][-1]
+    elif dir == "l":
         startV = contig[0][0]
         destV = contig[0][-1]
     elif dir == "r":
@@ -230,6 +172,67 @@ def crawlScore(frontier, contigs, currid):
                 frontier.append((contigs[rightIndex], id, "r", item[3]))
                 id += 1        
     
+# given a part/score return 
+    # contigs  [[verticalities], (startBoundary, endBoundary)]
+    # maximal contigs (contigs having maximal overlap)
+    # dictionary of voices (which will be separated into parts)
+# TODO: recognize rests
+# TODO: figure out how to recognize ties
+def segmentContigs(part):
+    f = (note.Note,) # music21 class filter
+    timespans = part.asTimespans(classList=f)
+    maxOverlap = timespans.maximumOverlap()
+    verticalities = list(timespans.iterateVerticalities())
+    maxContigs = []
+    contigs = []
+
+    # make contigs instead of using verticalities
+    ## step 1. put boundaries at places where the number of overlaps changes
+    boundaries = set()
+    i = 0
+    while i < len(verticalities):
+        refV = verticalities[i]
+        boundaries.add(refV.offset)
+        while i < len(verticalities) and (refV == verticalities[i] or len(verticalities[i].startAndOverlapTimespans) == len(refV.startAndOverlapTimespans)):
+            i += 1
+    ## step 2. look at notes overlapping boundaries, put another boundary at that note's start and end (where there aren't already boundaries)
+    for o in boundaries.intersection(set(timespans.overlapTimePoints(includeStopPoints=True))):
+        for e in timespans.elementsOverlappingOffset(o):
+            if e.offset not in boundaries: 
+                boundaries.add(e.offset)
+            if e.endTime not in boundaries: 
+                boundaries.add(e.endTime)
+    bList = sorted(boundaries)
+    ## populate contigs using boundaries as reference
+    vi = 0
+    bi = 1
+    while vi < len(verticalities) and bi < len(bList):
+        contigs.append([[], (bList[bi - 1], bList[bi])])
+        while vi < len(verticalities) and bi < len(bList) and verticalities[vi].offset < bList[bi]:
+            contigs[-1][0].append(verticalities[vi])
+            vi += 1
+        if not len(contigs[-1][0]):
+            contigs.pop()
+            bi += 1
+            continue
+        if len(contigs[-1][0][0].startAndOverlapTimespans) == maxOverlap:
+            maxContigs.append(contigs[-1])
+        bi += 1
+
+    # generate dictionary of voices with streams and colors
+    partdict = {}
+    for i in range(maxOverlap):
+        if i not in partdict:
+            partdict[str(i)] = {"stream": stream.Part(), "color": ""}
+            newcolor = ''
+            while (True):
+                newcolor = f"#{''.join(random.choices(string.hexdigits, k=6))}"
+                if newcolor not in [k["color"] for k in partdict.values()]:
+                    break
+            partdict[str(i)]["color"] = newcolor
+
+    return (maxContigs, contigs, partdict)
+
 # main algorithm
 # TODO: generate new parts for each group
 def separateVoices(part):
@@ -286,6 +289,8 @@ def preprocessScore(song):
             graceNotes.append(n)
             n.activeSite.remove(n, shiftOffsets=True)
     
+
+
 # set up the environment
 if platform == 'win32':
     # Windows
@@ -299,14 +304,12 @@ else:
 env = environment.Environment()
 env['musicxmlPath'] = path
 
-# MAIN
 argc = len(argv)
 if argc < 3:
     print('arguments: [input file] [output name (no extension)]')
 else:
     # parse musicxml
     song = converter.parse(argv[1])
-    song.write("musicxml", argv[2] + '_music21.musicxml')
     preprocessScore(song)
 
     # run algorithm
@@ -317,7 +320,7 @@ else:
         if len(n.groups) and n.groups[0] in partdict:
             n.style.color = partdict[n.groups[0]]["color"]
             n.addLyric(n.groups)
-        else:
+        else: # unassigned notes
             print(n)
 
     # TODO: combine resulting parts into one score (later)
