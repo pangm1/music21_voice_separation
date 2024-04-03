@@ -15,7 +15,7 @@ def segmentContigs(part):
     maxContigs = []
     contigs = []
     verticalities = list(timespans.iterateVerticalities())
-    # TODO: also actually make contigs instead of using verticalities (use chordify?)
+    # make contigs instead of using verticalities
         # step 1. put boundaries at places where the number of overlaps changes
     boundaries = set()
     i = 0
@@ -40,7 +40,7 @@ def segmentContigs(part):
         while vi < len(verticalities) and bi < len(bList) and verticalities[vi].offset < bList[bi]:
             contigs[-1][0].append(verticalities[vi])
             vi += 1
-        print(contigs[-1])
+        # print(contigs[-1])
         if not len(contigs[-1][0]):
             contigs.pop()
             bi += 1
@@ -101,6 +101,7 @@ def assignVoices(bfsItem, dir):
         startV = bfsItem[0][0][-1]
         destV = startV.nextVerticality
         maxV = bfsItem[3][0][-1]
+    
 
     # keep track of bin,group pairs already assigned
     assignedPairs = [[],[]]
@@ -109,44 +110,35 @@ def assignVoices(bfsItem, dir):
     toAssign = []
     for t in destV.startAndOverlapTimespans:
         element = t.element
-        if not len(element.groups): # unvisited
+        if not len(element.groups) and not element.id in [t.element.id for t in startV.startAndOverlapTimespans]: # unvisited
+            # print(f"appending1 {element.pitch} to toAssign with groups {element.groups}")
             toAssign.append([element, []])  
-        else:
+        elif len(element.groups):
             assignedPairs[0].append(element)
             assignedPairs[1].append(element.groups[0])
     # check if groups already assigned (contig visited already)
     if not len(toAssign):
         return
-    print("start")
-    
+    # print("start", startV.offset, "->", destV.offset)
+    # used = set()
+    # for n in startV.startAndOverlapTimespans:
+    #     e = n.element
+    #     if len(e.groups) and eval(e.groups[0]) in used:
+    #         print(f"ERROR3; duplicate groups {e.groups} at {startV.offset}")
+    #     elif len(e.groups): used.add(eval(e.groups[0]))
+    # used = set()
+    # for n in destV.startAndOverlapTimespans:
+    #     e = n.element
+    #     if len(e.groups) and eval(e.groups[0]) in used:
+    #         print(f"ERROR3; duplicate groups {e.groups} at {destV.offset}")
+    #     elif len(e.groups): used.add(eval(e.groups[0]))
+
     # notes of start contig
     toConnect = []
     for t in startV.startAndOverlapTimespans:
         if len(t.element.groups) and t.element.groups[0] not in assignedPairs[1]:
             toConnect.append(t.element)
             # print(f"appending1 {t.element} to toConnect with groups {t.element.groups}")
-
-    # contigV = contig[0][1]
-    # while True: # len(toAssign) > len(toConnect):
-    #     # crawl to contig in opposite direction
-    #     if dir == "l":
-    #         # if (not contigV) or contigV == contigV.nextVerticality:
-    #         #     break
-    #         contigV = contigV.nextVerticality
-    #     if dir == "r":
-    #         # if (not contigV) or contig == contigV.previousVerticality:
-    #         #     break
-    #         contigV = contigV.previousVerticality
-    #     if not contigV:
-    #         break
-    #     for e in [t.element for t in contigV.startAndOverlapTimespans if len(t.element.groups) and t.element.groups[0] not in [ce.groups[0] for ce in toConnect if len(ce.groups)]]:
-    #         # print(f"appending2 {e} to toConnect with groups {e.groups}")
-    #         toConnect.append(e)
-                
-    # if len(toAssign) > len(toConnect):
-    #     print("Problem at offset: ", contig[0][1].offset)
-            
-    # print(f"Connecting {startV} to {destV} ({len(startV.startAndOverlapTimespans)}->{len(destV.startAndOverlapTimespans)})")
 
     # naive assign first 
     # enumerate all possible combinations (hash)
@@ -172,28 +164,55 @@ def assignVoices(bfsItem, dir):
     # if len([a for a in toAssign if not len(a[0].groups)]):
     #     print("unassigned notes:", [[a[0].pitch.nameWithOctave] + a[1:] for a in toAssign if not len(a[0].groups)])
         # assignVoices(contig, dir)
+    # used = set()
+    # for n in startV.startAndOverlapTimespans:
+    #     e = n.element
+    #     if len(e.groups) and eval(e.groups[0]) in used:
+    #         print(f"ERROR0; duplicate groups {e.groups} at {startV.offset}")
+    #     elif len(e.groups): used.add(eval(e.groups[0]))
+    # used = set()
+    # for n in destV.startAndOverlapTimespans:
+    #     e = n.element
+    #     if len(e.groups) and eval(e.groups[0]) in used:
+    #         print(f"ERROR0; duplicate groups {e.groups} at {destV.offset}")
+    #     elif len(e.groups): used.add(eval(e.groups[0]))
 
     # TODO: connect with maxcontigs (aware)
     
-    print("finish")
+    # print("finish")
 
 # assign groups across fragments
 def groupFragments(contig, dir, maxContig):
     # TODO: experiment with sorting order (something to do with melody being high notes, or soprano and bass notes varying more)
+    # *** sorting order is important (notes with the same pitch and duration are considered equal even if they are different instances)
     grouphash = [] # verticalities x "fragment"
+    prev = [None] * len(contig[0][0].startAndOverlapTimespans)
+    # make sure that held notes stay in same fragment (column)
     for v in contig[0]:
-            grouphash.append([t.element for t in sorted(v.startAndOverlapTimespans, key=lambda n: n.element.pitch)])
+        temp = [None] * len(prev)
+        curr = [t.element for t in sorted(v.startAndOverlapTimespans, key=lambda n: n.element.id)]
+        curr = sorted(curr, key=lambda n: n.pitch)
+        # curr = sorted(curr, key=lambda n: n.duration.quarterLength)
+        for i,n in enumerate(prev):
+            if n in curr:
+                temp[i] = n
+        e = (n for n in curr if n not in prev)
+        for i,n in enumerate(temp):
+            if not temp[i]: temp[i] = next(e)
+        # print("appending", temp)
+        grouphash.append(temp)
+        prev = temp
 
-    if dir == "m":
-        for v in grouphash:
-            i = 0
-            used = [eval(n.groups[0]) for n in v if len(n.groups)]
-            for n in [n for n in v if not len(n.groups)]:
-                while i in used:
-                    i = (i + 1) % len(v)
-                n.groups = [str(i)]
-                used.append(i)
-        return
+    if dir == "m": # populate maximum contigs
+        i = 0
+        used = set(eval(n.groups[0]) for n in grouphash[0] if len(n.groups))
+        for n in [n for n in grouphash[0] if not len(n.groups)]:
+            while i in used:
+                i = (i + 1) % len(grouphash[0])
+            n.groups = [str(i)]
+            used.add(i)
+        startV = contig[0][0]
+        destV = contig[0][-1]
     elif dir == "l":
         startV = contig[0][0]
         destV = contig[0][-1]
@@ -201,22 +220,62 @@ def groupFragments(contig, dir, maxContig):
         startV = contig[0][-1]
         destV = contig[0][0]
 
-    print(grouphash)
+    # print(f"grouping {len(contig[0])} fragments {startV.offset}<->{destV.offset} of length {len(startV.startAndOverlapTimespans)}")
+    # for r in grouphash:
+    #     print("vertical", [(c.id, c.pitch.nameWithOctave, c.groups) for c in r])
+    # transpose grouphash -> fragments
+    fragments = []
+    for i in range(len(grouphash[0])):
+        fragments.append([])
+        for row in grouphash:
+            fragments[-1].append(row[i])
 
-    # # FIXME: fix everything below this (duplicate groups, check for same notes)
-    used = [t.element for v in contig[0] for t in v.startAndOverlapTimespans if len(t.element.groups)]
-    fragments = [[row[i] for row in grouphash] for i in range(len(grouphash[0]))]
-    # FIXME: (implement something similar to above with startV and destV)
-    for n in used:
-        # get fragment (grouphash column) that has n  
-        for f in fragments:
-            print(f"fragment: {f}") 
-            for note in f:
-                if n.id == note.id:
-                    print(f"{n} matches: {f}")
-                    for r in f:
-                        r.groups = n.groups
-                    break
+    # checks for duplicate groups
+    # quit = False
+    # used = set()
+    # for n in startV.startAndOverlapTimespans:
+    #     e = n.element
+    #     if len(e.groups) and eval(e.groups[0]) in used:
+    #         print(f"ERROR1; duplicate groups {e.groups} at {startV.offset}")
+    #         quit = True
+    #     elif len(e.groups): used.add(eval(e.groups[0]))
+    # used = set()
+    # for n in destV.startAndOverlapTimespans:
+    #     e = n.element
+    #     if len(e.groups) and eval(e.groups[0]) in used:
+    #         print(f"ERROR1; duplicate groups {e.groups} at {destV.offset}")
+    #         quit = True
+    #     elif len(e.groups): used.add(eval(e.groups[0]))
+    # for f in fragments:
+    #     # print("fragment", [(n.id, n.pitch.nameWithOctave, n.groups) for n in f], len(f))
+    #     startN = None
+    #     destN = None
+    #     for n in f:
+    #         if n.id in [t.element.id for t in startV.startAndOverlapTimespans]: startN = n
+    #         elif n.id in [t.element.id for t in destV.startAndOverlapTimespans]: destN = n
+    #     if not startN or not destN: continue
+    #     if (len(startN.groups) and len(destN.groups)) and eval(startN.groups[0]) != eval(destN.groups[0]):
+    #         print(f"ERROR2; {startN.pitch}:{startN.groups} at {startV.offset} is not equal to {destN.pitch}:{destN.groups} at {destV.offset}")
+    #         quit = True
+    # if quit: 
+    #     print("quit")
+        # return
+
+    for f in fragments:
+        startN = None
+        destN = None
+        for n in f:
+            if n.id in [t.element.id for t in startV.startAndOverlapTimespans]: startN = n
+            elif n.id in [t.element.id for t in destV.startAndOverlapTimespans]: destN = n
+        if not startN or not destN: continue
+        voice = startN.groups if len(startN.groups) else destN.groups
+        # print((startN.id, startN.pitch, startN.groups), (destN.id, destN.pitch, destN.groups))
+        # print(f"assigning group {voice}: ({startN.id}, {startN.pitch})<->({destN.pitch}, {destN.id})")
+        if len(voice):
+            for n in f:
+                if not len(n.groups): 
+                    # print(n.id, n.pitch, n.groups)
+                    n.groups = voice 
 
 # bfs
 def crawlScore(frontier, contigs, currid):
@@ -352,7 +411,7 @@ else:
     # TODO: recurse parts and clefs
     # TODO: as well as segments the song structure (where melodies and voicing change)
     (reduced, partdict) = separateVoices(song)
-    print(partdict)
+    # print(partdict)
     for n in reduced.recurse(classFilter=note.Note):
         if len(n.groups) and n.groups[0] in partdict:
             n.style.color = partdict[n.groups[0]]["color"]
