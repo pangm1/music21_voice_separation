@@ -46,11 +46,11 @@
     <score-part id="P1">
       <part-name>Piano</part-name>
       <part-abbreviation>Pno.</part-abbreviation>
-      <score-instrument id="Ie50fe9b4a226862ed23536b8f63ee7c2">
+      <score-instrument id="I487bb05e306a0a67ba3f994be73b8ea5">
         <instrument-name>Piano</instrument-name>
         <instrument-abbreviation>Pno</instrument-abbreviation>
       </score-instrument>
-      <midi-instrument id="Ie50fe9b4a226862ed23536b8f63ee7c2">
+      <midi-instrument id="I487bb05e306a0a67ba3f994be73b8ea5">
         <midi-channel>1</midi-channel>
         <midi-program>1</midi-program>
       </midi-instrument>
@@ -94492,7 +94492,7 @@
         <type>16th</type>
         <staff>1</staff>
       </note>
-      <note color="#138DBE" default-x="74.76" default-y="-25">
+      <note color="#70E9C5" default-x="74.76" default-y="-25">
         <pitch>
           <step>C</step>
           <alter>1</alter>
@@ -94502,7 +94502,7 @@
         <voice>1</voice>
         <type>16th</type>
         <stem>down</stem>
-        <notehead color="#138DBE" parentheses="no">normal</notehead>
+        <notehead color="#70E9C5" parentheses="no">normal</notehead>
         <staff>1</staff>
         <beam number="1">begin</beam>
         <beam number="2">begin</beam>
@@ -94729,7 +94729,7 @@
           </articulations>
         </notations>
       </note>
-      <note color="#138DBE" default-x="104.03" default-y="-155">
+      <note color="#70E9C5" default-x="104.03" default-y="-155">
         <pitch>
           <step>E</step>
           <octave>2</octave>
@@ -94738,7 +94738,7 @@
         <voice>2</voice>
         <type>eighth</type>
         <stem>up</stem>
-        <notehead color="#138DBE" parentheses="no">normal</notehead>
+        <notehead color="#70E9C5" parentheses="no">normal</notehead>
         <staff>2</staff>
         <beam number="1">continue</beam>
         <notations>
@@ -94751,7 +94751,7 @@
           <text>['3']</text>
         </lyric>
       </note>
-      <note color="#138DBE" default-x="162.55" default-y="-180">
+      <note color="#70E9C5" default-x="162.55" default-y="-180">
         <pitch>
           <step>G</step>
           <alter>1</alter>
@@ -94761,7 +94761,7 @@
         <voice>2</voice>
         <type>eighth</type>
         <stem>up</stem>
-        <notehead color="#138DBE" parentheses="no">normal</notehead>
+        <notehead color="#70E9C5" parentheses="no">normal</notehead>
         <staff>2</staff>
         <beam number="1">continue</beam>
         <notations>
@@ -94774,7 +94774,7 @@
           <text>['3']</text>
         </lyric>
       </note>
-      <note color="#138DBE" default-x="221.08" default-y="-155">
+      <note color="#70E9C5" default-x="221.08" default-y="-155">
         <pitch>
           <step>E</step>
           <octave>2</octave>
@@ -94783,7 +94783,7 @@
         <voice>2</voice>
         <type>eighth</type>
         <stem>up</stem>
-        <notehead color="#138DBE" parentheses="no">normal</notehead>
+        <notehead color="#70E9C5" parentheses="no">normal</notehead>
         <staff>2</staff>
         <beam number="1">end</beam>
         <notations>
@@ -94796,7 +94796,7 @@
           <text>['3']</text>
         </lyric>
       </note>
-      <note color="#138DBE" default-x="293.64" default-y="-180">
+      <note color="#70E9C5" default-x="293.64" default-y="-180">
         <pitch>
           <step>G</step>
           <alter>1</alter>
@@ -94806,7 +94806,7 @@
         <voice>2</voice>
         <type>eighth</type>
         <stem>up</stem>
-        <notehead color="#138DBE" parentheses="no">normal</notehead>
+        <notehead color="#70E9C5" parentheses="no">normal</notehead>
         <staff>2</staff>
         <beam number="1">begin</beam>
         <notations>
@@ -94819,7 +94819,7 @@
           <text>['3']</text>
         </lyric>
       </note>
-      <note color="#138DBE" default-x="352.17" default-y="-155">
+      <note color="#70E9C5" default-x="352.17" default-y="-155">
         <pitch>
           <step>E</step>
           <octave>2</octave>
@@ -94828,7 +94828,7 @@
         <voice>2</voice>
         <type>eighth</type>
         <stem>up</stem>
-        <notehead color="#138DBE" parentheses="no">normal</notehead>
+        <notehead color="#70E9C5" parentheses="no">normal</notehead>
         <staff>2</staff>
         <beam number="1">continue</beam>
         <notations>
@@ -94841,7 +94841,7 @@
           <text>['3']</text>
         </lyric>
       </note>
-      <note color="#138DBE" default-x="410.69" default-y="-180">
+      <note color="#70E9C5" default-x="410.69" default-y="-180">
         <pitch>
           <step>G</step>
           <alter>1</alter>
@@ -94851,7 +94851,7 @@
         <voice>2</voice>
         <type>eighth</type>
         <stem>up</stem>
-        <notehead color="#138DBE" parentheses="no">normal</notehead>
+        <notehead color="#70E9C5" parentheses="no">normal</notehead>
         <staff>2</staff>
         <beam number="1">continue</beam>
         <notations>
@@ -94864,7 +94864,7 @@
           <text>['3']</text>
         </lyric>
       </note>
-      <note color="#138DBE" default-x="469.22" default-y="-155">
+      <note color="#70E9C5" default-x="469.22" default-y="-155">
         <pitch>
           <step>E</step>
           <octave>2</octave>
@@ -94873,7 +94873,7 @@
         <voice>2</voice>
         <type>eighth</type>
         <stem>up</stem>
-        <notehead color="#138DBE" parentheses="no">normal</notehead>
+        <notehead color="#70E9C5" parentheses="no">normal</notehead>
         <staff>2</staff>
         <beam number="1">end</beam>
         <notations>
@@ -95187,7 +95187,7 @@
       <attributes>
         <staff-details print-object="yes" />
       </attributes>
-      <note color="#138DBE" default-x="97.27" default-y="-180">
+      <note color="#70E9C5" default-x="97.27" default-y="-180">
         <pitch>
           <step>G</step>
           <alter>1</alter>
@@ -95197,7 +95197,7 @@
         <voice>5</voice>
         <type>eighth</type>
         <stem>up</stem>
-        <notehead color="#138DBE" parentheses="no">normal</notehead>
+        <notehead color="#70E9C5" parentheses="no">normal</notehead>
         <staff>2</staff>
         <beam number="1">begin</beam>
         <notations>
@@ -95210,7 +95210,7 @@
           <text>['3']</text>
         </lyric>
       </note>
-      <note color="#138DBE" default-x="223.27" default-y="-155">
+      <note color="#70E9C5" default-x="223.27" default-y="-155">
         <pitch>
           <step>E</step>
           <octave>2</octave>
@@ -95219,7 +95219,7 @@
         <voice>5</voice>
         <type>eighth</type>
         <stem>up</stem>
-        <notehead color="#138DBE" parentheses="no">normal</notehead>
+        <notehead color="#70E9C5" parentheses="no">normal</notehead>
         <staff>2</staff>
         <beam number="1">continue</beam>
         <notations>
@@ -95232,7 +95232,7 @@
           <text>['3']</text>
         </lyric>
       </note>
-      <note color="#138DBE" default-x="349.28" default-y="-180">
+      <note color="#70E9C5" default-x="349.28" default-y="-180">
         <pitch>
           <step>G</step>
           <alter>1</alter>
@@ -95242,7 +95242,7 @@
         <voice>5</voice>
         <type>eighth</type>
         <stem>up</stem>
-        <notehead color="#138DBE" parentheses="no">normal</notehead>
+        <notehead color="#70E9C5" parentheses="no">normal</notehead>
         <staff>2</staff>
         <beam number="1">continue</beam>
         <notations>
@@ -95255,7 +95255,7 @@
           <text>['3']</text>
         </lyric>
       </note>
-      <note color="#138DBE" default-x="475.28" default-y="-155">
+      <note color="#70E9C5" default-x="475.28" default-y="-155">
         <pitch>
           <step>E</step>
           <octave>2</octave>
@@ -95264,7 +95264,7 @@
         <voice>5</voice>
         <type>eighth</type>
         <stem>up</stem>
-        <notehead color="#138DBE" parentheses="no">normal</notehead>
+        <notehead color="#70E9C5" parentheses="no">normal</notehead>
         <staff>2</staff>
         <beam number="1">end</beam>
         <notations>
@@ -95277,7 +95277,7 @@
           <text>['3']</text>
         </lyric>
       </note>
-      <note color="#138DBE" default-x="601.28" default-y="-180">
+      <note color="#70E9C5" default-x="601.28" default-y="-180">
         <pitch>
           <step>G</step>
           <alter>1</alter>
@@ -95287,7 +95287,7 @@
         <voice>5</voice>
         <type>eighth</type>
         <stem>up</stem>
-        <notehead color="#138DBE" parentheses="no">normal</notehead>
+        <notehead color="#70E9C5" parentheses="no">normal</notehead>
         <staff>2</staff>
         <beam number="1">begin</beam>
         <notations>
@@ -95300,7 +95300,7 @@
           <text>['3']</text>
         </lyric>
       </note>
-      <note color="#138DBE" default-x="727.29" default-y="-155">
+      <note color="#70E9C5" default-x="727.29" default-y="-155">
         <pitch>
           <step>E</step>
           <octave>2</octave>
@@ -95309,7 +95309,7 @@
         <voice>5</voice>
         <type>eighth</type>
         <stem>up</stem>
-        <notehead color="#138DBE" parentheses="no">normal</notehead>
+        <notehead color="#70E9C5" parentheses="no">normal</notehead>
         <staff>2</staff>
         <beam number="1">continue</beam>
         <notations>
@@ -95333,7 +95333,7 @@
         <type>eighth</type>
         <staff>2</staff>
       </note>
-      <note color="#138DBE" default-x="954.09" default-y="-155">
+      <note color="#70E9C5" default-x="954.09" default-y="-155">
         <pitch>
           <step>E</step>
           <octave>2</octave>
@@ -95342,7 +95342,7 @@
         <voice>5</voice>
         <type>eighth</type>
         <stem>up</stem>
-        <notehead color="#138DBE" parentheses="no">normal</notehead>
+        <notehead color="#70E9C5" parentheses="no">normal</notehead>
         <staff>2</staff>
         <beam number="1">end</beam>
         <notations>
@@ -95366,7 +95366,7 @@
         <dot />
         <staff>2</staff>
       </note>
-      <note color="#138DBE">
+      <note color="#70E9C5">
         <pitch>
           <step>G</step>
           <alter>1</alter>
@@ -95375,7 +95375,7 @@
         <duration>5040</duration>
         <voice>6</voice>
         <type>eighth</type>
-        <notehead color="#138DBE" parentheses="no">normal</notehead>
+        <notehead color="#70E9C5" parentheses="no">normal</notehead>
         <staff>2</staff>
         <lyric name="1" number="1">
           <syllabic>single</syllabic>
@@ -95427,7 +95427,7 @@
         <type>eighth</type>
         <staff>1</staff>
       </note>
-      <note color="#01F5C2" default-x="163.84" default-y="-25">
+      <note color="#7FA560" default-x="163.84" default-y="-25">
         <pitch>
           <step>C</step>
           <alter>1</alter>
@@ -95438,7 +95438,7 @@
         <voice>1</voice>
         <type>32nd</type>
         <stem>down</stem>
-        <notehead color="#01F5C2" parentheses="no">normal</notehead>
+        <notehead color="#7FA560" parentheses="no">normal</notehead>
         <staff>1</staff>
         <beam number="1">begin</beam>
         <beam number="2">begin</beam>
@@ -95451,7 +95451,7 @@
           <text>['8']</text>
         </lyric>
       </note>
-      <note color="#01F5C2" default-x="186.47" default-y="-15">
+      <note color="#7FA560" default-x="186.47" default-y="-15">
         <pitch>
           <step>E</step>
           <octave>3</octave>
@@ -95461,7 +95461,7 @@
         <voice>1</voice>
         <type>32nd</type>
         <stem>down</stem>
-        <notehead color="#01F5C2" parentheses="no">normal</notehead>
+        <notehead color="#7FA560" parentheses="no">normal</notehead>
         <staff>1</staff>
         <beam number="1">continue</beam>
         <beam number="2">continue</beam>
@@ -95474,7 +95474,7 @@
           <text>['8']</text>
         </lyric>
       </note>
-      <note color="#01F5C2" default-x="216.93" default-y="-10">
+      <note color="#7FA560" default-x="216.93" default-y="-10">
         <pitch>
           <step>F</step>
           <alter>2</alter>
@@ -95486,7 +95486,7 @@
         <type>32nd</type>
         <accidental>double-sharp</accidental>
         <stem>down</stem>
-        <notehead color="#01F5C2" parentheses="no">normal</notehead>
+        <notehead color="#7FA560" parentheses="no">normal</notehead>
         <staff>1</staff>
         <beam number="1">continue</beam>
         <beam number="2">continue</beam>
@@ -95499,7 +95499,7 @@
           <text>['8']</text>
         </lyric>
       </note>
-      <note color="#01F5C2" default-x="239.56" default-y="0">
+      <note color="#7FA560" default-x="239.56" default-y="0">
         <pitch>
           <step>A</step>
           <octave>3</octave>
@@ -95509,7 +95509,7 @@
         <voice>1</voice>
         <type>32nd</type>
         <stem>down</stem>
-        <notehead color="#01F5C2" parentheses="no">normal</notehead>
+        <notehead color="#7FA560" parentheses="no">normal</notehead>
         <staff>1</staff>
         <beam number="1">end</beam>
         <beam number="2">end</beam>
@@ -95522,7 +95522,7 @@
           <text>['8']</text>
         </lyric>
       </note>
-      <note color="#6F50BA">
+      <note color="#77F31E">
         <pitch>
           <step>C</step>
           <alter>1</alter>
@@ -95531,14 +95531,14 @@
         <duration>10080</duration>
         <voice>1</voice>
         <type>quarter</type>
-        <notehead color="#6F50BA" parentheses="no">normal</notehead>
+        <notehead color="#77F31E" parentheses="no">normal</notehead>
         <staff>1</staff>
         <lyric name="1" number="1">
           <syllabic>single</syllabic>
           <text>['5']</text>
         </lyric>
       </note>
-      <note color="#6F50BA">
+      <note color="#77F31E">
         <pitch>
           <step>C</step>
           <alter>1</alter>
@@ -95547,14 +95547,14 @@
         <duration>5040</duration>
         <voice>1</voice>
         <type>eighth</type>
-        <notehead color="#6F50BA" parentheses="no">normal</notehead>
+        <notehead color="#77F31E" parentheses="no">normal</notehead>
         <staff>1</staff>
         <lyric name="1" number="1">
           <syllabic>single</syllabic>
           <text>['5']</text>
         </lyric>
       </note>
-      <note color="#B476C3" default-x="478.81" default-y="-50">
+      <note color="#D6FFED" default-x="478.81" default-y="-50">
         <pitch>
           <step>C</step>
           <alter>1</alter>
@@ -95565,7 +95565,7 @@
         <voice>1</voice>
         <type>32nd</type>
         <stem>up</stem>
-        <notehead color="#B476C3" parentheses="no">normal</notehead>
+        <notehead color="#D6FFED" parentheses="no">normal</notehead>
         <staff>1</staff>
         <beam number="1">begin</beam>
         <beam number="2">begin</beam>
@@ -95578,7 +95578,7 @@
           <text>['9']</text>
         </lyric>
       </note>
-      <note color="#B476C3" default-x="501.44" default-y="-40">
+      <note color="#D6FFED" default-x="501.44" default-y="-40">
         <pitch>
           <step>E</step>
           <octave>4</octave>
@@ -95588,7 +95588,7 @@
         <voice>1</voice>
         <type>32nd</type>
         <stem>up</stem>
-        <notehead color="#B476C3" parentheses="no">normal</notehead>
+        <notehead color="#D6FFED" parentheses="no">normal</notehead>
         <staff>1</staff>
         <beam number="1">continue</beam>
         <beam number="2">continue</beam>
@@ -95601,7 +95601,7 @@
           <text>['9']</text>
         </lyric>
       </note>
-      <note color="#B476C3" default-x="531.9" default-y="-35">
+      <note color="#D6FFED" default-x="531.9" default-y="-35">
         <pitch>
           <step>F</step>
           <alter>2</alter>
@@ -95613,7 +95613,7 @@
         <type>32nd</type>
         <accidental>double-sharp</accidental>
         <stem>up</stem>
-        <notehead color="#B476C3" parentheses="no">normal</notehead>
+        <notehead color="#D6FFED" parentheses="no">normal</notehead>
         <staff>1</staff>
         <beam number="1">continue</beam>
         <beam number="2">continue</beam>
@@ -95626,7 +95626,7 @@
           <text>['9']</text>
         </lyric>
       </note>
-      <note color="#B476C3" default-x="562.98" default-y="-25">
+      <note color="#D6FFED" default-x="562.98" default-y="-25">
         <pitch>
           <step>A</step>
           <alter>1</alter>
@@ -95638,7 +95638,7 @@
         <type>32nd</type>
         <accidental>sharp</accidental>
         <stem>up</stem>
-        <notehead color="#B476C3" parentheses="no">normal</notehead>
+        <notehead color="#D6FFED" parentheses="no">normal</notehead>
         <staff>1</staff>
         <beam number="1">end</beam>
         <beam number="2">end</beam>
@@ -95651,7 +95651,7 @@
           <text>['9']</text>
         </lyric>
       </note>
-      <note color="#6F50BA">
+      <note color="#77F31E">
         <pitch>
           <step>C</step>
           <alter>1</alter>
@@ -95660,7 +95660,7 @@
         <duration>10080</duration>
         <voice>1</voice>
         <type>quarter</type>
-        <notehead color="#6F50BA" parentheses="no">normal</notehead>
+        <notehead color="#77F31E" parentheses="no">normal</notehead>
         <staff>1</staff>
         <lyric name="1" number="1">
           <syllabic>single</syllabic>
@@ -95677,7 +95677,7 @@
         <type>quarter</type>
         <staff>1</staff>
       </note>
-      <note color="#6000D0">
+      <note color="#BB6CCB">
         <pitch>
           <step>E</step>
           <octave>3</octave>
@@ -95685,14 +95685,14 @@
         <duration>10080</duration>
         <voice>2</voice>
         <type>quarter</type>
-        <notehead color="#6000D0" parentheses="no">normal</notehead>
+        <notehead color="#BB6CCB" parentheses="no">normal</notehead>
         <staff>1</staff>
         <lyric name="1" number="1">
           <syllabic>single</syllabic>
           <text>['6']</text>
         </lyric>
       </note>
-      <note color="#6000D0">
+      <note color="#BB6CCB">
         <pitch>
           <step>E</step>
           <octave>3</octave>
@@ -95700,7 +95700,7 @@
         <duration>5040</duration>
         <voice>2</voice>
         <type>eighth</type>
-        <notehead color="#6000D0" parentheses="no">normal</notehead>
+        <notehead color="#BB6CCB" parentheses="no">normal</notehead>
         <staff>1</staff>
         <lyric name="1" number="1">
           <syllabic>single</syllabic>
@@ -95714,7 +95714,7 @@
         <type>eighth</type>
         <staff>1</staff>
       </note>
-      <note color="#6000D0">
+      <note color="#BB6CCB">
         <pitch>
           <step>E</step>
           <octave>4</octave>
@@ -95722,7 +95722,7 @@
         <duration>10080</duration>
         <voice>2</voice>
         <type>quarter</type>
-        <notehead color="#6000D0" parentheses="no">normal</notehead>
+        <notehead color="#BB6CCB" parentheses="no">normal</notehead>
         <staff>1</staff>
         <lyric name="1" number="1">
           <syllabic>single</syllabic>
@@ -95739,7 +95739,7 @@
         <type>quarter</type>
         <staff>1</staff>
       </note>
-      <note color="#2CB004">
+      <note color="#DA81A8">
         <pitch>
           <step>F</step>
           <alter>2</alter>
@@ -95748,14 +95748,14 @@
         <duration>10080</duration>
         <voice>3</voice>
         <type>quarter</type>
-        <notehead color="#2CB004" parentheses="no">normal</notehead>
+        <notehead color="#DA81A8" parentheses="no">normal</notehead>
         <staff>1</staff>
         <lyric name="1" number="1">
           <syllabic>single</syllabic>
           <text>['7']</text>
         </lyric>
       </note>
-      <note color="#2CB004">
+      <note color="#DA81A8">
         <pitch>
           <step>F</step>
           <alter>2</alter>
@@ -95764,7 +95764,7 @@
         <duration>5040</duration>
         <voice>3</voice>
         <type>eighth</type>
-        <notehead color="#2CB004" parentheses="no">normal</notehead>
+        <notehead color="#DA81A8" parentheses="no">normal</notehead>
         <staff>1</staff>
         <lyric name="1" number="1">
           <syllabic>single</syllabic>
@@ -95778,7 +95778,7 @@
         <type>eighth</type>
         <staff>1</staff>
       </note>
-      <note color="#2CB004">
+      <note color="#DA81A8">
         <pitch>
           <step>F</step>
           <alter>2</alter>
@@ -95787,7 +95787,7 @@
         <duration>10080</duration>
         <voice>3</voice>
         <type>quarter</type>
-        <notehead color="#2CB004" parentheses="no">normal</notehead>
+        <notehead color="#DA81A8" parentheses="no">normal</notehead>
         <staff>1</staff>
         <lyric name="1" number="1">
           <syllabic>single</syllabic>
@@ -95804,7 +95804,7 @@
         <type>quarter</type>
         <staff>1</staff>
       </note>
-      <note color="#01F5C2">
+      <note color="#7FA560">
         <pitch>
           <step>A</step>
           <octave>3</octave>
@@ -95812,14 +95812,14 @@
         <duration>10080</duration>
         <voice>4</voice>
         <type>quarter</type>
-        <notehead color="#01F5C2" parentheses="no">normal</notehead>
+        <notehead color="#7FA560" parentheses="no">normal</notehead>
         <staff>1</staff>
         <lyric name="1" number="1">
           <syllabic>single</syllabic>
           <text>['8']</text>
         </lyric>
       </note>
-      <note color="#01F5C2">
+      <note color="#7FA560">
         <pitch>
           <step>A</step>
           <octave>3</octave>
@@ -95827,7 +95827,7 @@
         <duration>5040</duration>
         <voice>4</voice>
         <type>eighth</type>
-        <notehead color="#01F5C2" parentheses="no">normal</notehead>
+        <notehead color="#7FA560" parentheses="no">normal</notehead>
         <staff>1</staff>
         <lyric name="1" number="1">
           <syllabic>single</syllabic>
@@ -95841,7 +95841,7 @@
         <type>eighth</type>
         <staff>1</staff>
       </note>
-      <note color="#01F5C2">
+      <note color="#7FA560">
         <pitch>
           <step>A</step>
           <alter>1</alter>
@@ -95850,7 +95850,7 @@
         <duration>10080</duration>
         <voice>4</voice>
         <type>quarter</type>
-        <notehead color="#01F5C2" parentheses="no">normal</notehead>
+        <notehead color="#7FA560" parentheses="no">normal</notehead>
         <staff>1</staff>
         <lyric name="1" number="1">
           <syllabic>single</syllabic>
@@ -95867,7 +95867,7 @@
         <type>quarter</type>
         <staff>1</staff>
       </note>
-      <note color="#B476C3">
+      <note color="#D6FFED">
         <pitch>
           <step>C</step>
           <alter>1</alter>
@@ -95876,14 +95876,14 @@
         <duration>10080</duration>
         <voice>5</voice>
         <type>quarter</type>
-        <notehead color="#B476C3" parentheses="no">normal</notehead>
+        <notehead color="#D6FFED" parentheses="no">normal</notehead>
         <staff>1</staff>
         <lyric name="1" number="1">
           <syllabic>single</syllabic>
           <text>['9']</text>
         </lyric>
       </note>
-      <note color="#B476C3">
+      <note color="#D6FFED">
         <pitch>
           <step>C</step>
           <alter>1</alter>
@@ -95892,7 +95892,7 @@
         <duration>5040</duration>
         <voice>5</voice>
         <type>eighth</type>
-        <notehead color="#B476C3" parentheses="no">normal</notehead>
+        <notehead color="#D6FFED" parentheses="no">normal</notehead>
         <staff>1</staff>
         <lyric name="1" number="1">
           <syllabic>single</syllabic>
@@ -95906,7 +95906,7 @@
         <type>eighth</type>
         <staff>1</staff>
       </note>
-      <note color="#B476C3">
+      <note color="#D6FFED">
         <pitch>
           <step>C</step>
           <alter>1</alter>
@@ -95915,7 +95915,7 @@
         <duration>10080</duration>
         <voice>5</voice>
         <type>quarter</type>
-        <notehead color="#B476C3" parentheses="no">normal</notehead>
+        <notehead color="#D6FFED" parentheses="no">normal</notehead>
         <staff>1</staff>
         <lyric name="1" number="1">
           <syllabic>single</syllabic>
@@ -95928,7 +95928,7 @@
       <attributes>
         <staff-details print-object="yes" />
       </attributes>
-      <note color="#138DBE" default-x="114.07" default-y="-185">
+      <note color="#70E9C5" default-x="114.07" default-y="-185">
         <pitch>
           <step>F</step>
           <alter>2</alter>
@@ -95940,7 +95940,7 @@
         <type>quarter</type>
         <accidental>double-sharp</accidental>
         <stem>up</stem>
-        <notehead color="#138DBE" parentheses="no">normal</notehead>
+        <notehead color="#70E9C5" parentheses="no">normal</notehead>
         <staff>2</staff>
         <notations>
           <tied type="start" />
@@ -95950,7 +95950,7 @@
           <text>['3']</text>
         </lyric>
       </note>
-      <note color="#138DBE" default-x="268.38" default-y="-185">
+      <note color="#70E9C5" default-x="268.38" default-y="-185">
         <pitch>
           <step>F</step>
           <alter>2</alter>
@@ -95961,7 +95961,7 @@
         <voice>6</voice>
         <type>eighth</type>
         <stem>up</stem>
-        <notehead color="#138DBE" parentheses="no">normal</notehead>
+        <notehead color="#70E9C5" parentheses="no">normal</notehead>
         <staff>2</staff>
         <notations>
           <tied type="stop" />
@@ -95971,7 +95971,7 @@
           <text>['3']</text>
         </lyric>
       </note>
-      <note color="#138DBE" default-x="318.16" default-y="-185">
+      <note color="#70E9C5" default-x="318.16" default-y="-185">
         <pitch>
           <step>F</step>
           <alter>2</alter>
@@ -95982,7 +95982,7 @@
         <voice>6</voice>
         <type>32nd</type>
         <stem>up</stem>
-        <notehead color="#138DBE" parentheses="no">normal</notehead>
+        <notehead color="#70E9C5" parentheses="no">normal</notehead>
         <staff>2</staff>
         <beam number="1">begin</beam>
         <beam number="2">begin</beam>
@@ -95995,7 +95995,7 @@
           <text>['3']</text>
         </lyric>
       </note>
-      <note color="#138DBE" default-x="351.24" default-y="-175">
+      <note color="#70E9C5" default-x="351.24" default-y="-175">
         <pitch>
           <step>A</step>
           <alter>1</alter>
@@ -96007,7 +96007,7 @@
         <type>32nd</type>
         <accidental>sharp</accidental>
         <stem>up</stem>
-        <notehead color="#138DBE" parentheses="no">normal</notehead>
+        <notehead color="#70E9C5" parentheses="no">normal</notehead>
         <staff>2</staff>
         <beam number="1">continue</beam>
         <beam number="2">continue</beam>
@@ -96020,7 +96020,7 @@
           <text>['3']</text>
         </lyric>
       </note>
-      <note color="#138DBE" default-x="374.91" default-y="-165">
+      <note color="#70E9C5" default-x="374.91" default-y="-165">
         <pitch>
           <step>C</step>
           <alter>1</alter>
@@ -96031,7 +96031,7 @@
         <voice>6</voice>
         <type>32nd</type>
         <stem>up</stem>
-        <notehead color="#138DBE" parentheses="no">normal</notehead>
+        <notehead color="#70E9C5" parentheses="no">normal</notehead>
         <staff>2</staff>
         <beam number="1">continue</beam>
         <beam number="2">continue</beam>
@@ -96044,7 +96044,7 @@
           <text>['3']</text>
         </lyric>
       </note>
-      <note color="#138DBE" default-x="398.57" default-y="-155">
+      <note color="#70E9C5" default-x="398.57" default-y="-155">
         <pitch>
           <step>E</step>
           <octave>2</octave>
@@ -96054,7 +96054,7 @@
         <voice>6</voice>
         <type>32nd</type>
         <stem>up</stem>
-        <notehead color="#138DBE" parentheses="no">normal</notehead>
+        <notehead color="#70E9C5" parentheses="no">normal</notehead>
         <staff>2</staff>
         <beam number="1">end</beam>
         <beam number="2">end</beam>
@@ -96067,7 +96067,7 @@
           <text>['3']</text>
         </lyric>
       </note>
-      <note color="#0EDCD6">
+      <note color="#CD4AFA">
         <pitch>
           <step>F</step>
           <alter>2</alter>
@@ -96076,14 +96076,14 @@
         <duration>10080</duration>
         <voice>6</voice>
         <type>quarter</type>
-        <notehead color="#0EDCD6" parentheses="no">normal</notehead>
+        <notehead color="#CD4AFA" parentheses="no">normal</notehead>
         <staff>2</staff>
         <lyric name="1" number="1">
           <syllabic>single</syllabic>
           <text>['0']</text>
         </lyric>
       </note>
-      <note color="#0EDCD6">
+      <note color="#CD4AFA">
         <pitch>
           <step>F</step>
           <alter>2</alter>
@@ -96092,14 +96092,14 @@
         <duration>5040</duration>
         <voice>6</voice>
         <type>eighth</type>
-        <notehead color="#0EDCD6" parentheses="no">normal</notehead>
+        <notehead color="#CD4AFA" parentheses="no">normal</notehead>
         <staff>2</staff>
         <lyric name="1" number="1">
           <syllabic>single</syllabic>
           <text>['0']</text>
         </lyric>
       </note>
-      <note color="#95F5C5" default-x="635.4" default-y="-150">
+      <note color="#C5AC9D" default-x="635.4" default-y="-150">
         <pitch>
           <step>F</step>
           <alter>2</alter>
@@ -96111,7 +96111,7 @@
         <type>32nd</type>
         <accidental>double-sharp</accidental>
         <stem>up</stem>
-        <notehead color="#95F5C5" parentheses="no">normal</notehead>
+        <notehead color="#C5AC9D" parentheses="no">normal</notehead>
         <staff>2</staff>
         <beam number="1">continue</beam>
         <beam number="2">begin</beam>
@@ -96124,7 +96124,7 @@
           <text>['4']</text>
         </lyric>
       </note>
-      <note color="#95F5C5" default-x="666.48" default-y="-140">
+      <note color="#C5AC9D" default-x="666.48" default-y="-140">
         <pitch>
           <step>A</step>
           <alter>1</alter>
@@ -96136,7 +96136,7 @@
         <type>32nd</type>
         <accidental>sharp</accidental>
         <stem>up</stem>
-        <notehead color="#95F5C5" parentheses="no">normal</notehead>
+        <notehead color="#C5AC9D" parentheses="no">normal</notehead>
         <staff>2</staff>
         <beam number="1">continue</beam>
         <beam number="2">continue</beam>
@@ -96149,7 +96149,7 @@
           <text>['4']</text>
         </lyric>
       </note>
-      <note color="#95F5C5" default-x="689.1" default-y="-130">
+      <note color="#C5AC9D" default-x="689.1" default-y="-130">
         <pitch>
           <step>C</step>
           <alter>1</alter>
@@ -96160,7 +96160,7 @@
         <voice>6</voice>
         <type>32nd</type>
         <stem>up</stem>
-        <notehead color="#95F5C5" parentheses="no">normal</notehead>
+        <notehead color="#C5AC9D" parentheses="no">normal</notehead>
         <staff>2</staff>
         <beam number="1">continue</beam>
         <beam number="2">continue</beam>
@@ -96173,7 +96173,7 @@
           <text>['4']</text>
         </lyric>
       </note>
-      <note color="#95F5C5" default-x="711.73" default-y="-120">
+      <note color="#C5AC9D" default-x="711.73" default-y="-120">
         <pitch>
           <step>E</step>
           <octave>3</octave>
@@ -96183,7 +96183,7 @@
         <voice>6</voice>
         <type>32nd</type>
         <stem>up</stem>
-        <notehead color="#95F5C5" parentheses="no">normal</notehead>
+        <notehead color="#C5AC9D" parentheses="no">normal</notehead>
         <staff>2</staff>
         <beam number="1">end</beam>
         <beam number="2">end</beam>
@@ -96206,7 +96206,7 @@
         <type>half</type>
         <staff>2</staff>
       </note>
-      <note color="#5202FD">
+      <note color="#ABFB47">
         <pitch>
           <step>A</step>
           <alter>1</alter>
@@ -96215,14 +96215,14 @@
         <duration>10080</duration>
         <voice>7</voice>
         <type>quarter</type>
-        <notehead color="#5202FD" parentheses="no">normal</notehead>
+        <notehead color="#ABFB47" parentheses="no">normal</notehead>
         <staff>2</staff>
         <lyric name="1" number="1">
           <syllabic>single</syllabic>
           <text>['1']</text>
         </lyric>
       </note>
-      <note color="#5202FD">
+      <note color="#ABFB47">
         <pitch>
           <step>A</step>
           <alter>1</alter>
@@ -96231,7 +96231,7 @@
         <duration>5040</duration>
         <voice>7</voice>
         <type>eighth</type>
-        <notehead color="#5202FD" parentheses="no">normal</notehead>
+        <notehead color="#ABFB47" parentheses="no">normal</notehead>
         <staff>2</staff>
         <lyric name="1" number="1">
           <syllabic>single</syllabic>
@@ -96255,7 +96255,7 @@
         <type>half</type>
         <staff>2</staff>
       </note>
-      <note color="#CFBCEB">
+      <note color="#2BCF4B">
         <pitch>
           <step>C</step>
           <alter>1</alter>
@@ -96264,14 +96264,14 @@
         <duration>10080</duration>
         <voice>8</voice>
         <type>quarter</type>
-        <notehead color="#CFBCEB" parentheses="no">normal</notehead>
+        <notehead color="#2BCF4B" parentheses="no">normal</notehead>
         <staff>2</staff>
         <lyric name="1" number="1">
           <syllabic>single</syllabic>
           <text>['2']</text>
         </lyric>
       </note>
-      <note color="#CFBCEB">
+      <note color="#2BCF4B">
         <pitch>
           <step>C</step>
           <alter>1</alter>
@@ -96280,7 +96280,7 @@
         <duration>5040</duration>
         <voice>8</voice>
         <type>eighth</type>
-        <notehead color="#CFBCEB" parentheses="no">normal</notehead>
+        <notehead color="#2BCF4B" parentheses="no">normal</notehead>
         <staff>2</staff>
         <lyric name="1" number="1">
           <syllabic>single</syllabic>
@@ -96304,7 +96304,7 @@
         <type>half</type>
         <staff>2</staff>
       </note>
-      <note color="#138DBE">
+      <note color="#70E9C5">
         <pitch>
           <step>E</step>
           <octave>2</octave>
@@ -96312,14 +96312,14 @@
         <duration>10080</duration>
         <voice>9</voice>
         <type>quarter</type>
-        <notehead color="#138DBE" parentheses="no">normal</notehead>
+        <notehead color="#70E9C5" parentheses="no">normal</notehead>
         <staff>2</staff>
         <lyric name="1" number="1">
           <syllabic>single</syllabic>
           <text>['3']</text>
         </lyric>
       </note>
-      <note color="#138DBE">
+      <note color="#70E9C5">
         <pitch>
           <step>E</step>
           <octave>2</octave>
@@ -96327,7 +96327,7 @@
         <duration>5040</duration>
         <voice>9</voice>
         <type>eighth</type>
-        <notehead color="#138DBE" parentheses="no">normal</notehead>
+        <notehead color="#70E9C5" parentheses="no">normal</notehead>
         <staff>2</staff>
         <lyric name="1" number="1">
           <syllabic>single</syllabic>
@@ -96351,7 +96351,7 @@
         <type>half</type>
         <staff>2</staff>
       </note>
-      <note color="#95F5C5">
+      <note color="#C5AC9D">
         <pitch>
           <step>F</step>
           <alter>2</alter>
@@ -96361,14 +96361,14 @@
         <voice>10</voice>
         <type>quarter</type>
         <accidental>double-sharp</accidental>
-        <notehead color="#95F5C5" parentheses="no">normal</notehead>
+        <notehead color="#C5AC9D" parentheses="no">normal</notehead>
         <staff>2</staff>
         <lyric name="1" number="1">
           <syllabic>single</syllabic>
           <text>['4']</text>
         </lyric>
       </note>
-      <note color="#95F5C5">
+      <note color="#C5AC9D">
         <pitch>
           <step>F</step>
           <alter>2</alter>
@@ -96377,7 +96377,7 @@
         <duration>5040</duration>
         <voice>10</voice>
         <type>eighth</type>
-        <notehead color="#95F5C5" parentheses="no">normal</notehead>
+        <notehead color="#C5AC9D" parentheses="no">normal</notehead>
         <staff>2</staff>
         <lyric name="1" number="1">
           <syllabic>single</syllabic>
@@ -96394,7 +96394,7 @@
     </measure>
     <!--======================== Measure 335 =========================-->
     <measure implicit="no" number="335" width="320">
-      <note color="#6F50BA">
+      <note color="#77F31E">
         <pitch>
           <step>C</step>
           <alter>1</alter>
@@ -96403,14 +96403,14 @@
         <duration>5040</duration>
         <voice>1</voice>
         <type>eighth</type>
-        <notehead color="#6F50BA" parentheses="no">normal</notehead>
+        <notehead color="#77F31E" parentheses="no">normal</notehead>
         <staff>1</staff>
         <lyric name="1" number="1">
           <syllabic>single</syllabic>
           <text>['5']</text>
         </lyric>
       </note>
-      <note color="#B476C3" default-x="81.24" default-y="-15">
+      <note color="#D6FFED" default-x="81.24" default-y="-15">
         <pitch>
           <step>C</step>
           <alter>1</alter>
@@ -96421,7 +96421,7 @@
         <voice>1</voice>
         <type>32nd</type>
         <stem>down</stem>
-        <notehead color="#B476C3" parentheses="no">normal</notehead>
+        <notehead color="#D6FFED" parentheses="no">normal</notehead>
         <staff>1</staff>
         <beam number="1">begin</beam>
         <beam number="2">begin</beam>
@@ -96434,7 +96434,7 @@
           <text>['9']</text>
         </lyric>
       </note>
-      <note color="#B476C3" default-x="110.08" default-y="-5">
+      <note color="#D6FFED" default-x="110.08" default-y="-5">
         <pitch>
           <step>E</step>
           <octave>5</octave>
@@ -96444,7 +96444,7 @@
         <voice>1</voice>
         <type>32nd</type>
         <stem>down</stem>
-        <notehead color="#B476C3" parentheses="no">normal</notehead>
+        <notehead color="#D6FFED" parentheses="no">normal</notehead>
         <staff>1</staff>
         <beam number="1">continue</beam>
         <beam number="2">continue</beam>
@@ -96457,7 +96457,7 @@
           <text>['9']</text>
         </lyric>
       </note>
-      <note color="#B476C3" default-x="140.54" default-y="0">
+      <note color="#D6FFED" default-x="140.54" default-y="0">
         <pitch>
           <step>F</step>
           <alter>2</alter>
@@ -96469,7 +96469,7 @@
         <type>32nd</type>
         <accidental>double-sharp</accidental>
         <stem>down</stem>
-        <notehead color="#B476C3" parentheses="no">normal</notehead>
+        <notehead color="#D6FFED" parentheses="no">normal</notehead>
         <staff>1</staff>
         <beam number="1">continue</beam>
         <beam number="2">continue</beam>
@@ -96482,7 +96482,7 @@
           <text>['9']</text>
         </lyric>
       </note>
-      <note color="#B476C3" default-x="173.62" default-y="10">
+      <note color="#D6FFED" default-x="173.62" default-y="10">
         <pitch>
           <step>A</step>
           <alter>1</alter>
@@ -96494,7 +96494,7 @@
         <type>32nd</type>
         <accidental>sharp</accidental>
         <stem>down</stem>
-        <notehead color="#B476C3" parentheses="no">normal</notehead>
+        <notehead color="#D6FFED" parentheses="no">normal</notehead>
         <staff>1</staff>
         <beam number="1">end</beam>
         <beam number="2">end</beam>
@@ -96507,7 +96507,7 @@
           <text>['9']</text>
         </lyric>
       </note>
-      <note color="#0EDCD6">
+      <note color="#CD4AFA">
         <pitch>
           <step>C</step>
           <alter>1</alter>
@@ -96517,7 +96517,7 @@
         <voice>1</voice>
         <type>half</type>
         <dot />
-        <notehead color="#0EDCD6" parentheses="no">normal</notehead>
+        <notehead color="#CD4AFA" parentheses="no">normal</notehead>
         <staff>1</staff>
         <lyric name="1" number="1">
           <syllabic>single</syllabic>
@@ -96527,7 +96527,7 @@
       <backup>
         <duration>40320</duration>
       </backup>
-      <note color="#6000D0">
+      <note color="#BB6CCB">
         <pitch>
           <step>E</step>
           <octave>4</octave>
@@ -96535,7 +96535,7 @@
         <duration>5040</duration>
         <voice>2</voice>
         <type>eighth</type>
-        <notehead color="#6000D0" parentheses="no">normal</notehead>
+        <notehead color="#BB6CCB" parentheses="no">normal</notehead>
         <staff>1</staff>
         <lyric name="1" number="1">
           <syllabic>single</syllabic>
@@ -96563,7 +96563,7 @@
       <backup>
         <duration>40320</duration>
       </backup>
-      <note color="#2CB004">
+      <note color="#DA81A8">
         <pitch>
           <step>F</step>
           <alter>2</alter>
@@ -96572,7 +96572,7 @@
         <duration>5040</duration>
         <voice>3</voice>
         <type>eighth</type>
-        <notehead color="#2CB004" parentheses="no">normal</notehead>
+        <notehead color="#DA81A8" parentheses="no">normal</notehead>
         <staff>1</staff>
         <lyric name="1" number="1">
           <syllabic>single</syllabic>
@@ -96601,7 +96601,7 @@
       <backup>
         <duration>40320</duration>
       </backup>
-      <note color="#01F5C2">
+      <note color="#7FA560">
         <pitch>
           <step>A</step>
           <alter>1</alter>
@@ -96610,7 +96610,7 @@
         <duration>5040</duration>
         <voice>4</voice>
         <type>eighth</type>
-        <notehead color="#01F5C2" parentheses="no">normal</notehead>
+        <notehead color="#7FA560" parentheses="no">normal</notehead>
         <staff>1</staff>
         <lyric name="1" number="1">
           <syllabic>single</syllabic>
@@ -96624,7 +96624,7 @@
         <type>eighth</type>
         <staff>1</staff>
       </note>
-      <note color="#B476C3">
+      <note color="#D6FFED">
         <pitch>
           <step>A</step>
           <alter>1</alter>
@@ -96634,7 +96634,7 @@
         <voice>4</voice>
         <type>half</type>
         <dot />
-        <notehead color="#B476C3" parentheses="no">normal</notehead>
+        <notehead color="#D6FFED" parentheses="no">normal</notehead>
         <staff>1</staff>
         <lyric name="1" number="1">
           <syllabic>single</syllabic>
@@ -96644,7 +96644,7 @@
       <backup>
         <duration>40320</duration>
       </backup>
-      <note color="#B476C3">
+      <note color="#D6FFED">
         <pitch>
           <step>C</step>
           <alter>1</alter>
@@ -96653,7 +96653,7 @@
         <duration>5040</duration>
         <voice>5</voice>
         <type>eighth</type>
-        <notehead color="#B476C3" parentheses="no">normal</notehead>
+        <notehead color="#D6FFED" parentheses="no">normal</notehead>
         <staff>1</staff>
         <lyric name="1" number="1">
           <syllabic>single</syllabic>
@@ -96682,7 +96682,7 @@
       <backup>
         <duration>40320</duration>
       </backup>
-      <note color="#0EDCD6">
+      <note color="#CD4AFA">
         <pitch>
           <step>F</step>
           <alter>2</alter>
@@ -96691,14 +96691,14 @@
         <duration>10080</duration>
         <voice>6</voice>
         <type>quarter</type>
-        <notehead color="#0EDCD6" parentheses="no">normal</notehead>
+        <notehead color="#CD4AFA" parentheses="no">normal</notehead>
         <staff>2</staff>
         <lyric name="1" number="1">
           <syllabic>single</syllabic>
           <text>['0']</text>
         </lyric>
       </note>
-      <note color="#95F5C5">
+      <note color="#C5AC9D">
         <pitch>
           <step>F</step>
           <alter>2</alter>
@@ -96709,7 +96709,7 @@
         <type>half</type>
         <dot />
         <accidental>double-sharp</accidental>
-        <notehead color="#95F5C5" parentheses="no">normal</notehead>
+        <notehead color="#C5AC9D" parentheses="no">normal</notehead>
         <staff>2</staff>
         <lyric name="1" number="1">
           <syllabic>single</syllabic>
@@ -96719,7 +96719,7 @@
       <backup>
         <duration>40320</duration>
       </backup>
-      <note color="#5202FD">
+      <note color="#ABFB47">
         <pitch>
           <step>A</step>
           <alter>1</alter>
@@ -96728,14 +96728,14 @@
         <duration>10080</duration>
         <voice>7</voice>
         <type>quarter</type>
-        <notehead color="#5202FD" parentheses="no">normal</notehead>
+        <notehead color="#ABFB47" parentheses="no">normal</notehead>
         <staff>2</staff>
         <lyric name="1" number="1">
           <syllabic>single</syllabic>
           <text>['1']</text>
         </lyric>
       </note>
-      <note color="#138DBE">
+      <note color="#70E9C5">
         <pitch>
           <step>A</step>
           <alter>1</alter>
@@ -96746,7 +96746,7 @@
         <type>half</type>
         <dot />
         <accidental>sharp</accidental>
-        <notehead color="#138DBE" parentheses="no">normal</notehead>
+        <notehead color="#70E9C5" parentheses="no">normal</notehead>
         <staff>2</staff>
         <lyric name="1" number="1">
           <syllabic>single</syllabic>
@@ -96756,7 +96756,7 @@
       <backup>
         <duration>40320</duration>
       </backup>
-      <note color="#CFBCEB">
+      <note color="#2BCF4B">
         <pitch>
           <step>C</step>
           <alter>1</alter>
@@ -96765,14 +96765,14 @@
         <duration>10080</duration>
         <voice>8</voice>
         <type>quarter</type>
-        <notehead color="#CFBCEB" parentheses="no">normal</notehead>
+        <notehead color="#2BCF4B" parentheses="no">normal</notehead>
         <staff>2</staff>
         <lyric name="1" number="1">
           <syllabic>single</syllabic>
           <text>['2']</text>
         </lyric>
       </note>
-      <note color="#CFBCEB">
+      <note color="#2BCF4B">
         <pitch>
           <step>C</step>
           <alter>1</alter>
@@ -96782,7 +96782,7 @@
         <voice>8</voice>
         <type>half</type>
         <dot />
-        <notehead color="#CFBCEB" parentheses="no">normal</notehead>
+        <notehead color="#2BCF4B" parentheses="no">normal</notehead>
         <staff>2</staff>
         <lyric name="1" number="1">
           <syllabic>single</syllabic>
@@ -96792,7 +96792,7 @@
       <backup>
         <duration>40320</duration>
       </backup>
-      <note color="#138DBE">
+      <note color="#70E9C5">
         <pitch>
           <step>E</step>
           <octave>3</octave>
@@ -96800,14 +96800,14 @@
         <duration>10080</duration>
         <voice>9</voice>
         <type>quarter</type>
-        <notehead color="#138DBE" parentheses="no">normal</notehead>
+        <notehead color="#70E9C5" parentheses="no">normal</notehead>
         <staff>2</staff>
         <lyric name="1" number="1">
           <syllabic>single</syllabic>
           <text>['3']</text>
         </lyric>
       </note>
-      <note color="#5202FD">
+      <note color="#ABFB47">
         <pitch>
           <step>E</step>
           <octave>4</octave>
@@ -96816,7 +96816,7 @@
         <voice>9</voice>
         <type>half</type>
         <dot />
-        <notehead color="#5202FD" parentheses="no">normal</notehead>
+        <notehead color="#ABFB47" parentheses="no">normal</notehead>
         <staff>2</staff>
         <lyric name="1" number="1">
           <syllabic>single</syllabic>
@@ -96826,7 +96826,7 @@
       <backup>
         <duration>40320</duration>
       </backup>
-      <note color="#95F5C5">
+      <note color="#C5AC9D">
         <pitch>
           <step>F</step>
           <alter>2</alter>
@@ -96836,7 +96836,7 @@
         <voice>10</voice>
         <type>quarter</type>
         <accidental>double-sharp</accidental>
-        <notehead color="#95F5C5" parentheses="no">normal</notehead>
+        <notehead color="#C5AC9D" parentheses="no">normal</notehead>
         <staff>2</staff>
         <lyric name="1" number="1">
           <syllabic>single</syllabic>
@@ -96889,7 +96889,7 @@
         <type>eighth</type>
         <staff>1</staff>
       </note>
-      <note color="#01F5C2" default-x="168.17" default-y="-35">
+      <note color="#7FA560" default-x="168.17" default-y="-35">
         <pitch>
           <step>A</step>
           <alter>0</alter>
@@ -96901,7 +96901,7 @@
         <type>32nd</type>
         <accidental>natural</accidental>
         <stem>up</stem>
-        <notehead color="#01F5C2" parentheses="no">normal</notehead>
+        <notehead color="#7FA560" parentheses="no">normal</notehead>
         <staff>1</staff>
         <beam number="1">begin</beam>
         <beam number="2">begin</beam>
@@ -96914,7 +96914,7 @@
           <text>['8']</text>
         </lyric>
       </note>
-      <note color="#01F5C2" default-x="199.25" default-y="-30">
+      <note color="#7FA560" default-x="199.25" default-y="-30">
         <pitch>
           <step>B</step>
           <alter>1</alter>
@@ -96926,7 +96926,7 @@
         <type>32nd</type>
         <accidental>sharp</accidental>
         <stem>up</stem>
-        <notehead color="#01F5C2" parentheses="no">normal</notehead>
+        <notehead color="#7FA560" parentheses="no">normal</notehead>
         <staff>1</staff>
         <beam number="1">continue</beam>
         <beam number="2">continue</beam>
@@ -96939,7 +96939,7 @@
           <text>['8']</text>
         </lyric>
       </note>
-      <note color="#01F5C2" default-x="223.56" default-y="-20">
+      <note color="#7FA560" default-x="223.56" default-y="-20">
         <pitch>
           <step>D</step>
           <alter>1</alter>
@@ -96950,7 +96950,7 @@
         <voice>1</voice>
         <type>32nd</type>
         <stem>up</stem>
-        <notehead color="#01F5C2" parentheses="no">normal</notehead>
+        <notehead color="#7FA560" parentheses="no">normal</notehead>
         <staff>1</staff>
         <beam number="1">continue</beam>
         <beam number="2">continue</beam>
@@ -96963,7 +96963,7 @@
           <text>['8']</text>
         </lyric>
       </note>
-      <note color="#01F5C2" default-x="254.64" default-y="-10">
+      <note color="#7FA560" default-x="254.64" default-y="-10">
         <pitch>
           <step>F</step>
           <alter>1</alter>
@@ -96975,7 +96975,7 @@
         <type>32nd</type>
         <accidental>sharp</accidental>
         <stem>up</stem>
-        <notehead color="#01F5C2" parentheses="no">normal</notehead>
+        <notehead color="#7FA560" parentheses="no">normal</notehead>
         <staff>1</staff>
         <beam number="1">end</beam>
         <beam number="2">end</beam>
@@ -96988,7 +96988,7 @@
           <text>['8']</text>
         </lyric>
       </note>
-      <note color="#6F50BA">
+      <note color="#77F31E">
         <pitch>
           <step>A</step>
           <octave>2</octave>
@@ -96996,14 +96996,14 @@
         <duration>10080</duration>
         <voice>1</voice>
         <type>quarter</type>
-        <notehead color="#6F50BA" parentheses="no">normal</notehead>
+        <notehead color="#77F31E" parentheses="no">normal</notehead>
         <staff>1</staff>
         <lyric name="1" number="1">
           <syllabic>single</syllabic>
           <text>['5']</text>
         </lyric>
       </note>
-      <note color="#6F50BA">
+      <note color="#77F31E">
         <pitch>
           <step>A</step>
           <octave>2</octave>
@@ -97011,14 +97011,14 @@
         <duration>5040</duration>
         <voice>1</voice>
         <type>eighth</type>
-        <notehead color="#6F50BA" parentheses="no">normal</notehead>
+        <notehead color="#77F31E" parentheses="no">normal</notehead>
         <staff>1</staff>
         <lyric name="1" number="1">
           <syllabic>single</syllabic>
           <text>['5']</text>
         </lyric>
       </note>
-      <note color="#B476C3" default-x="499.86" default-y="-60">
+      <note color="#D6FFED" default-x="499.86" default-y="-60">
         <pitch>
           <step>A</step>
           <octave>3</octave>
@@ -97028,7 +97028,7 @@
         <voice>1</voice>
         <type>32nd</type>
         <stem>up</stem>
-        <notehead color="#B476C3" parentheses="no">normal</notehead>
+        <notehead color="#D6FFED" parentheses="no">normal</notehead>
         <staff>1</staff>
         <beam number="1">begin</beam>
         <beam number="2">begin</beam>
@@ -97041,7 +97041,7 @@
           <text>['9']</text>
         </lyric>
       </note>
-      <note color="#B476C3" default-x="532.94" default-y="-55">
+      <note color="#D6FFED" default-x="532.94" default-y="-55">
         <pitch>
           <step>B</step>
           <alter>1</alter>
@@ -97053,7 +97053,7 @@
         <type>32nd</type>
         <accidental>sharp</accidental>
         <stem>up</stem>
-        <notehead color="#B476C3" parentheses="no">normal</notehead>
+        <notehead color="#D6FFED" parentheses="no">normal</notehead>
         <staff>1</staff>
         <beam number="1">continue</beam>
         <beam number="2">continue</beam>
@@ -97066,7 +97066,7 @@
           <text>['9']</text>
         </lyric>
       </note>
-      <note color="#B476C3" default-x="557.25" default-y="-45">
+      <note color="#D6FFED" default-x="557.25" default-y="-45">
         <pitch>
           <step>D</step>
           <alter>1</alter>
@@ -97077,7 +97077,7 @@
         <voice>1</voice>
         <type>32nd</type>
         <stem>up</stem>
-        <notehead color="#B476C3" parentheses="no">normal</notehead>
+        <notehead color="#D6FFED" parentheses="no">normal</notehead>
         <staff>1</staff>
         <beam number="1">continue</beam>
         <beam number="2">continue</beam>
@@ -97090,7 +97090,7 @@
           <text>['9']</text>
         </lyric>
       </note>
-      <note color="#B476C3" default-x="581.56" default-y="-35">
+      <note color="#D6FFED" default-x="581.56" default-y="-35">
         <pitch>
           <step>F</step>
           <alter>1</alter>
@@ -97101,7 +97101,7 @@
         <voice>1</voice>
         <type>32nd</type>
         <stem>up</stem>
-        <notehead color="#B476C3" parentheses="no">normal</notehead>
+        <notehead color="#D6FFED" parentheses="no">normal</notehead>
         <staff>1</staff>
         <beam number="1">end</beam>
         <beam number="2">end</beam>
@@ -97114,7 +97114,7 @@
           <text>['9']</text>
         </lyric>
       </note>
-      <note color="#6F50BA">
+      <note color="#77F31E">
         <pitch>
           <step>A</step>
           <octave>3</octave>
@@ -97122,7 +97122,7 @@
         <duration>10080</duration>
         <voice>1</voice>
         <type>quarter</type>
-        <notehead color="#6F50BA" parentheses="no">normal</notehead>
+        <notehead color="#77F31E" parentheses="no">normal</notehead>
         <staff>1</staff>
         <lyric name="1" number="1">
           <syllabic>single</syllabic>
@@ -97139,7 +97139,7 @@
         <type>quarter</type>
         <staff>1</staff>
       </note>
-      <note color="#6000D0">
+      <note color="#BB6CCB">
         <pitch>
           <step>B</step>
           <alter>1</alter>
@@ -97148,14 +97148,14 @@
         <duration>10080</duration>
         <voice>2</voice>
         <type>quarter</type>
-        <notehead color="#6000D0" parentheses="no">normal</notehead>
+        <notehead color="#BB6CCB" parentheses="no">normal</notehead>
         <staff>1</staff>
         <lyric name="1" number="1">
           <syllabic>single</syllabic>
           <text>['6']</text>
         </lyric>
       </note>
-      <note color="#6000D0">
+      <note color="#BB6CCB">
         <pitch>
           <step>B</step>
           <alter>1</alter>
@@ -97164,7 +97164,7 @@
         <duration>5040</duration>
         <voice>2</voice>
         <type>eighth</type>
-        <notehead color="#6000D0" parentheses="no">normal</notehead>
+        <notehead color="#BB6CCB" parentheses="no">normal</notehead>
         <staff>1</staff>
         <lyric name="1" number="1">
           <syllabic>single</syllabic>
@@ -97178,7 +97178,7 @@
         <type>eighth</type>
         <staff>1</staff>
       </note>
-      <note color="#6000D0">
+      <note color="#BB6CCB">
         <pitch>
           <step>B</step>
           <alter>1</alter>
@@ -97187,7 +97187,7 @@
         <duration>10080</duration>
         <voice>2</voice>
         <type>quarter</type>
-        <notehead color="#6000D0" parentheses="no">normal</notehead>
+        <notehead color="#BB6CCB" parentheses="no">normal</notehead>
         <staff>1</staff>
         <lyric name="1" number="1">
           <syllabic>single</syllabic>
@@ -97204,7 +97204,7 @@
         <type>quarter</type>
         <staff>1</staff>
       </note>
-      <note color="#2CB004">
+      <note color="#DA81A8">
         <pitch>
           <step>D</step>
           <alter>1</alter>
@@ -97213,14 +97213,14 @@
         <duration>10080</duration>
         <voice>3</voice>
         <type>quarter</type>
-        <notehead color="#2CB004" parentheses="no">normal</notehead>
+        <notehead color="#DA81A8" parentheses="no">normal</notehead>
         <staff>1</staff>
         <lyric name="1" number="1">
           <syllabic>single</syllabic>
           <text>['7']</text>
         </lyric>
       </note>
-      <note color="#2CB004">
+      <note color="#DA81A8">
         <pitch>
           <step>D</step>
           <alter>1</alter>
@@ -97229,7 +97229,7 @@
         <duration>5040</duration>
         <voice>3</voice>
         <type>eighth</type>
-        <notehead color="#2CB004" parentheses="no">normal</notehead>
+        <notehead color="#DA81A8" parentheses="no">normal</notehead>
         <staff>1</staff>
         <lyric name="1" number="1">
           <syllabic>single</syllabic>
@@ -97243,7 +97243,7 @@
         <type>eighth</type>
         <staff>1</staff>
       </note>
-      <note color="#2CB004">
+      <note color="#DA81A8">
         <pitch>
           <step>D</step>
           <alter>1</alter>
@@ -97252,7 +97252,7 @@
         <duration>10080</duration>
         <voice>3</voice>
         <type>quarter</type>
-        <notehead color="#2CB004" parentheses="no">normal</notehead>
+        <notehead color="#DA81A8" parentheses="no">normal</notehead>
         <staff>1</staff>
         <lyric name="1" number="1">
           <syllabic>single</syllabic>
@@ -97269,7 +97269,7 @@
         <type>quarter</type>
         <staff>1</staff>
       </note>
-      <note color="#01F5C2">
+      <note color="#7FA560">
         <pitch>
           <step>F</step>
           <alter>1</alter>
@@ -97278,14 +97278,14 @@
         <duration>10080</duration>
         <voice>4</voice>
         <type>quarter</type>
-        <notehead color="#01F5C2" parentheses="no">normal</notehead>
+        <notehead color="#7FA560" parentheses="no">normal</notehead>
         <staff>1</staff>
         <lyric name="1" number="1">
           <syllabic>single</syllabic>
           <text>['8']</text>
         </lyric>
       </note>
-      <note color="#01F5C2">
+      <note color="#7FA560">
         <pitch>
           <step>F</step>
           <alter>1</alter>
@@ -97294,7 +97294,7 @@
         <duration>5040</duration>
         <voice>4</voice>
         <type>eighth</type>
-        <notehead color="#01F5C2" parentheses="no">normal</notehead>
+        <notehead color="#7FA560" parentheses="no">normal</notehead>
         <staff>1</staff>
         <lyric name="1" number="1">
           <syllabic>single</syllabic>
@@ -97308,7 +97308,7 @@
         <type>eighth</type>
         <staff>1</staff>
       </note>
-      <note color="#01F5C2">
+      <note color="#7FA560">
         <pitch>
           <step>F</step>
           <alter>1</alter>
@@ -97317,7 +97317,7 @@
         <duration>10080</duration>
         <voice>4</voice>
         <type>quarter</type>
-        <notehead color="#01F5C2" parentheses="no">normal</notehead>
+        <notehead color="#7FA560" parentheses="no">normal</notehead>
         <staff>1</staff>
         <lyric name="1" number="1">
           <syllabic>single</syllabic>
@@ -97334,7 +97334,7 @@
         <type>quarter</type>
         <staff>1</staff>
       </note>
-      <note color="#B476C3">
+      <note color="#D6FFED">
         <pitch>
           <step>A</step>
           <alter>0</alter>
@@ -97344,14 +97344,14 @@
         <voice>5</voice>
         <type>quarter</type>
         <accidental>natural</accidental>
-        <notehead color="#B476C3" parentheses="no">normal</notehead>
+        <notehead color="#D6FFED" parentheses="no">normal</notehead>
         <staff>1</staff>
         <lyric name="1" number="1">
           <syllabic>single</syllabic>
           <text>['9']</text>
         </lyric>
       </note>
-      <note color="#B476C3">
+      <note color="#D6FFED">
         <pitch>
           <step>A</step>
           <octave>3</octave>
@@ -97359,7 +97359,7 @@
         <duration>5040</duration>
         <voice>5</voice>
         <type>eighth</type>
-        <notehead color="#B476C3" parentheses="no">normal</notehead>
+        <notehead color="#D6FFED" parentheses="no">normal</notehead>
         <staff>1</staff>
         <lyric name="1" number="1">
           <syllabic>single</syllabic>
@@ -97373,7 +97373,7 @@
         <type>eighth</type>
         <staff>1</staff>
       </note>
-      <note color="#B476C3">
+      <note color="#D6FFED">
         <pitch>
           <step>A</step>
           <octave>4</octave>
@@ -97381,7 +97381,7 @@
         <duration>10080</duration>
         <voice>5</voice>
         <type>quarter</type>
-        <notehead color="#B476C3" parentheses="no">normal</notehead>
+        <notehead color="#D6FFED" parentheses="no">normal</notehead>
         <staff>1</staff>
         <lyric name="1" number="1">
           <syllabic>single</syllabic>
@@ -97394,7 +97394,7 @@
       <attributes>
         <staff-details print-object="yes" />
       </attributes>
-      <note color="#138DBE" default-x="114.68" default-y="-185">
+      <note color="#70E9C5" default-x="114.68" default-y="-185">
         <pitch>
           <step>F</step>
           <alter>1</alter>
@@ -97406,7 +97406,7 @@
         <type>quarter</type>
         <accidental>sharp</accidental>
         <stem>up</stem>
-        <notehead color="#138DBE" parentheses="no">normal</notehead>
+        <notehead color="#70E9C5" parentheses="no">normal</notehead>
         <staff>2</staff>
         <notations>
           <tied type="start" />
@@ -97416,7 +97416,7 @@
           <text>['3']</text>
         </lyric>
       </note>
-      <note color="#138DBE" default-x="282.17" default-y="-185">
+      <note color="#70E9C5" default-x="282.17" default-y="-185">
         <pitch>
           <step>F</step>
           <alter>1</alter>
@@ -97427,7 +97427,7 @@
         <voice>6</voice>
         <type>eighth</type>
         <stem>up</stem>
-        <notehead color="#138DBE" parentheses="no">normal</notehead>
+        <notehead color="#70E9C5" parentheses="no">normal</notehead>
         <staff>2</staff>
         <notations>
           <tied type="stop" />
@@ -97437,7 +97437,7 @@
           <text>['3']</text>
         </lyric>
       </note>
-      <note color="#138DBE" default-x="335.65" default-y="-185">
+      <note color="#70E9C5" default-x="335.65" default-y="-185">
         <pitch>
           <step>F</step>
           <alter>1</alter>
@@ -97448,7 +97448,7 @@
         <voice>6</voice>
         <type>32nd</type>
         <stem>up</stem>
-        <notehead color="#138DBE" parentheses="no">normal</notehead>
+        <notehead color="#70E9C5" parentheses="no">normal</notehead>
         <staff>2</staff>
         <beam number="1">begin</beam>
         <beam number="2">begin</beam>
@@ -97461,7 +97461,7 @@
           <text>['3']</text>
         </lyric>
       </note>
-      <note color="#138DBE" default-x="364.67" default-y="-175">
+      <note color="#70E9C5" default-x="364.67" default-y="-175">
         <pitch>
           <step>A</step>
           <alter>0</alter>
@@ -97473,7 +97473,7 @@
         <type>32nd</type>
         <accidental>natural</accidental>
         <stem>up</stem>
-        <notehead color="#138DBE" parentheses="no">normal</notehead>
+        <notehead color="#70E9C5" parentheses="no">normal</notehead>
         <staff>2</staff>
         <beam number="1">continue</beam>
         <beam number="2">continue</beam>
@@ -97486,7 +97486,7 @@
           <text>['3']</text>
         </lyric>
       </note>
-      <note color="#138DBE" default-x="397.76" default-y="-170">
+      <note color="#70E9C5" default-x="397.76" default-y="-170">
         <pitch>
           <step>B</step>
           <alter>1</alter>
@@ -97498,7 +97498,7 @@
         <type>32nd</type>
         <accidental>sharp</accidental>
         <stem>up</stem>
-        <notehead color="#138DBE" parentheses="no">normal</notehead>
+        <notehead color="#70E9C5" parentheses="no">normal</notehead>
         <staff>2</staff>
         <beam number="1">continue</beam>
         <beam number="2">continue</beam>
@@ -97511,7 +97511,7 @@
           <text>['3']</text>
         </lyric>
       </note>
-      <note color="#138DBE" default-x="422.07" default-y="-160">
+      <note color="#70E9C5" default-x="422.07" default-y="-160">
         <pitch>
           <step>D</step>
           <alter>1</alter>
@@ -97522,7 +97522,7 @@
         <voice>6</voice>
         <type>32nd</type>
         <stem>up</stem>
-        <notehead color="#138DBE" parentheses="no">normal</notehead>
+        <notehead color="#70E9C5" parentheses="no">normal</notehead>
         <staff>2</staff>
         <beam number="1">end</beam>
         <beam number="2">end</beam>
@@ -97535,7 +97535,7 @@
           <text>['3']</text>
         </lyric>
       </note>
-      <note color="#0EDCD6">
+      <note color="#CD4AFA">
         <pitch>
           <step>F</step>
           <alter>1</alter>
@@ -97544,14 +97544,14 @@
         <duration>10080</duration>
         <voice>6</voice>
         <type>quarter</type>
-        <notehead color="#0EDCD6" parentheses="no">normal</notehead>
+        <notehead color="#CD4AFA" parentheses="no">normal</notehead>
         <staff>2</staff>
         <lyric name="1" number="1">
           <syllabic>single</syllabic>
           <text>['0']</text>
         </lyric>
       </note>
-      <note color="#0EDCD6">
+      <note color="#CD4AFA">
         <pitch>
           <step>F</step>
           <alter>1</alter>
@@ -97560,14 +97560,14 @@
         <duration>5040</duration>
         <voice>6</voice>
         <type>eighth</type>
-        <notehead color="#0EDCD6" parentheses="no">normal</notehead>
+        <notehead color="#CD4AFA" parentheses="no">normal</notehead>
         <staff>2</staff>
         <lyric name="1" number="1">
           <syllabic>single</syllabic>
           <text>['0']</text>
         </lyric>
       </note>
-      <note color="#95F5C5" default-x="659.35" default-y="-150">
+      <note color="#C5AC9D" default-x="659.35" default-y="-150">
         <pitch>
           <step>F</step>
           <alter>1</alter>
@@ -97578,7 +97578,7 @@
         <voice>6</voice>
         <type>32nd</type>
         <stem>up</stem>
-        <notehead color="#95F5C5" parentheses="no">normal</notehead>
+        <notehead color="#C5AC9D" parentheses="no">normal</notehead>
         <staff>2</staff>
         <beam number="1">begin</beam>
         <beam number="2">begin</beam>
@@ -97591,7 +97591,7 @@
           <text>['4']</text>
         </lyric>
       </note>
-      <note color="#95F5C5" default-x="683.66" default-y="-140">
+      <note color="#C5AC9D" default-x="683.66" default-y="-140">
         <pitch>
           <step>A</step>
           <octave>2</octave>
@@ -97601,7 +97601,7 @@
         <voice>6</voice>
         <type>32nd</type>
         <stem>up</stem>
-        <notehead color="#95F5C5" parentheses="no">normal</notehead>
+        <notehead color="#C5AC9D" parentheses="no">normal</notehead>
         <staff>2</staff>
         <beam number="1">continue</beam>
         <beam number="2">continue</beam>
@@ -97614,7 +97614,7 @@
           <text>['4']</text>
         </lyric>
       </note>
-      <note color="#95F5C5" default-x="714.74" default-y="-135">
+      <note color="#C5AC9D" default-x="714.74" default-y="-135">
         <pitch>
           <step>B</step>
           <alter>1</alter>
@@ -97626,7 +97626,7 @@
         <type>32nd</type>
         <accidental>sharp</accidental>
         <stem>up</stem>
-        <notehead color="#95F5C5" parentheses="no">normal</notehead>
+        <notehead color="#C5AC9D" parentheses="no">normal</notehead>
         <staff>2</staff>
         <beam number="1">continue</beam>
         <beam number="2">continue</beam>
@@ -97639,7 +97639,7 @@
           <text>['4']</text>
         </lyric>
       </note>
-      <note color="#95F5C5" default-x="739.05" default-y="-125">
+      <note color="#C5AC9D" default-x="739.05" default-y="-125">
         <pitch>
           <step>D</step>
           <alter>1</alter>
@@ -97650,7 +97650,7 @@
         <voice>6</voice>
         <type>32nd</type>
         <stem>up</stem>
-        <notehead color="#95F5C5" parentheses="no">normal</notehead>
+        <notehead color="#C5AC9D" parentheses="no">normal</notehead>
         <staff>2</staff>
         <beam number="1">end</beam>
         <beam number="2">end</beam>
@@ -97673,7 +97673,7 @@
         <type>half</type>
         <staff>2</staff>
       </note>
-      <note color="#5202FD">
+      <note color="#ABFB47">
         <pitch>
           <step>A</step>
           <octave>1</octave>
@@ -97681,14 +97681,14 @@
         <duration>10080</duration>
         <voice>7</voice>
         <type>quarter</type>
-        <notehead color="#5202FD" parentheses="no">normal</notehead>
+        <notehead color="#ABFB47" parentheses="no">normal</notehead>
         <staff>2</staff>
         <lyric name="1" number="1">
           <syllabic>single</syllabic>
           <text>['1']</text>
         </lyric>
       </note>
-      <note color="#5202FD">
+      <note color="#ABFB47">
         <pitch>
           <step>A</step>
           <octave>1</octave>
@@ -97696,7 +97696,7 @@
         <duration>5040</duration>
         <voice>7</voice>
         <type>eighth</type>
-        <notehead color="#5202FD" parentheses="no">normal</notehead>
+        <notehead color="#ABFB47" parentheses="no">normal</notehead>
         <staff>2</staff>
         <lyric name="1" number="1">
           <syllabic>single</syllabic>
@@ -97720,7 +97720,7 @@
         <type>half</type>
         <staff>2</staff>
       </note>
-      <note color="#CFBCEB">
+      <note color="#2BCF4B">
         <pitch>
           <step>B</step>
           <alter>1</alter>
@@ -97729,14 +97729,14 @@
         <duration>10080</duration>
         <voice>8</voice>
         <type>quarter</type>
-        <notehead color="#CFBCEB" parentheses="no">normal</notehead>
+        <notehead color="#2BCF4B" parentheses="no">normal</notehead>
         <staff>2</staff>
         <lyric name="1" number="1">
           <syllabic>single</syllabic>
           <text>['2']</text>
         </lyric>
       </note>
-      <note color="#CFBCEB">
+      <note color="#2BCF4B">
         <pitch>
           <step>B</step>
           <alter>1</alter>
@@ -97745,7 +97745,7 @@
         <duration>5040</duration>
         <voice>8</voice>
         <type>eighth</type>
-        <notehead color="#CFBCEB" parentheses="no">normal</notehead>
+        <notehead color="#2BCF4B" parentheses="no">normal</notehead>
         <staff>2</staff>
         <lyric name="1" number="1">
           <syllabic>single</syllabic>
@@ -97769,7 +97769,7 @@
         <type>half</type>
         <staff>2</staff>
       </note>
-      <note color="#138DBE">
+      <note color="#70E9C5">
         <pitch>
           <step>D</step>
           <alter>1</alter>
@@ -97778,14 +97778,14 @@
         <duration>10080</duration>
         <voice>9</voice>
         <type>quarter</type>
-        <notehead color="#138DBE" parentheses="no">normal</notehead>
+        <notehead color="#70E9C5" parentheses="no">normal</notehead>
         <staff>2</staff>
         <lyric name="1" number="1">
           <syllabic>single</syllabic>
           <text>['3']</text>
         </lyric>
       </note>
-      <note color="#138DBE">
+      <note color="#70E9C5">
         <pitch>
           <step>D</step>
           <alter>1</alter>
@@ -97794,7 +97794,7 @@
         <duration>5040</duration>
         <voice>9</voice>
         <type>eighth</type>
-        <notehead color="#138DBE" parentheses="no">normal</notehead>
+        <notehead color="#70E9C5" parentheses="no">normal</notehead>
         <staff>2</staff>
         <lyric name="1" number="1">
           <syllabic>single</syllabic>
@@ -97818,7 +97818,7 @@
         <type>half</type>
         <staff>2</staff>
       </note>
-      <note color="#95F5C5">
+      <note color="#C5AC9D">
         <pitch>
           <step>F</step>
           <alter>1</alter>
@@ -97827,14 +97827,14 @@
         <duration>10080</duration>
         <voice>10</voice>
         <type>quarter</type>
-        <notehead color="#95F5C5" parentheses="no">normal</notehead>
+        <notehead color="#C5AC9D" parentheses="no">normal</notehead>
         <staff>2</staff>
         <lyric name="1" number="1">
           <syllabic>single</syllabic>
           <text>['4']</text>
         </lyric>
       </note>
-      <note color="#95F5C5">
+      <note color="#C5AC9D">
         <pitch>
           <step>F</step>
           <alter>1</alter>
@@ -97843,7 +97843,7 @@
         <duration>5040</duration>
         <voice>10</voice>
         <type>eighth</type>
-        <notehead color="#95F5C5" parentheses="no">normal</notehead>
+        <notehead color="#C5AC9D" parentheses="no">normal</notehead>
         <staff>2</staff>
         <lyric name="1" number="1">
           <syllabic>single</syllabic>
@@ -97860,7 +97860,7 @@
     </measure>
     <!--======================== Measure 337 =========================-->
     <measure implicit="no" number="337" width="291.53">
-      <note color="#6F50BA">
+      <note color="#77F31E">
         <pitch>
           <step>A</step>
           <octave>3</octave>
@@ -97868,14 +97868,14 @@
         <duration>2520</duration>
         <voice>1</voice>
         <type>16th</type>
-        <notehead color="#6F50BA" parentheses="no">normal</notehead>
+        <notehead color="#77F31E" parentheses="no">normal</notehead>
         <staff>1</staff>
         <lyric name="1" number="1">
           <syllabic>single</syllabic>
           <text>['5']</text>
         </lyric>
       </note>
-      <note color="#B476C3" default-x="50.87" default-y="-25">
+      <note color="#D6FFED" default-x="50.87" default-y="-25">
         <pitch>
           <step>A</step>
           <octave>4</octave>
@@ -97885,7 +97885,7 @@
         <voice>1</voice>
         <type>16th</type>
         <stem>up</stem>
-        <notehead color="#B476C3" parentheses="no">normal</notehead>
+        <notehead color="#D6FFED" parentheses="no">normal</notehead>
         <staff>1</staff>
         <beam number="1">continue</beam>
         <beam number="2">continue</beam>
@@ -97897,7 +97897,7 @@
           <text>['9']</text>
         </lyric>
       </note>
-      <note color="#B476C3" default-x="89.73" default-y="-20">
+      <note color="#D6FFED" default-x="89.73" default-y="-20">
         <pitch>
           <step>B</step>
           <alter>1</alter>
@@ -97909,7 +97909,7 @@
         <type>16th</type>
         <accidental>sharp</accidental>
         <stem>up</stem>
-        <notehead color="#B476C3" parentheses="no">normal</notehead>
+        <notehead color="#D6FFED" parentheses="no">normal</notehead>
         <staff>1</staff>
         <beam number="1">continue</beam>
         <beam number="2">continue</beam>
@@ -97921,7 +97921,7 @@
           <text>['9']</text>
         </lyric>
       </note>
-      <note color="#B476C3" default-x="128.6" default-y="-10">
+      <note color="#D6FFED" default-x="128.6" default-y="-10">
         <pitch>
           <step>D</step>
           <alter>1</alter>
@@ -97932,7 +97932,7 @@
         <voice>1</voice>
         <type>16th</type>
         <stem>up</stem>
-        <notehead color="#B476C3" parentheses="no">normal</notehead>
+        <notehead color="#D6FFED" parentheses="no">normal</notehead>
         <staff>1</staff>
         <beam number="1">end</beam>
         <beam number="2">end</beam>
@@ -97944,7 +97944,7 @@
           <text>['9']</text>
         </lyric>
       </note>
-      <note color="#0EDCD6">
+      <note color="#CD4AFA">
         <pitch>
           <step>A</step>
           <octave>4</octave>
@@ -97953,7 +97953,7 @@
         <voice>1</voice>
         <type>half</type>
         <dot />
-        <notehead color="#0EDCD6" parentheses="no">normal</notehead>
+        <notehead color="#CD4AFA" parentheses="no">normal</notehead>
         <staff>1</staff>
         <lyric name="1" number="1">
           <syllabic>single</syllabic>
@@ -97963,7 +97963,7 @@
       <backup>
         <duration>40320</duration>
       </backup>
-      <note color="#6000D0">
+      <note color="#BB6CCB">
         <pitch>
           <step>B</step>
           <alter>1</alter>
@@ -97972,7 +97972,7 @@
         <duration>2520</duration>
         <voice>2</voice>
         <type>16th</type>
-        <notehead color="#6000D0" parentheses="no">normal</notehead>
+        <notehead color="#BB6CCB" parentheses="no">normal</notehead>
         <staff>1</staff>
         <lyric name="1" number="1">
           <syllabic>single</syllabic>
@@ -98002,7 +98002,7 @@
       <backup>
         <duration>40320</duration>
       </backup>
-      <note color="#2CB004">
+      <note color="#DA81A8">
         <pitch>
           <step>D</step>
           <alter>1</alter>
@@ -98011,7 +98011,7 @@
         <duration>2520</duration>
         <voice>3</voice>
         <type>16th</type>
-        <notehead color="#2CB004" parentheses="no">normal</notehead>
+        <notehead color="#DA81A8" parentheses="no">normal</notehead>
         <staff>1</staff>
         <lyric name="1" number="1">
           <syllabic>single</syllabic>
@@ -98026,7 +98026,7 @@
         <dot />
         <staff>1</staff>
       </note>
-      <note color="#B476C3">
+      <note color="#D6FFED">
         <pitch>
           <step>D</step>
           <alter>1</alter>
@@ -98036,7 +98036,7 @@
         <voice>3</voice>
         <type>half</type>
         <dot />
-        <notehead color="#B476C3" parentheses="no">normal</notehead>
+        <notehead color="#D6FFED" parentheses="no">normal</notehead>
         <staff>1</staff>
         <lyric name="1" number="1">
           <syllabic>single</syllabic>
@@ -98046,7 +98046,7 @@
       <backup>
         <duration>40320</duration>
       </backup>
-      <note color="#01F5C2">
+      <note color="#7FA560">
         <pitch>
           <step>F</step>
           <alter>1</alter>
@@ -98055,7 +98055,7 @@
         <duration>2520</duration>
         <voice>4</voice>
         <type>16th</type>
-        <notehead color="#01F5C2" parentheses="no">normal</notehead>
+        <notehead color="#7FA560" parentheses="no">normal</notehead>
         <staff>1</staff>
         <lyric name="1" number="1">
           <syllabic>single</syllabic>
@@ -98075,7 +98075,7 @@
       <backup>
         <duration>40320</duration>
       </backup>
-      <note color="#B476C3">
+      <note color="#D6FFED">
         <pitch>
           <step>A</step>
           <octave>4</octave>
@@ -98083,7 +98083,7 @@
         <duration>2520</duration>
         <voice>5</voice>
         <type>16th</type>
-        <notehead color="#B476C3" parentheses="no">normal</notehead>
+        <notehead color="#D6FFED" parentheses="no">normal</notehead>
         <staff>1</staff>
         <lyric name="1" number="1">
           <syllabic>single</syllabic>
@@ -98103,7 +98103,7 @@
       <backup>
         <duration>40320</duration>
       </backup>
-      <note color="#0EDCD6">
+      <note color="#CD4AFA">
         <pitch>
           <step>F</step>
           <alter>1</alter>
@@ -98112,14 +98112,14 @@
         <duration>10080</duration>
         <voice>6</voice>
         <type>quarter</type>
-        <notehead color="#0EDCD6" parentheses="no">normal</notehead>
+        <notehead color="#CD4AFA" parentheses="no">normal</notehead>
         <staff>2</staff>
         <lyric name="1" number="1">
           <syllabic>single</syllabic>
           <text>['0']</text>
         </lyric>
       </note>
-      <note color="#95F5C5">
+      <note color="#C5AC9D">
         <pitch>
           <step>F</step>
           <alter>1</alter>
@@ -98129,7 +98129,7 @@
         <voice>6</voice>
         <type>half</type>
         <dot />
-        <notehead color="#95F5C5" parentheses="no">normal</notehead>
+        <notehead color="#C5AC9D" parentheses="no">normal</notehead>
         <staff>2</staff>
         <lyric name="1" number="1">
           <syllabic>single</syllabic>
@@ -98139,7 +98139,7 @@
       <backup>
         <duration>40320</duration>
       </backup>
-      <note color="#5202FD">
+      <note color="#ABFB47">
         <pitch>
           <step>A</step>
           <octave>2</octave>
@@ -98147,14 +98147,14 @@
         <duration>10080</duration>
         <voice>7</voice>
         <type>quarter</type>
-        <notehead color="#5202FD" parentheses="no">normal</notehead>
+        <notehead color="#ABFB47" parentheses="no">normal</notehead>
         <staff>2</staff>
         <lyric name="1" number="1">
           <syllabic>single</syllabic>
           <text>['1']</text>
         </lyric>
       </note>
-      <note color="#138DBE">
+      <note color="#70E9C5">
         <pitch>
           <step>A</step>
           <octave>3</octave>
@@ -98163,7 +98163,7 @@
         <voice>7</voice>
         <type>half</type>
         <dot />
-        <notehead color="#138DBE" parentheses="no">normal</notehead>
+        <notehead color="#70E9C5" parentheses="no">normal</notehead>
         <staff>2</staff>
         <lyric name="1" number="1">
           <syllabic>single</syllabic>
@@ -98173,7 +98173,7 @@
       <backup>
         <duration>40320</duration>
       </backup>
-      <note color="#CFBCEB">
+      <note color="#2BCF4B">
         <pitch>
           <step>B</step>
           <alter>1</alter>
@@ -98182,14 +98182,14 @@
         <duration>10080</duration>
         <voice>8</voice>
         <type>quarter</type>
-        <notehead color="#CFBCEB" parentheses="no">normal</notehead>
+        <notehead color="#2BCF4B" parentheses="no">normal</notehead>
         <staff>2</staff>
         <lyric name="1" number="1">
           <syllabic>single</syllabic>
           <text>['2']</text>
         </lyric>
       </note>
-      <note color="#CFBCEB">
+      <note color="#2BCF4B">
         <pitch>
           <step>B</step>
           <alter>1</alter>
@@ -98200,7 +98200,7 @@
         <type>half</type>
         <dot />
         <accidental>sharp</accidental>
-        <notehead color="#CFBCEB" parentheses="no">normal</notehead>
+        <notehead color="#2BCF4B" parentheses="no">normal</notehead>
         <staff>2</staff>
         <lyric name="1" number="1">
           <syllabic>single</syllabic>
@@ -98210,7 +98210,7 @@
       <backup>
         <duration>40320</duration>
       </backup>
-      <note color="#138DBE">
+      <note color="#70E9C5">
         <pitch>
           <step>D</step>
           <alter>1</alter>
@@ -98219,14 +98219,14 @@
         <duration>10080</duration>
         <voice>9</voice>
         <type>quarter</type>
-        <notehead color="#138DBE" parentheses="no">normal</notehead>
+        <notehead color="#70E9C5" parentheses="no">normal</notehead>
         <staff>2</staff>
         <lyric name="1" number="1">
           <syllabic>single</syllabic>
           <text>['3']</text>
         </lyric>
       </note>
-      <note color="#5202FD">
+      <note color="#ABFB47">
         <pitch>
           <step>D</step>
           <alter>1</alter>
@@ -98236,7 +98236,7 @@
         <voice>9</voice>
         <type>half</type>
         <dot />
-        <notehead color="#5202FD" parentheses="no">normal</notehead>
+        <notehead color="#ABFB47" parentheses="no">normal</notehead>
         <staff>2</staff>
         <lyric name="1" number="1">
           <syllabic>single</syllabic>
@@ -98246,7 +98246,7 @@
       <backup>
         <duration>40320</duration>
       </backup>
-      <note color="#95F5C5">
+      <note color="#C5AC9D">
         <pitch>
           <step>F</step>
           <alter>1</alter>
@@ -98255,7 +98255,7 @@
         <duration>10080</duration>
         <voice>10</voice>
         <type>quarter</type>
-        <notehead color="#95F5C5" parentheses="no">normal</notehead>
+        <notehead color="#C5AC9D" parentheses="no">normal</notehead>
         <staff>2</staff>
         <lyric name="1" number="1">
           <syllabic>single</syllabic>
@@ -98501,7 +98501,7 @@
       <attributes>
         <staff-details print-object="yes" />
       </attributes>
-      <note color="#95F5C5" default-x="98.27" default-y="-130">
+      <note color="#C5AC9D" default-x="98.27" default-y="-130">
         <pitch>
           <step>C</step>
           <alter>1</alter>
@@ -98511,7 +98511,7 @@
         <voice>2</voice>
         <type>quarter</type>
         <stem>up</stem>
-        <notehead color="#95F5C5" parentheses="no">normal</notehead>
+        <notehead color="#C5AC9D" parentheses="no">normal</notehead>
         <staff>2</staff>
         <notations>
           <articulations>
@@ -98523,7 +98523,7 @@
           <text>['4']</text>
         </lyric>
       </note>
-      <note color="#95F5C5" default-x="214.12" default-y="-110">
+      <note color="#C5AC9D" default-x="214.12" default-y="-110">
         <pitch>
           <step>G</step>
           <alter>1</alter>
@@ -98533,14 +98533,14 @@
         <voice>2</voice>
         <type>half</type>
         <stem>down</stem>
-        <notehead color="#95F5C5" parentheses="no">normal</notehead>
+        <notehead color="#C5AC9D" parentheses="no">normal</notehead>
         <staff>2</staff>
         <lyric name="1" number="1">
           <syllabic>single</syllabic>
           <text>['4']</text>
         </lyric>
       </note>
-      <note color="#95F5C5" default-x="446.89" default-y="-120">
+      <note color="#C5AC9D" default-x="446.89" default-y="-120">
         <pitch>
           <step>E</step>
           <octave>3</octave>
@@ -98550,7 +98550,7 @@
         <type>eighth</type>
         <dot />
         <stem>down</stem>
-        <notehead color="#95F5C5" parentheses="no">normal</notehead>
+        <notehead color="#C5AC9D" parentheses="no">normal</notehead>
         <staff>2</staff>
         <beam number="1">begin</beam>
         <lyric name="1" number="1">
@@ -98558,7 +98558,7 @@
           <text>['4']</text>
         </lyric>
       </note>
-      <note color="#95F5C5" default-x="534.05" default-y="-130">
+      <note color="#C5AC9D" default-x="534.05" default-y="-130">
         <pitch>
           <step>C</step>
           <alter>1</alter>
@@ -98568,7 +98568,7 @@
         <voice>2</voice>
         <type>16th</type>
         <stem>down</stem>
-        <notehead color="#95F5C5" parentheses="no">normal</notehead>
+        <notehead color="#C5AC9D" parentheses="no">normal</notehead>
         <staff>2</staff>
         <beam number="1">end</beam>
         <beam number="2">backward hook</beam>
@@ -98807,7 +98807,7 @@
       <backup>
         <duration>40320</duration>
       </backup>
-      <note color="#95F5C5" default-x="12" default-y="-130">
+      <note color="#C5AC9D" default-x="12" default-y="-130">
         <pitch>
           <step>C</step>
           <alter>1</alter>
@@ -98817,14 +98817,14 @@
         <voice>2</voice>
         <type>quarter</type>
         <stem>up</stem>
-        <notehead color="#95F5C5" parentheses="no">normal</notehead>
+        <notehead color="#C5AC9D" parentheses="no">normal</notehead>
         <staff>2</staff>
         <lyric name="1" number="1">
           <syllabic>single</syllabic>
           <text>['4']</text>
         </lyric>
       </note>
-      <note color="#95F5C5" default-x="131.55" default-y="-135">
+      <note color="#C5AC9D" default-x="131.55" default-y="-135">
         <pitch>
           <step>B</step>
           <alter>1</alter>
@@ -98836,7 +98836,7 @@
         <type>quarter</type>
         <accidental>sharp</accidental>
         <stem>up</stem>
-        <notehead color="#95F5C5" parentheses="no">normal</notehead>
+        <notehead color="#C5AC9D" parentheses="no">normal</notehead>
         <staff>2</staff>
         <notations>
           <tied type="start" />
@@ -98846,7 +98846,7 @@
           <text>['4']</text>
         </lyric>
       </note>
-      <note color="#95F5C5" default-x="251.1" default-y="-135">
+      <note color="#C5AC9D" default-x="251.1" default-y="-135">
         <pitch>
           <step>B</step>
           <alter>1</alter>
@@ -98857,7 +98857,7 @@
         <voice>2</voice>
         <type>eighth</type>
         <stem>down</stem>
-        <notehead color="#95F5C5" parentheses="no">normal</notehead>
+        <notehead color="#C5AC9D" parentheses="no">normal</notehead>
         <staff>2</staff>
         <beam number="1">begin</beam>
         <notations>
@@ -98868,7 +98868,7 @@
           <text>['4']</text>
         </lyric>
       </note>
-      <note color="#95F5C5" default-x="310.87" default-y="-135">
+      <note color="#C5AC9D" default-x="310.87" default-y="-135">
         <pitch>
           <step>B</step>
           <alter>1</alter>
@@ -98878,7 +98878,7 @@
         <voice>2</voice>
         <type>eighth</type>
         <stem>down</stem>
-        <notehead color="#95F5C5" parentheses="no">normal</notehead>
+        <notehead color="#C5AC9D" parentheses="no">normal</notehead>
         <staff>2</staff>
         <beam number="1">continue</beam>
         <lyric name="1" number="1">
@@ -98886,7 +98886,7 @@
           <text>['4']</text>
         </lyric>
       </note>
-      <note color="#95F5C5" default-x="370.65" default-y="-110">
+      <note color="#C5AC9D" default-x="370.65" default-y="-110">
         <pitch>
           <step>G</step>
           <alter>1</alter>
@@ -98897,7 +98897,7 @@
         <type>eighth</type>
         <dot />
         <stem>down</stem>
-        <notehead color="#95F5C5" parentheses="no">normal</notehead>
+        <notehead color="#C5AC9D" parentheses="no">normal</notehead>
         <staff>2</staff>
         <beam number="1">continue</beam>
         <lyric name="1" number="1">
@@ -98905,7 +98905,7 @@
           <text>['4']</text>
         </lyric>
       </note>
-      <note color="#95F5C5" default-x="460.31" default-y="-135">
+      <note color="#C5AC9D" default-x="460.31" default-y="-135">
         <pitch>
           <step>B</step>
           <alter>1</alter>
@@ -98915,7 +98915,7 @@
         <voice>2</voice>
         <type>16th</type>
         <stem>down</stem>
-        <notehead color="#95F5C5" parentheses="no">normal</notehead>
+        <notehead color="#C5AC9D" parentheses="no">normal</notehead>
         <staff>2</staff>
         <beam number="1">end</beam>
         <beam number="2">backward hook</beam>
@@ -99162,7 +99162,7 @@
       <attributes>
         <staff-details print-object="yes" />
       </attributes>
-      <note color="#95F5C5" default-x="97.27" default-y="-125">
+      <note color="#C5AC9D" default-x="97.27" default-y="-125">
         <pitch>
           <step>D</step>
           <alter>1</alter>
@@ -99172,14 +99172,14 @@
         <voice>2</voice>
         <type>quarter</type>
         <stem>down</stem>
-        <notehead color="#95F5C5" parentheses="no">normal</notehead>
+        <notehead color="#C5AC9D" parentheses="no">normal</notehead>
         <staff>2</staff>
         <lyric name="1" number="1">
           <syllabic>single</syllabic>
           <text>['4']</text>
         </lyric>
       </note>
-      <note color="#95F5C5" default-x="214.02" default-y="-130">
+      <note color="#C5AC9D" default-x="214.02" default-y="-130">
         <pitch>
           <step>C</step>
           <alter>1</alter>
@@ -99190,7 +99190,7 @@
         <voice>2</voice>
         <type>quarter</type>
         <stem>up</stem>
-        <notehead color="#95F5C5" parentheses="no">normal</notehead>
+        <notehead color="#C5AC9D" parentheses="no">normal</notehead>
         <staff>2</staff>
         <notations>
           <tied type="start" />
@@ -99200,7 +99200,7 @@
           <text>['4']</text>
         </lyric>
       </note>
-      <note color="#95F5C5" default-x="330.77" default-y="-130">
+      <note color="#C5AC9D" default-x="330.77" default-y="-130">
         <pitch>
           <step>C</step>
           <alter>1</alter>
@@ -99211,7 +99211,7 @@
         <voice>2</voice>
         <type>eighth</type>
         <stem>down</stem>
-        <notehead color="#95F5C5" parentheses="no">normal</notehead>
+        <notehead color="#C5AC9D" parentheses="no">normal</notehead>
         <staff>2</staff>
         <beam number="1">begin</beam>
         <notations>
@@ -99222,7 +99222,7 @@
           <text>['4']</text>
         </lyric>
       </note>
-      <note color="#95F5C5" default-x="389.15" default-y="-130">
+      <note color="#C5AC9D" default-x="389.15" default-y="-130">
         <pitch>
           <step>C</step>
           <alter>1</alter>
@@ -99232,7 +99232,7 @@
         <voice>2</voice>
         <type>eighth</type>
         <stem>down</stem>
-        <notehead color="#95F5C5" parentheses="no">normal</notehead>
+        <notehead color="#C5AC9D" parentheses="no">normal</notehead>
         <staff>2</staff>
         <beam number="1">continue</beam>
         <lyric name="1" number="1">
@@ -99240,7 +99240,7 @@
           <text>['4']</text>
         </lyric>
       </note>
-      <note color="#95F5C5" default-x="447.52" default-y="-110">
+      <note color="#C5AC9D" default-x="447.52" default-y="-110">
         <pitch>
           <step>G</step>
           <alter>1</alter>
@@ -99251,7 +99251,7 @@
         <type>eighth</type>
         <dot />
         <stem>down</stem>
-        <notehead color="#95F5C5" parentheses="no">normal</notehead>
+        <notehead color="#C5AC9D" parentheses="no">normal</notehead>
         <staff>2</staff>
         <beam number="1">continue</beam>
         <lyric name="1" number="1">
@@ -99259,7 +99259,7 @@
           <text>['4']</text>
         </lyric>
       </note>
-      <note color="#95F5C5" default-x="535.09" default-y="-130">
+      <note color="#C5AC9D" default-x="535.09" default-y="-130">
         <pitch>
           <step>C</step>
           <alter>1</alter>
@@ -99269,7 +99269,7 @@
         <voice>2</voice>
         <type>16th</type>
         <stem>down</stem>
-        <notehead color="#95F5C5" parentheses="no">normal</notehead>
+        <notehead color="#C5AC9D" parentheses="no">normal</notehead>
         <staff>2</staff>
         <beam number="1">end</beam>
         <beam number="2">backward hook</beam>
@@ -99509,7 +99509,7 @@
       <backup>
         <duration>40320</duration>
       </backup>
-      <note color="#95F5C5" default-x="20.42" default-y="-120">
+      <note color="#C5AC9D" default-x="20.42" default-y="-120">
         <pitch>
           <step>E</step>
           <octave>3</octave>
@@ -99518,14 +99518,14 @@
         <voice>2</voice>
         <type>quarter</type>
         <stem>down</stem>
-        <notehead color="#95F5C5" parentheses="no">normal</notehead>
+        <notehead color="#C5AC9D" parentheses="no">normal</notehead>
         <staff>2</staff>
         <lyric name="1" number="1">
           <syllabic>single</syllabic>
           <text>['4']</text>
         </lyric>
       </note>
-      <note color="#95F5C5" default-x="137.57" default-y="-125">
+      <note color="#C5AC9D" default-x="137.57" default-y="-125">
         <pitch>
           <step>D</step>
           <alter>1</alter>
@@ -99536,7 +99536,7 @@
         <voice>2</voice>
         <type>quarter</type>
         <stem>down</stem>
-        <notehead color="#95F5C5" parentheses="no">normal</notehead>
+        <notehead color="#C5AC9D" parentheses="no">normal</notehead>
         <staff>2</staff>
         <notations>
           <tied type="start" />
@@ -99546,7 +99546,7 @@
           <text>['4']</text>
         </lyric>
       </note>
-      <note color="#95F5C5" default-x="254.72" default-y="-125">
+      <note color="#C5AC9D" default-x="254.72" default-y="-125">
         <pitch>
           <step>D</step>
           <alter>1</alter>
@@ -99557,7 +99557,7 @@
         <voice>2</voice>
         <type>eighth</type>
         <stem>down</stem>
-        <notehead color="#95F5C5" parentheses="no">normal</notehead>
+        <notehead color="#C5AC9D" parentheses="no">normal</notehead>
         <staff>2</staff>
         <beam number="1">begin</beam>
         <notations>
@@ -99568,7 +99568,7 @@
           <text>['4']</text>
         </lyric>
       </note>
-      <note color="#95F5C5" default-x="313.29" default-y="-125">
+      <note color="#C5AC9D" default-x="313.29" default-y="-125">
         <pitch>
           <step>D</step>
           <alter>1</alter>
@@ -99578,7 +99578,7 @@
         <voice>2</voice>
         <type>eighth</type>
         <stem>down</stem>
-        <notehead color="#95F5C5" parentheses="no">normal</notehead>
+        <notehead color="#C5AC9D" parentheses="no">normal</notehead>
         <staff>2</staff>
         <beam number="1">continue</beam>
         <lyric name="1" number="1">
@@ -99586,7 +99586,7 @@
           <text>['4']</text>
         </lyric>
       </note>
-      <note color="#95F5C5" default-x="371.87" default-y="-110">
+      <note color="#C5AC9D" default-x="371.87" default-y="-110">
         <pitch>
           <step>G</step>
           <alter>1</alter>
@@ -99597,7 +99597,7 @@
         <type>eighth</type>
         <dot />
         <stem>down</stem>
-        <notehead color="#95F5C5" parentheses="no">normal</notehead>
+        <notehead color="#C5AC9D" parentheses="no">normal</notehead>
         <staff>2</staff>
         <beam number="1">continue</beam>
         <lyric name="1" number="1">
@@ -99605,7 +99605,7 @@
           <text>['4']</text>
         </lyric>
       </note>
-      <note color="#95F5C5" default-x="459.73" default-y="-125">
+      <note color="#C5AC9D" default-x="459.73" default-y="-125">
         <pitch>
           <step>D</step>
           <alter>1</alter>
@@ -99615,7 +99615,7 @@
         <voice>2</voice>
         <type>16th</type>
         <stem>down</stem>
-        <notehead color="#95F5C5" parentheses="no">normal</notehead>
+        <notehead color="#C5AC9D" parentheses="no">normal</notehead>
         <staff>2</staff>
         <beam number="1">end</beam>
         <beam number="2">backward hook</beam>
@@ -99754,7 +99754,7 @@
       <attributes>
         <staff-details print-object="yes" />
       </attributes>
-      <note color="#95F5C5" default-x="97.27" default-y="-120">
+      <note color="#C5AC9D" default-x="97.27" default-y="-120">
         <pitch>
           <step>E</step>
           <octave>3</octave>
@@ -99763,7 +99763,7 @@
         <voice>4</voice>
         <type>16th</type>
         <stem>down</stem>
-        <notehead color="#95F5C5" parentheses="no">normal</notehead>
+        <notehead color="#C5AC9D" parentheses="no">normal</notehead>
         <staff>2</staff>
         <beam number="1">begin</beam>
         <beam number="2">begin</beam>
@@ -99772,7 +99772,7 @@
           <text>['4']</text>
         </lyric>
       </note>
-      <note color="#95F5C5" default-x="126.32" default-y="-110">
+      <note color="#C5AC9D" default-x="126.32" default-y="-110">
         <pitch>
           <step>G</step>
           <alter>1</alter>
@@ -99782,7 +99782,7 @@
         <voice>4</voice>
         <type>16th</type>
         <stem>down</stem>
-        <notehead color="#95F5C5" parentheses="no">normal</notehead>
+        <notehead color="#C5AC9D" parentheses="no">normal</notehead>
         <staff>2</staff>
         <beam number="1">continue</beam>
         <beam number="2">continue</beam>
@@ -99791,7 +99791,7 @@
           <text>['4']</text>
         </lyric>
       </note>
-      <note color="#95F5C5" default-x="155.38" default-y="-120">
+      <note color="#C5AC9D" default-x="155.38" default-y="-120">
         <pitch>
           <step>E</step>
           <octave>3</octave>
@@ -99800,7 +99800,7 @@
         <voice>4</voice>
         <type>16th</type>
         <stem>down</stem>
-        <notehead color="#95F5C5" parentheses="no">normal</notehead>
+        <notehead color="#C5AC9D" parentheses="no">normal</notehead>
         <staff>2</staff>
         <beam number="1">continue</beam>
         <beam number="2">continue</beam>
@@ -99809,7 +99809,7 @@
           <text>['4']</text>
         </lyric>
       </note>
-      <note color="#95F5C5" default-x="184.44" default-y="-110">
+      <note color="#C5AC9D" default-x="184.44" default-y="-110">
         <pitch>
           <step>G</step>
           <alter>1</alter>
@@ -99819,7 +99819,7 @@
         <voice>4</voice>
         <type>16th</type>
         <stem>down</stem>
-        <notehead color="#95F5C5" parentheses="no">normal</notehead>
+        <notehead color="#C5AC9D" parentheses="no">normal</notehead>
         <staff>2</staff>
         <beam number="1">end</beam>
         <beam number="2">end</beam>
@@ -99828,7 +99828,7 @@
           <text>['4']</text>
         </lyric>
       </note>
-      <note color="#95F5C5" default-x="213.49" default-y="-120">
+      <note color="#C5AC9D" default-x="213.49" default-y="-120">
         <pitch>
           <step>E</step>
           <octave>3</octave>
@@ -99837,7 +99837,7 @@
         <voice>4</voice>
         <type>16th</type>
         <stem>down</stem>
-        <notehead color="#95F5C5" parentheses="no">normal</notehead>
+        <notehead color="#C5AC9D" parentheses="no">normal</notehead>
         <staff>2</staff>
         <beam number="1">begin</beam>
         <beam number="2">begin</beam>
@@ -99846,7 +99846,7 @@
           <text>['4']</text>
         </lyric>
       </note>
-      <note color="#95F5C5" default-x="242.55" default-y="-110">
+      <note color="#C5AC9D" default-x="242.55" default-y="-110">
         <pitch>
           <step>G</step>
           <alter>1</alter>
@@ -99856,7 +99856,7 @@
         <voice>4</voice>
         <type>16th</type>
         <stem>down</stem>
-        <notehead color="#95F5C5" parentheses="no">normal</notehead>
+        <notehead color="#C5AC9D" parentheses="no">normal</notehead>
         <staff>2</staff>
         <beam number="1">continue</beam>
         <beam number="2">continue</beam>
@@ -99865,7 +99865,7 @@
           <text>['4']</text>
         </lyric>
       </note>
-      <note color="#95F5C5" default-x="271.6" default-y="-120">
+      <note color="#C5AC9D" default-x="271.6" default-y="-120">
         <pitch>
           <step>E</step>
           <octave>3</octave>
@@ -99874,7 +99874,7 @@
         <voice>4</voice>
         <type>16th</type>
         <stem>down</stem>
-        <notehead color="#95F5C5" parentheses="no">normal</notehead>
+        <notehead color="#C5AC9D" parentheses="no">normal</notehead>
         <staff>2</staff>
         <beam number="1">continue</beam>
         <beam number="2">continue</beam>
@@ -99883,7 +99883,7 @@
           <text>['4']</text>
         </lyric>
       </note>
-      <note color="#95F5C5" default-x="300.66" default-y="-110">
+      <note color="#C5AC9D" default-x="300.66" default-y="-110">
         <pitch>
           <step>G</step>
           <alter>1</alter>
@@ -99893,7 +99893,7 @@
         <voice>4</voice>
         <type>16th</type>
         <stem>down</stem>
-        <notehead color="#95F5C5" parentheses="no">normal</notehead>
+        <notehead color="#C5AC9D" parentheses="no">normal</notehead>
         <staff>2</staff>
         <beam number="1">end</beam>
         <beam number="2">end</beam>
@@ -99902,7 +99902,7 @@
           <text>['4']</text>
         </lyric>
       </note>
-      <note color="#95F5C5" default-x="329.71" default-y="-120">
+      <note color="#C5AC9D" default-x="329.71" default-y="-120">
         <pitch>
           <step>E</step>
           <octave>3</octave>
@@ -99911,7 +99911,7 @@
         <voice>4</voice>
         <type>16th</type>
         <stem>down</stem>
-        <notehead color="#95F5C5" parentheses="no">normal</notehead>
+        <notehead color="#C5AC9D" parentheses="no">normal</notehead>
         <staff>2</staff>
         <beam number="1">begin</beam>
         <beam number="2">begin</beam>
@@ -99920,7 +99920,7 @@
           <text>['4']</text>
         </lyric>
       </note>
-      <note color="#95F5C5" default-x="358.77" default-y="-110">
+      <note color="#C5AC9D" default-x="358.77" default-y="-110">
         <pitch>
           <step>G</step>
           <alter>1</alter>
@@ -99930,7 +99930,7 @@
         <voice>4</voice>
         <type>16th</type>
         <stem>down</stem>
-        <notehead color="#95F5C5" parentheses="no">normal</notehead>
+        <notehead color="#C5AC9D" parentheses="no">normal</notehead>
         <staff>2</staff>
         <beam number="1">continue</beam>
         <beam number="2">continue</beam>
@@ -99939,7 +99939,7 @@
           <text>['4']</text>
         </lyric>
       </note>
-      <note color="#95F5C5" default-x="387.82" default-y="-120">
+      <note color="#C5AC9D" default-x="387.82" default-y="-120">
         <pitch>
           <step>E</step>
           <octave>3</octave>
@@ -99948,7 +99948,7 @@
         <voice>4</voice>
         <type>16th</type>
         <stem>down</stem>
-        <notehead color="#95F5C5" parentheses="no">normal</notehead>
+        <notehead color="#C5AC9D" parentheses="no">normal</notehead>
         <staff>2</staff>
         <beam number="1">continue</beam>
         <beam number="2">continue</beam>
@@ -99957,7 +99957,7 @@
           <text>['4']</text>
         </lyric>
       </note>
-      <note color="#95F5C5" default-x="416.88" default-y="-110">
+      <note color="#C5AC9D" default-x="416.88" default-y="-110">
         <pitch>
           <step>G</step>
           <alter>1</alter>
@@ -99967,7 +99967,7 @@
         <voice>4</voice>
         <type>16th</type>
         <stem>down</stem>
-        <notehead color="#95F5C5" parentheses="no">normal</notehead>
+        <notehead color="#C5AC9D" parentheses="no">normal</notehead>
         <staff>2</staff>
         <beam number="1">end</beam>
         <beam number="2">end</beam>
@@ -99976,7 +99976,7 @@
           <text>['4']</text>
         </lyric>
       </note>
-      <note color="#95F5C5" default-x="445.93" default-y="-120">
+      <note color="#C5AC9D" default-x="445.93" default-y="-120">
         <pitch>
           <step>E</step>
           <octave>3</octave>
@@ -99985,7 +99985,7 @@
         <voice>4</voice>
         <type>16th</type>
         <stem>down</stem>
-        <notehead color="#95F5C5" parentheses="no">normal</notehead>
+        <notehead color="#C5AC9D" parentheses="no">normal</notehead>
         <staff>2</staff>
         <beam number="1">begin</beam>
         <beam number="2">begin</beam>
@@ -99994,7 +99994,7 @@
           <text>['4']</text>
         </lyric>
       </note>
-      <note color="#95F5C5" default-x="474.99" default-y="-110">
+      <note color="#C5AC9D" default-x="474.99" default-y="-110">
         <pitch>
           <step>G</step>
           <alter>1</alter>
@@ -100004,7 +100004,7 @@
         <voice>4</voice>
         <type>16th</type>
         <stem>down</stem>
-        <notehead color="#95F5C5" parentheses="no">normal</notehead>
+        <notehead color="#C5AC9D" parentheses="no">normal</notehead>
         <staff>2</staff>
         <beam number="1">continue</beam>
         <beam number="2">continue</beam>
@@ -100013,7 +100013,7 @@
           <text>['4']</text>
         </lyric>
       </note>
-      <note color="#95F5C5" default-x="504.05" default-y="-120">
+      <note color="#C5AC9D" default-x="504.05" default-y="-120">
         <pitch>
           <step>E</step>
           <octave>3</octave>
@@ -100022,7 +100022,7 @@
         <voice>4</voice>
         <type>16th</type>
         <stem>down</stem>
-        <notehead color="#95F5C5" parentheses="no">normal</notehead>
+        <notehead color="#C5AC9D" parentheses="no">normal</notehead>
         <staff>2</staff>
         <beam number="1">continue</beam>
         <beam number="2">continue</beam>
@@ -100031,7 +100031,7 @@
           <text>['4']</text>
         </lyric>
       </note>
-      <note color="#95F5C5" default-x="533.1" default-y="-110">
+      <note color="#C5AC9D" default-x="533.1" default-y="-110">
         <pitch>
           <step>G</step>
           <alter>1</alter>
@@ -100041,7 +100041,7 @@
         <voice>4</voice>
         <type>16th</type>
         <stem>down</stem>
-        <notehead color="#95F5C5" parentheses="no">normal</notehead>
+        <notehead color="#C5AC9D" parentheses="no">normal</notehead>
         <staff>2</staff>
         <beam number="1">end</beam>
         <beam number="2">end</beam>
@@ -100195,7 +100195,7 @@
       <backup>
         <duration>40320</duration>
       </backup>
-      <note color="#95F5C5" default-x="12" default-y="-115">
+      <note color="#C5AC9D" default-x="12" default-y="-115">
         <pitch>
           <step>F</step>
           <alter>1</alter>
@@ -100205,7 +100205,7 @@
         <voice>3</voice>
         <type>16th</type>
         <stem>down</stem>
-        <notehead color="#95F5C5" parentheses="no">normal</notehead>
+        <notehead color="#C5AC9D" parentheses="no">normal</notehead>
         <staff>2</staff>
         <beam number="1">begin</beam>
         <beam number="2">begin</beam>
@@ -100214,7 +100214,7 @@
           <text>['4']</text>
         </lyric>
       </note>
-      <note color="#95F5C5" default-x="41.95" default-y="-110">
+      <note color="#C5AC9D" default-x="41.95" default-y="-110">
         <pitch>
           <step>G</step>
           <alter>1</alter>
@@ -100224,7 +100224,7 @@
         <voice>3</voice>
         <type>16th</type>
         <stem>down</stem>
-        <notehead color="#95F5C5" parentheses="no">normal</notehead>
+        <notehead color="#C5AC9D" parentheses="no">normal</notehead>
         <staff>2</staff>
         <beam number="1">continue</beam>
         <beam number="2">continue</beam>
@@ -100233,7 +100233,7 @@
           <text>['4']</text>
         </lyric>
       </note>
-      <note color="#95F5C5" default-x="71.89" default-y="-115">
+      <note color="#C5AC9D" default-x="71.89" default-y="-115">
         <pitch>
           <step>F</step>
           <alter>1</alter>
@@ -100243,7 +100243,7 @@
         <voice>3</voice>
         <type>16th</type>
         <stem>down</stem>
-        <notehead color="#95F5C5" parentheses="no">normal</notehead>
+        <notehead color="#C5AC9D" parentheses="no">normal</notehead>
         <staff>2</staff>
         <beam number="1">continue</beam>
         <beam number="2">continue</beam>
@@ -100252,7 +100252,7 @@
           <text>['4']</text>
         </lyric>
       </note>
-      <note color="#95F5C5" default-x="101.84" default-y="-110">
+      <note color="#C5AC9D" default-x="101.84" default-y="-110">
         <pitch>
           <step>G</step>
           <alter>1</alter>
@@ -100262,7 +100262,7 @@
         <voice>3</voice>
         <type>16th</type>
         <stem>down</stem>
-        <notehead color="#95F5C5" parentheses="no">normal</notehead>
+        <notehead color="#C5AC9D" parentheses="no">normal</notehead>
         <staff>2</staff>
         <beam number="1">end</beam>
         <beam number="2">end</beam>
@@ -100271,7 +100271,7 @@
           <text>['4']</text>
         </lyric>
       </note>
-      <note color="#95F5C5" default-x="131.78" default-y="-115">
+      <note color="#C5AC9D" default-x="131.78" default-y="-115">
         <pitch>
           <step>F</step>
           <alter>1</alter>
@@ -100281,7 +100281,7 @@
         <voice>3</voice>
         <type>16th</type>
         <stem>down</stem>
-        <notehead color="#95F5C5" parentheses="no">normal</notehead>
+        <notehead color="#C5AC9D" parentheses="no">normal</notehead>
         <staff>2</staff>
         <beam number="1">begin</beam>
         <beam number="2">begin</beam>
@@ -100290,7 +100290,7 @@
           <text>['4']</text>
         </lyric>
       </note>
-      <note color="#95F5C5" default-x="161.73" default-y="-110">
+      <note color="#C5AC9D" default-x="161.73" default-y="-110">
         <pitch>
           <step>G</step>
           <alter>1</alter>
@@ -100300,7 +100300,7 @@
         <voice>3</voice>
         <type>16th</type>
         <stem>down</stem>
-        <notehead color="#95F5C5" parentheses="no">normal</notehead>
+        <notehead color="#C5AC9D" parentheses="no">normal</notehead>
         <staff>2</staff>
         <beam number="1">continue</beam>
         <beam number="2">continue</beam>
@@ -100309,7 +100309,7 @@
           <text>['4']</text>
         </lyric>
       </note>
-      <note color="#95F5C5" default-x="191.68" default-y="-115">
+      <note color="#C5AC9D" default-x="191.68" default-y="-115">
         <pitch>
           <step>F</step>
           <alter>1</alter>
@@ -100319,7 +100319,7 @@
         <voice>3</voice>
         <type>16th</type>
         <stem>down</stem>
-        <notehead color="#95F5C5" parentheses="no">normal</notehead>
+        <notehead color="#C5AC9D" parentheses="no">normal</notehead>
         <staff>2</staff>
         <beam number="1">continue</beam>
         <beam number="2">continue</beam>
@@ -100328,7 +100328,7 @@
           <text>['4']</text>
         </lyric>
       </note>
-      <note color="#95F5C5" default-x="221.62" default-y="-110">
+      <note color="#C5AC9D" default-x="221.62" default-y="-110">
         <pitch>
           <step>G</step>
           <alter>1</alter>
@@ -100338,7 +100338,7 @@
         <voice>3</voice>
         <type>16th</type>
         <stem>down</stem>
-        <notehead color="#95F5C5" parentheses="no">normal</notehead>
+        <notehead color="#C5AC9D" parentheses="no">normal</notehead>
         <staff>2</staff>
         <beam number="1">end</beam>
         <beam number="2">end</beam>
@@ -100347,7 +100347,7 @@
           <text>['4']</text>
         </lyric>
       </note>
-      <note color="#95F5C5" default-x="251.57" default-y="-115">
+      <note color="#C5AC9D" default-x="251.57" default-y="-115">
         <pitch>
           <step>F</step>
           <alter>1</alter>
@@ -100357,7 +100357,7 @@
         <voice>3</voice>
         <type>16th</type>
         <stem>down</stem>
-        <notehead color="#95F5C5" parentheses="no">normal</notehead>
+        <notehead color="#C5AC9D" parentheses="no">normal</notehead>
         <staff>2</staff>
         <beam number="1">begin</beam>
         <beam number="2">begin</beam>
@@ -100366,7 +100366,7 @@
           <text>['4']</text>
         </lyric>
       </note>
-      <note color="#95F5C5" default-x="281.51" default-y="-110">
+      <note color="#C5AC9D" default-x="281.51" default-y="-110">
         <pitch>
           <step>G</step>
           <alter>1</alter>
@@ -100376,7 +100376,7 @@
         <voice>3</voice>
         <type>16th</type>
         <stem>down</stem>
-        <notehead color="#95F5C5" parentheses="no">normal</notehead>
+        <notehead color="#C5AC9D" parentheses="no">normal</notehead>
         <staff>2</staff>
         <beam number="1">continue</beam>
         <beam number="2">continue</beam>
@@ -100385,7 +100385,7 @@
           <text>['4']</text>
         </lyric>
       </note>
-      <note color="#95F5C5" default-x="311.46" default-y="-115">
+      <note color="#C5AC9D" default-x="311.46" default-y="-115">
         <pitch>
           <step>F</step>
           <alter>1</alter>
@@ -100395,7 +100395,7 @@
         <voice>3</voice>
         <type>16th</type>
         <stem>down</stem>
-        <notehead color="#95F5C5" parentheses="no">normal</notehead>
+        <notehead color="#C5AC9D" parentheses="no">normal</notehead>
         <staff>2</staff>
         <beam number="1">continue</beam>
         <beam number="2">continue</beam>
@@ -100404,7 +100404,7 @@
           <text>['4']</text>
         </lyric>
       </note>
-      <note color="#95F5C5" default-x="341.41" default-y="-110">
+      <note color="#C5AC9D" default-x="341.41" default-y="-110">
         <pitch>
           <step>G</step>
           <alter>1</alter>
@@ -100414,7 +100414,7 @@
         <voice>3</voice>
         <type>16th</type>
         <stem>down</stem>
-        <notehead color="#95F5C5" parentheses="no">normal</notehead>
+        <notehead color="#C5AC9D" parentheses="no">normal</notehead>
         <staff>2</staff>
         <beam number="1">end</beam>
         <beam number="2">end</beam>
@@ -100423,7 +100423,7 @@
           <text>['4']</text>
         </lyric>
       </note>
-      <note color="#95F5C5" default-x="371.35" default-y="-115">
+      <note color="#C5AC9D" default-x="371.35" default-y="-115">
         <pitch>
           <step>F</step>
           <alter>1</alter>
@@ -100433,7 +100433,7 @@
         <voice>3</voice>
         <type>16th</type>
         <stem>down</stem>
-        <notehead color="#95F5C5" parentheses="no">normal</notehead>
+        <notehead color="#C5AC9D" parentheses="no">normal</notehead>
         <staff>2</staff>
         <beam number="1">begin</beam>
         <beam number="2">begin</beam>
@@ -100442,7 +100442,7 @@
           <text>['4']</text>
         </lyric>
       </note>
-      <note color="#95F5C5" default-x="401.3" default-y="-110">
+      <note color="#C5AC9D" default-x="401.3" default-y="-110">
         <pitch>
           <step>G</step>
           <alter>1</alter>
@@ -100452,7 +100452,7 @@
         <voice>3</voice>
         <type>16th</type>
         <stem>down</stem>
-        <notehead color="#95F5C5" parentheses="no">normal</notehead>
+        <notehead color="#C5AC9D" parentheses="no">normal</notehead>
         <staff>2</staff>
         <beam number="1">continue</beam>
         <beam number="2">continue</beam>
@@ -100461,7 +100461,7 @@
           <text>['4']</text>
         </lyric>
       </note>
-      <note color="#95F5C5" default-x="431.25" default-y="-115">
+      <note color="#C5AC9D" default-x="431.25" default-y="-115">
         <pitch>
           <step>F</step>
           <alter>1</alter>
@@ -100471,7 +100471,7 @@
         <voice>3</voice>
         <type>16th</type>
         <stem>down</stem>
-        <notehead color="#95F5C5" parentheses="no">normal</notehead>
+        <notehead color="#C5AC9D" parentheses="no">normal</notehead>
         <staff>2</staff>
         <beam number="1">continue</beam>
         <beam number="2">continue</beam>
@@ -100480,7 +100480,7 @@
           <text>['4']</text>
         </lyric>
       </note>
-      <note color="#95F5C5" default-x="461.19" default-y="-110">
+      <note color="#C5AC9D" default-x="461.19" default-y="-110">
         <pitch>
           <step>G</step>
           <alter>1</alter>
@@ -100490,7 +100490,7 @@
         <voice>3</voice>
         <type>16th</type>
         <stem>down</stem>
-        <notehead color="#95F5C5" parentheses="no">normal</notehead>
+        <notehead color="#C5AC9D" parentheses="no">normal</notehead>
         <staff>2</staff>
         <beam number="1">end</beam>
         <beam number="2">end</beam>
@@ -100654,7 +100654,7 @@
       <attributes>
         <staff-details print-object="yes" />
       </attributes>
-      <note color="#95F5C5" default-x="97.27" default-y="-120">
+      <note color="#C5AC9D" default-x="97.27" default-y="-120">
         <pitch>
           <step>E</step>
           <octave>3</octave>
@@ -100663,7 +100663,7 @@
         <voice>3</voice>
         <type>16th</type>
         <stem>down</stem>
-        <notehead color="#95F5C5" parentheses="no">normal</notehead>
+        <notehead color="#C5AC9D" parentheses="no">normal</notehead>
         <staff>2</staff>
         <beam number="1">begin</beam>
         <beam number="2">begin</beam>
@@ -100672,7 +100672,7 @@
           <text>['4']</text>
         </lyric>
       </note>
-      <note color="#95F5C5" default-x="126.46" default-y="-110">
+      <note color="#C5AC9D" default-x="126.46" default-y="-110">
         <pitch>
           <step>G</step>
           <alter>1</alter>
@@ -100682,7 +100682,7 @@
         <voice>3</voice>
         <type>16th</type>
         <stem>down</stem>
-        <notehead color="#95F5C5" parentheses="no">normal</notehead>
+        <notehead color="#C5AC9D" parentheses="no">normal</notehead>
         <staff>2</staff>
         <beam number="1">continue</beam>
         <beam number="2">continue</beam>
@@ -100691,7 +100691,7 @@
           <text>['4']</text>
         </lyric>
       </note>
-      <note color="#95F5C5" default-x="155.65" default-y="-120">
+      <note color="#C5AC9D" default-x="155.65" default-y="-120">
         <pitch>
           <step>E</step>
           <octave>3</octave>
@@ -100700,7 +100700,7 @@
         <voice>3</voice>
         <type>16th</type>
         <stem>down</stem>
-        <notehead color="#95F5C5" parentheses="no">normal</notehead>
+        <notehead color="#C5AC9D" parentheses="no">normal</notehead>
         <staff>2</staff>
         <beam number="1">continue</beam>
         <beam number="2">continue</beam>
@@ -100709,7 +100709,7 @@
           <text>['4']</text>
         </lyric>
       </note>
-      <note color="#95F5C5" default-x="184.83" default-y="-110">
+      <note color="#C5AC9D" default-x="184.83" default-y="-110">
         <pitch>
           <step>G</step>
           <alter>1</alter>
@@ -100719,7 +100719,7 @@
         <voice>3</voice>
         <type>16th</type>
         <stem>down</stem>
-        <notehead color="#95F5C5" parentheses="no">normal</notehead>
+        <notehead color="#C5AC9D" parentheses="no">normal</notehead>
         <staff>2</staff>
         <beam number="1">end</beam>
         <beam number="2">end</beam>
@@ -100728,7 +100728,7 @@
           <text>['4']</text>
         </lyric>
       </note>
-      <note color="#95F5C5" default-x="214.02" default-y="-120">
+      <note color="#C5AC9D" default-x="214.02" default-y="-120">
         <pitch>
           <step>E</step>
           <octave>3</octave>
@@ -100737,7 +100737,7 @@
         <voice>3</voice>
         <type>16th</type>
         <stem>down</stem>
-        <notehead color="#95F5C5" parentheses="no">normal</notehead>
+        <notehead color="#C5AC9D" parentheses="no">normal</notehead>
         <staff>2</staff>
         <beam number="1">begin</beam>
         <beam number="2">begin</beam>
@@ -100746,7 +100746,7 @@
           <text>['4']</text>
         </lyric>
       </note>
-      <note color="#95F5C5" default-x="243.21" default-y="-110">
+      <note color="#C5AC9D" default-x="243.21" default-y="-110">
         <pitch>
           <step>G</step>
           <alter>1</alter>
@@ -100756,7 +100756,7 @@
         <voice>3</voice>
         <type>16th</type>
         <stem>down</stem>
-        <notehead color="#95F5C5" parentheses="no">normal</notehead>
+        <notehead color="#C5AC9D" parentheses="no">normal</notehead>
         <staff>2</staff>
         <beam number="1">continue</beam>
         <beam number="2">continue</beam>
@@ -100765,7 +100765,7 @@
           <text>['4']</text>
         </lyric>
       </note>
-      <note color="#95F5C5" default-x="272.4" default-y="-120">
+      <note color="#C5AC9D" default-x="272.4" default-y="-120">
         <pitch>
           <step>E</step>
           <octave>3</octave>
@@ -100774,7 +100774,7 @@
         <voice>3</voice>
         <type>16th</type>
         <stem>down</stem>
-        <notehead color="#95F5C5" parentheses="no">normal</notehead>
+        <notehead color="#C5AC9D" parentheses="no">normal</notehead>
         <staff>2</staff>
         <beam number="1">continue</beam>
         <beam number="2">continue</beam>
@@ -100783,7 +100783,7 @@
           <text>['4']</text>
         </lyric>
       </note>
-      <note color="#95F5C5" default-x="301.59" default-y="-110">
+      <note color="#C5AC9D" default-x="301.59" default-y="-110">
         <pitch>
           <step>G</step>
           <alter>1</alter>
@@ -100793,7 +100793,7 @@
         <voice>3</voice>
         <type>16th</type>
         <stem>down</stem>
-        <notehead color="#95F5C5" parentheses="no">normal</notehead>
+        <notehead color="#C5AC9D" parentheses="no">normal</notehead>
         <staff>2</staff>
         <beam number="1">end</beam>
         <beam number="2">end</beam>
@@ -100802,7 +100802,7 @@
           <text>['4']</text>
         </lyric>
       </note>
-      <note color="#95F5C5" default-x="330.77" default-y="-120">
+      <note color="#C5AC9D" default-x="330.77" default-y="-120">
         <pitch>
           <step>E</step>
           <octave>3</octave>
@@ -100811,7 +100811,7 @@
         <voice>3</voice>
         <type>16th</type>
         <stem>down</stem>
-        <notehead color="#95F5C5" parentheses="no">normal</notehead>
+        <notehead color="#C5AC9D" parentheses="no">normal</notehead>
         <staff>2</staff>
         <beam number="1">begin</beam>
         <beam number="2">begin</beam>
@@ -100820,7 +100820,7 @@
           <text>['4']</text>
         </lyric>
       </note>
-      <note color="#95F5C5" default-x="359.96" default-y="-110">
+      <note color="#C5AC9D" default-x="359.96" default-y="-110">
         <pitch>
           <step>G</step>
           <alter>1</alter>
@@ -100830,7 +100830,7 @@
         <voice>3</voice>
         <type>16th</type>
         <stem>down</stem>
-        <notehead color="#95F5C5" parentheses="no">normal</notehead>
+        <notehead color="#C5AC9D" parentheses="no">normal</notehead>
         <staff>2</staff>
         <beam number="1">continue</beam>
         <beam number="2">continue</beam>
@@ -100839,7 +100839,7 @@
           <text>['4']</text>
         </lyric>
       </note>
-      <note color="#95F5C5" default-x="389.15" default-y="-120">
+      <note color="#C5AC9D" default-x="389.15" default-y="-120">
         <pitch>
           <step>E</step>
           <octave>3</octave>
@@ -100848,7 +100848,7 @@
         <voice>3</voice>
         <type>16th</type>
         <stem>down</stem>
-        <notehead color="#95F5C5" parentheses="no">normal</notehead>
+        <notehead color="#C5AC9D" parentheses="no">normal</notehead>
         <staff>2</staff>
         <beam number="1">continue</beam>
         <beam number="2">continue</beam>
@@ -100857,7 +100857,7 @@
           <text>['4']</text>
         </lyric>
       </note>
-      <note color="#95F5C5" default-x="418.34" default-y="-110">
+      <note color="#C5AC9D" default-x="418.34" default-y="-110">
         <pitch>
           <step>G</step>
           <alter>1</alter>
@@ -100867,7 +100867,7 @@
         <voice>3</voice>
         <type>16th</type>
         <stem>down</stem>
-        <notehead color="#95F5C5" parentheses="no">normal</notehead>
+        <notehead color="#C5AC9D" parentheses="no">normal</notehead>
         <staff>2</staff>
         <beam number="1">end</beam>
         <beam number="2">end</beam>
@@ -100876,7 +100876,7 @@
           <text>['4']</text>
         </lyric>
       </note>
-      <note color="#95F5C5" default-x="447.53" default-y="-120">
+      <note color="#C5AC9D" default-x="447.53" default-y="-120">
         <pitch>
           <step>E</step>
           <octave>3</octave>
@@ -100885,7 +100885,7 @@
         <voice>3</voice>
         <type>16th</type>
         <stem>down</stem>
-        <notehead color="#95F5C5" parentheses="no">normal</notehead>
+        <notehead color="#C5AC9D" parentheses="no">normal</notehead>
         <staff>2</staff>
         <beam number="1">begin</beam>
         <beam number="2">begin</beam>
@@ -100894,7 +100894,7 @@
           <text>['4']</text>
         </lyric>
       </note>
-      <note color="#95F5C5" default-x="476.72" default-y="-110">
+      <note color="#C5AC9D" default-x="476.72" default-y="-110">
         <pitch>
           <step>G</step>
           <alter>1</alter>
@@ -100904,7 +100904,7 @@
         <voice>3</voice>
         <type>16th</type>
         <stem>down</stem>
-        <notehead color="#95F5C5" parentheses="no">normal</notehead>
+        <notehead color="#C5AC9D" parentheses="no">normal</notehead>
         <staff>2</staff>
         <beam number="1">continue</beam>
         <beam number="2">continue</beam>
@@ -100913,7 +100913,7 @@
           <text>['4']</text>
         </lyric>
       </note>
-      <note color="#95F5C5" default-x="505.9" default-y="-120">
+      <note color="#C5AC9D" default-x="505.9" default-y="-120">
         <pitch>
           <step>E</step>
           <octave>3</octave>
@@ -100922,7 +100922,7 @@
         <voice>3</voice>
         <type>16th</type>
         <stem>down</stem>
-        <notehead color="#95F5C5" parentheses="no">normal</notehead>
+        <notehead color="#C5AC9D" parentheses="no">normal</notehead>
         <staff>2</staff>
         <beam number="1">continue</beam>
         <beam number="2">continue</beam>
@@ -100931,7 +100931,7 @@
           <text>['4']</text>
         </lyric>
       </note>
-      <note color="#95F5C5" default-x="535.09" default-y="-110">
+      <note color="#C5AC9D" default-x="535.09" default-y="-110">
         <pitch>
           <step>G</step>
           <alter>1</alter>
@@ -100941,7 +100941,7 @@
         <voice>3</voice>
         <type>16th</type>
         <stem>down</stem>
-        <notehead color="#95F5C5" parentheses="no">normal</notehead>
+        <notehead color="#C5AC9D" parentheses="no">normal</notehead>
         <staff>2</staff>
         <beam number="1">end</beam>
         <beam number="2">end</beam>
@@ -101091,7 +101091,7 @@
       <backup>
         <duration>40320</duration>
       </backup>
-      <note color="#95F5C5" default-x="18.42" default-y="-135">
+      <note color="#C5AC9D" default-x="18.42" default-y="-135">
         <pitch>
           <step>B</step>
           <alter>1</alter>
@@ -101102,7 +101102,7 @@
         <type>16th</type>
         <accidental>sharp</accidental>
         <stem>down</stem>
-        <notehead color="#95F5C5" parentheses="no">normal</notehead>
+        <notehead color="#C5AC9D" parentheses="no">normal</notehead>
         <staff>2</staff>
         <beam number="1">begin</beam>
         <beam number="2">begin</beam>
@@ -101111,7 +101111,7 @@
           <text>['4']</text>
         </lyric>
       </note>
-      <note color="#95F5C5" default-x="47.83" default-y="-110">
+      <note color="#C5AC9D" default-x="47.83" default-y="-110">
         <pitch>
           <step>G</step>
           <alter>1</alter>
@@ -101121,7 +101121,7 @@
         <voice>3</voice>
         <type>16th</type>
         <stem>down</stem>
-        <notehead color="#95F5C5" parentheses="no">normal</notehead>
+        <notehead color="#C5AC9D" parentheses="no">normal</notehead>
         <staff>2</staff>
         <beam number="1">continue</beam>
         <beam number="2">continue</beam>
@@ -101130,7 +101130,7 @@
           <text>['4']</text>
         </lyric>
       </note>
-      <note color="#95F5C5" default-x="77.24" default-y="-135">
+      <note color="#C5AC9D" default-x="77.24" default-y="-135">
         <pitch>
           <step>B</step>
           <alter>1</alter>
@@ -101140,7 +101140,7 @@
         <voice>3</voice>
         <type>16th</type>
         <stem>down</stem>
-        <notehead color="#95F5C5" parentheses="no">normal</notehead>
+        <notehead color="#C5AC9D" parentheses="no">normal</notehead>
         <staff>2</staff>
         <beam number="1">continue</beam>
         <beam number="2">continue</beam>
@@ -101149,7 +101149,7 @@
           <text>['4']</text>
         </lyric>
       </note>
-      <note color="#95F5C5" default-x="106.65" default-y="-110">
+      <note color="#C5AC9D" default-x="106.65" default-y="-110">
         <pitch>
           <step>G</step>
           <alter>1</alter>
@@ -101159,7 +101159,7 @@
         <voice>3</voice>
         <type>16th</type>
         <stem>down</stem>
-        <notehead color="#95F5C5" parentheses="no">normal</notehead>
+        <notehead color="#C5AC9D" parentheses="no">normal</notehead>
         <staff>2</staff>
         <beam number="1">end</beam>
         <beam number="2">end</beam>
@@ -101168,7 +101168,7 @@
           <text>['4']</text>
         </lyric>
       </note>
-      <note color="#95F5C5" default-x="136.06" default-y="-135">
+      <note color="#C5AC9D" default-x="136.06" default-y="-135">
         <pitch>
           <step>B</step>
           <alter>1</alter>
@@ -101178,7 +101178,7 @@
         <voice>3</voice>
         <type>16th</type>
         <stem>down</stem>
-        <notehead color="#95F5C5" parentheses="no">normal</notehead>
+        <notehead color="#C5AC9D" parentheses="no">normal</notehead>
         <staff>2</staff>
         <beam number="1">begin</beam>
         <beam number="2">begin</beam>
@@ -101187,7 +101187,7 @@
           <text>['4']</text>
         </lyric>
       </note>
-      <note color="#95F5C5" default-x="165.48" default-y="-110">
+      <note color="#C5AC9D" default-x="165.48" default-y="-110">
         <pitch>
           <step>G</step>
           <alter>1</alter>
@@ -101197,7 +101197,7 @@
         <voice>3</voice>
         <type>16th</type>
         <stem>down</stem>
-        <notehead color="#95F5C5" parentheses="no">normal</notehead>
+        <notehead color="#C5AC9D" parentheses="no">normal</notehead>
         <staff>2</staff>
         <beam number="1">continue</beam>
         <beam number="2">continue</beam>
@@ -101206,7 +101206,7 @@
           <text>['4']</text>
         </lyric>
       </note>
-      <note color="#95F5C5" default-x="194.89" default-y="-135">
+      <note color="#C5AC9D" default-x="194.89" default-y="-135">
         <pitch>
           <step>B</step>
           <alter>1</alter>
@@ -101216,7 +101216,7 @@
         <voice>3</voice>
         <type>16th</type>
         <stem>down</stem>
-        <notehead color="#95F5C5" parentheses="no">normal</notehead>
+        <notehead color="#C5AC9D" parentheses="no">normal</notehead>
         <staff>2</staff>
         <beam number="1">continue</beam>
         <beam number="2">continue</beam>
@@ -101225,7 +101225,7 @@
           <text>['4']</text>
         </lyric>
       </note>
-      <note color="#95F5C5" default-x="224.3" default-y="-110">
+      <note color="#C5AC9D" default-x="224.3" default-y="-110">
         <pitch>
           <step>G</step>
           <alter>1</alter>
@@ -101235,7 +101235,7 @@
         <voice>3</voice>
         <type>16th</type>
         <stem>down</stem>
-        <notehead color="#95F5C5" parentheses="no">normal</notehead>
+        <notehead color="#C5AC9D" parentheses="no">normal</notehead>
         <staff>2</staff>
         <beam number="1">end</beam>
         <beam number="2">end</beam>
@@ -101244,7 +101244,7 @@
           <text>['4']</text>
         </lyric>
       </note>
-      <note color="#95F5C5" default-x="253.71" default-y="-135">
+      <note color="#C5AC9D" default-x="253.71" default-y="-135">
         <pitch>
           <step>B</step>
           <alter>1</alter>
@@ -101254,7 +101254,7 @@
         <voice>3</voice>
         <type>16th</type>
         <stem>down</stem>
-        <notehead color="#95F5C5" parentheses="no">normal</notehead>
+        <notehead color="#C5AC9D" parentheses="no">normal</notehead>
         <staff>2</staff>
         <beam number="1">begin</beam>
         <beam number="2">begin</beam>
@@ -101263,7 +101263,7 @@
           <text>['4']</text>
         </lyric>
       </note>
-      <note color="#95F5C5" default-x="283.13" default-y="-110">
+      <note color="#C5AC9D" default-x="283.13" default-y="-110">
         <pitch>
           <step>G</step>
           <alter>1</alter>
@@ -101273,7 +101273,7 @@
         <voice>3</voice>
         <type>16th</type>
         <stem>down</stem>
-        <notehead color="#95F5C5" parentheses="no">normal</notehead>
+        <notehead color="#C5AC9D" parentheses="no">normal</notehead>
         <staff>2</staff>
         <beam number="1">continue</beam>
         <beam number="2">continue</beam>
@@ -101282,7 +101282,7 @@
           <text>['4']</text>
         </lyric>
       </note>
-      <note color="#95F5C5" default-x="312.54" default-y="-135">
+      <note color="#C5AC9D" default-x="312.54" default-y="-135">
         <pitch>
           <step>B</step>
           <alter>1</alter>
@@ -101292,7 +101292,7 @@
         <voice>3</voice>
         <type>16th</type>
         <stem>down</stem>
-        <notehead color="#95F5C5" parentheses="no">normal</notehead>
+        <notehead color="#C5AC9D" parentheses="no">normal</notehead>
         <staff>2</staff>
         <beam number="1">continue</beam>
         <beam number="2">continue</beam>
@@ -101301,7 +101301,7 @@
           <text>['4']</text>
         </lyric>
       </note>
-      <note color="#95F5C5" default-x="341.95" default-y="-110">
+      <note color="#C5AC9D" default-x="341.95" default-y="-110">
         <pitch>
           <step>G</step>
           <alter>1</alter>
@@ -101311,7 +101311,7 @@
         <voice>3</voice>
         <type>16th</type>
         <stem>down</stem>
-        <notehead color="#95F5C5" parentheses="no">normal</notehead>
+        <notehead color="#C5AC9D" parentheses="no">normal</notehead>
         <staff>2</staff>
         <beam number="1">end</beam>
         <beam number="2">end</beam>
@@ -101320,7 +101320,7 @@
           <text>['4']</text>
         </lyric>
       </note>
-      <note color="#95F5C5" default-x="371.36" default-y="-135">
+      <note color="#C5AC9D" default-x="371.36" default-y="-135">
         <pitch>
           <step>B</step>
           <alter>1</alter>
@@ -101330,7 +101330,7 @@
         <voice>3</voice>
         <type>16th</type>
         <stem>down</stem>
-        <notehead color="#95F5C5" parentheses="no">normal</notehead>
+        <notehead color="#C5AC9D" parentheses="no">normal</notehead>
         <staff>2</staff>
         <beam number="1">begin</beam>
         <beam number="2">begin</beam>
@@ -101339,7 +101339,7 @@
           <text>['4']</text>
         </lyric>
       </note>
-      <note color="#95F5C5" default-x="400.78" default-y="-110">
+      <note color="#C5AC9D" default-x="400.78" default-y="-110">
         <pitch>
           <step>G</step>
           <alter>1</alter>
@@ -101349,7 +101349,7 @@
         <voice>3</voice>
         <type>16th</type>
         <stem>down</stem>
-        <notehead color="#95F5C5" parentheses="no">normal</notehead>
+        <notehead color="#C5AC9D" parentheses="no">normal</notehead>
         <staff>2</staff>
         <beam number="1">continue</beam>
         <beam number="2">continue</beam>
@@ -101358,7 +101358,7 @@
           <text>['4']</text>
         </lyric>
       </note>
-      <note color="#95F5C5" default-x="430.19" default-y="-135">
+      <note color="#C5AC9D" default-x="430.19" default-y="-135">
         <pitch>
           <step>B</step>
           <alter>1</alter>
@@ -101368,7 +101368,7 @@
         <voice>3</voice>
         <type>16th</type>
         <stem>down</stem>
-        <notehead color="#95F5C5" parentheses="no">normal</notehead>
+        <notehead color="#C5AC9D" parentheses="no">normal</notehead>
         <staff>2</staff>
         <beam number="1">continue</beam>
         <beam number="2">continue</beam>
@@ -101377,7 +101377,7 @@
           <text>['4']</text>
         </lyric>
       </note>
-      <note color="#95F5C5" default-x="459.6" default-y="-110">
+      <note color="#C5AC9D" default-x="459.6" default-y="-110">
         <pitch>
           <step>G</step>
           <alter>1</alter>
@@ -101387,7 +101387,7 @@
         <voice>3</voice>
         <type>16th</type>
         <stem>down</stem>
-        <notehead color="#95F5C5" parentheses="no">normal</notehead>
+        <notehead color="#C5AC9D" parentheses="no">normal</notehead>
         <staff>2</staff>
         <beam number="1">end</beam>
         <beam number="2">end</beam>
@@ -101591,7 +101591,7 @@
       <attributes>
         <staff-details print-object="yes" />
       </attributes>
-      <note color="#95F5C5" default-x="97.27" default-y="-130">
+      <note color="#C5AC9D" default-x="97.27" default-y="-130">
         <pitch>
           <step>C</step>
           <alter>1</alter>
@@ -101601,7 +101601,7 @@
         <voice>3</voice>
         <type>16th</type>
         <stem>down</stem>
-        <notehead color="#95F5C5" parentheses="no">normal</notehead>
+        <notehead color="#C5AC9D" parentheses="no">normal</notehead>
         <staff>2</staff>
         <beam number="1">begin</beam>
         <beam number="2">begin</beam>
@@ -101610,7 +101610,7 @@
           <text>['4']</text>
         </lyric>
       </note>
-      <note color="#95F5C5" default-x="126.34" default-y="-110">
+      <note color="#C5AC9D" default-x="126.34" default-y="-110">
         <pitch>
           <step>G</step>
           <alter>1</alter>
@@ -101620,7 +101620,7 @@
         <voice>3</voice>
         <type>16th</type>
         <stem>down</stem>
-        <notehead color="#95F5C5" parentheses="no">normal</notehead>
+        <notehead color="#C5AC9D" parentheses="no">normal</notehead>
         <staff>2</staff>
         <beam number="1">continue</beam>
         <beam number="2">continue</beam>
@@ -101629,7 +101629,7 @@
           <text>['4']</text>
         </lyric>
       </note>
-      <note color="#95F5C5" default-x="155.41" default-y="-130">
+      <note color="#C5AC9D" default-x="155.41" default-y="-130">
         <pitch>
           <step>C</step>
           <alter>1</alter>
@@ -101639,7 +101639,7 @@
         <voice>3</voice>
         <type>16th</type>
         <stem>down</stem>
-        <notehead color="#95F5C5" parentheses="no">normal</notehead>
+        <notehead color="#C5AC9D" parentheses="no">normal</notehead>
         <staff>2</staff>
         <beam number="1">continue</beam>
         <beam number="2">continue</beam>
@@ -101648,7 +101648,7 @@
           <text>['4']</text>
         </lyric>
       </note>
-      <note color="#95F5C5" default-x="184.48" default-y="-110">
+      <note color="#C5AC9D" default-x="184.48" default-y="-110">
         <pitch>
           <step>G</step>
           <alter>1</alter>
@@ -101658,7 +101658,7 @@
         <voice>3</voice>
         <type>16th</type>
         <stem>down</stem>
-        <notehead color="#95F5C5" parentheses="no">normal</notehead>
+        <notehead color="#C5AC9D" parentheses="no">normal</notehead>
         <staff>2</staff>
         <beam number="1">end</beam>
         <beam number="2">end</beam>
@@ -101667,7 +101667,7 @@
           <text>['4']</text>
         </lyric>
       </note>
-      <note color="#95F5C5" default-x="213.55" default-y="-130">
+      <note color="#C5AC9D" default-x="213.55" default-y="-130">
         <pitch>
           <step>C</step>
           <alter>1</alter>
@@ -101677,7 +101677,7 @@
         <voice>3</voice>
         <type>16th</type>
         <stem>down</stem>
-        <notehead color="#95F5C5" parentheses="no">normal</notehead>
+        <notehead color="#C5AC9D" parentheses="no">normal</notehead>
         <staff>2</staff>
         <beam number="1">begin</beam>
         <beam number="2">begin</beam>
@@ -101686,7 +101686,7 @@
           <text>['4']</text>
         </lyric>
       </note>
-      <note color="#95F5C5" default-x="242.61" default-y="-110">
+      <note color="#C5AC9D" default-x="242.61" default-y="-110">
         <pitch>
           <step>G</step>
           <alter>1</alter>
@@ -101696,7 +101696,7 @@
         <voice>3</voice>
         <type>16th</type>
         <stem>down</stem>
-        <notehead color="#95F5C5" parentheses="no">normal</notehead>
+        <notehead color="#C5AC9D" parentheses="no">normal</notehead>
         <staff>2</staff>
         <beam number="1">continue</beam>
         <beam number="2">continue</beam>
@@ -101705,7 +101705,7 @@
           <text>['4']</text>
         </lyric>
       </note>
-      <note color="#95F5C5" default-x="271.68" default-y="-130">
+      <note color="#C5AC9D" default-x="271.68" default-y="-130">
         <pitch>
           <step>C</step>
           <alter>1</alter>
@@ -101715,7 +101715,7 @@
         <voice>3</voice>
         <type>16th</type>
         <stem>down</stem>
-        <notehead color="#95F5C5" parentheses="no">normal</notehead>
+        <notehead color="#C5AC9D" parentheses="no">normal</notehead>
         <staff>2</staff>
         <beam number="1">continue</beam>
         <beam number="2">continue</beam>
@@ -101724,7 +101724,7 @@
           <text>['4']</text>
         </lyric>
       </note>
-      <note color="#95F5C5" default-x="300.75" default-y="-110">
+      <note color="#C5AC9D" default-x="300.75" default-y="-110">
         <pitch>
           <step>G</step>
           <alter>1</alter>
@@ -101734,7 +101734,7 @@
         <voice>3</voice>
         <type>16th</type>
         <stem>down</stem>
-        <notehead color="#95F5C5" parentheses="no">normal</notehead>
+        <notehead color="#C5AC9D" parentheses="no">normal</notehead>
         <staff>2</staff>
         <beam number="1">end</beam>
         <beam number="2">end</beam>
@@ -101743,7 +101743,7 @@
           <text>['4']</text>
         </lyric>
       </note>
-      <note color="#95F5C5" default-x="329.82" default-y="-135">
+      <note color="#C5AC9D" default-x="329.82" default-y="-135">
         <pitch>
           <step>B</step>
           <alter>0</alter>
@@ -101754,7 +101754,7 @@
         <type>16th</type>
         <accidental>natural</accidental>
         <stem>up</stem>
-        <notehead color="#95F5C5" parentheses="no">normal</notehead>
+        <notehead color="#C5AC9D" parentheses="no">normal</notehead>
         <staff>2</staff>
         <beam number="1">begin</beam>
         <beam number="2">begin</beam>
@@ -101763,7 +101763,7 @@
           <text>['4']</text>
         </lyric>
       </note>
-      <note color="#95F5C5" default-x="358.89" default-y="-130">
+      <note color="#C5AC9D" default-x="358.89" default-y="-130">
         <pitch>
           <step>C</step>
           <alter>1</alter>
@@ -101773,7 +101773,7 @@
         <voice>3</voice>
         <type>16th</type>
         <stem>up</stem>
-        <notehead color="#95F5C5" parentheses="no">normal</notehead>
+        <notehead color="#C5AC9D" parentheses="no">normal</notehead>
         <staff>2</staff>
         <beam number="1">continue</beam>
         <beam number="2">continue</beam>
@@ -101782,7 +101782,7 @@
           <text>['4']</text>
         </lyric>
       </note>
-      <note color="#95F5C5" default-x="387.96" default-y="-135">
+      <note color="#C5AC9D" default-x="387.96" default-y="-135">
         <pitch>
           <step>B</step>
           <octave>2</octave>
@@ -101791,7 +101791,7 @@
         <voice>3</voice>
         <type>16th</type>
         <stem>up</stem>
-        <notehead color="#95F5C5" parentheses="no">normal</notehead>
+        <notehead color="#C5AC9D" parentheses="no">normal</notehead>
         <staff>2</staff>
         <beam number="1">continue</beam>
         <beam number="2">continue</beam>
@@ -101800,7 +101800,7 @@
           <text>['4']</text>
         </lyric>
       </note>
-      <note color="#95F5C5" default-x="417.03" default-y="-130">
+      <note color="#C5AC9D" default-x="417.03" default-y="-130">
         <pitch>
           <step>C</step>
           <alter>1</alter>
@@ -101810,7 +101810,7 @@
         <voice>3</voice>
         <type>16th</type>
         <stem>up</stem>
-        <notehead color="#95F5C5" parentheses="no">normal</notehead>
+        <notehead color="#C5AC9D" parentheses="no">normal</notehead>
         <staff>2</staff>
         <beam number="1">end</beam>
         <beam number="2">end</beam>
@@ -101819,7 +101819,7 @@
           <text>['4']</text>
         </lyric>
       </note>
-      <note color="#95F5C5" default-x="446.1" default-y="-135">
+      <note color="#C5AC9D" default-x="446.1" default-y="-135">
         <pitch>
           <step>B</step>
           <octave>2</octave>
@@ -101828,7 +101828,7 @@
         <voice>3</voice>
         <type>16th</type>
         <stem>up</stem>
-        <notehead color="#95F5C5" parentheses="no">normal</notehead>
+        <notehead color="#C5AC9D" parentheses="no">normal</notehead>
         <staff>2</staff>
         <beam number="1">begin</beam>
         <beam number="2">begin</beam>
@@ -101837,7 +101837,7 @@
           <text>['4']</text>
         </lyric>
       </note>
-      <note color="#95F5C5" default-x="475.17" default-y="-130">
+      <note color="#C5AC9D" default-x="475.17" default-y="-130">
         <pitch>
           <step>C</step>
           <alter>1</alter>
@@ -101847,7 +101847,7 @@
         <voice>3</voice>
         <type>16th</type>
         <stem>up</stem>
-        <notehead color="#95F5C5" parentheses="no">normal</notehead>
+        <notehead color="#C5AC9D" parentheses="no">normal</notehead>
         <staff>2</staff>
         <beam number="1">continue</beam>
         <beam number="2">continue</beam>
@@ -101856,7 +101856,7 @@
           <text>['4']</text>
         </lyric>
       </note>
-      <note color="#95F5C5" default-x="504.24" default-y="-135">
+      <note color="#C5AC9D" default-x="504.24" default-y="-135">
         <pitch>
           <step>B</step>
           <octave>2</octave>
@@ -101865,7 +101865,7 @@
         <voice>3</voice>
         <type>16th</type>
         <stem>up</stem>
-        <notehead color="#95F5C5" parentheses="no">normal</notehead>
+        <notehead color="#C5AC9D" parentheses="no">normal</notehead>
         <staff>2</staff>
         <beam number="1">continue</beam>
         <beam number="2">continue</beam>
@@ -101874,7 +101874,7 @@
           <text>['4']</text>
         </lyric>
       </note>
-      <note color="#95F5C5" default-x="533.31" default-y="-130">
+      <note color="#C5AC9D" default-x="533.31" default-y="-130">
         <pitch>
           <step>C</step>
           <alter>1</alter>
@@ -101884,7 +101884,7 @@
         <voice>3</voice>
         <type>16th</type>
         <stem>up</stem>
-        <notehead color="#95F5C5" parentheses="no">normal</notehead>
+        <notehead color="#C5AC9D" parentheses="no">normal</notehead>
         <staff>2</staff>
         <beam number="1">end</beam>
         <beam number="2">end</beam>
@@ -102076,7 +102076,7 @@
       <backup>
         <duration>40320</duration>
       </backup>
-      <note color="#95F5C5" default-x="12" default-y="-140">
+      <note color="#C5AC9D" default-x="12" default-y="-140">
         <pitch>
           <step>A</step>
           <octave>2</octave>
@@ -102085,7 +102085,7 @@
         <voice>3</voice>
         <type>16th</type>
         <stem>up</stem>
-        <notehead color="#95F5C5" parentheses="no">normal</notehead>
+        <notehead color="#C5AC9D" parentheses="no">normal</notehead>
         <staff>2</staff>
         <beam number="1">begin</beam>
         <beam number="2">begin</beam>
@@ -102094,7 +102094,7 @@
           <text>['4']</text>
         </lyric>
       </note>
-      <note color="#95F5C5" default-x="41.72" default-y="-130">
+      <note color="#C5AC9D" default-x="41.72" default-y="-130">
         <pitch>
           <step>C</step>
           <alter>1</alter>
@@ -102104,7 +102104,7 @@
         <voice>3</voice>
         <type>16th</type>
         <stem>up</stem>
-        <notehead color="#95F5C5" parentheses="no">normal</notehead>
+        <notehead color="#C5AC9D" parentheses="no">normal</notehead>
         <staff>2</staff>
         <beam number="1">continue</beam>
         <beam number="2">continue</beam>
@@ -102113,7 +102113,7 @@
           <text>['4']</text>
         </lyric>
       </note>
-      <note color="#95F5C5" default-x="71.44" default-y="-140">
+      <note color="#C5AC9D" default-x="71.44" default-y="-140">
         <pitch>
           <step>A</step>
           <octave>2</octave>
@@ -102122,7 +102122,7 @@
         <voice>3</voice>
         <type>16th</type>
         <stem>up</stem>
-        <notehead color="#95F5C5" parentheses="no">normal</notehead>
+        <notehead color="#C5AC9D" parentheses="no">normal</notehead>
         <staff>2</staff>
         <beam number="1">continue</beam>
         <beam number="2">continue</beam>
@@ -102131,7 +102131,7 @@
           <text>['4']</text>
         </lyric>
       </note>
-      <note color="#95F5C5" default-x="101.17" default-y="-130">
+      <note color="#C5AC9D" default-x="101.17" default-y="-130">
         <pitch>
           <step>C</step>
           <alter>1</alter>
@@ -102141,7 +102141,7 @@
         <voice>3</voice>
         <type>16th</type>
         <stem>up</stem>
-        <notehead color="#95F5C5" parentheses="no">normal</notehead>
+        <notehead color="#C5AC9D" parentheses="no">normal</notehead>
         <staff>2</staff>
         <beam number="1">end</beam>
         <beam number="2">end</beam>
@@ -102150,7 +102150,7 @@
           <text>['4']</text>
         </lyric>
       </note>
-      <note color="#95F5C5" default-x="130.89" default-y="-140">
+      <note color="#C5AC9D" default-x="130.89" default-y="-140">
         <pitch>
           <step>A</step>
           <octave>2</octave>
@@ -102159,7 +102159,7 @@
         <voice>3</voice>
         <type>16th</type>
         <stem>up</stem>
-        <notehead color="#95F5C5" parentheses="no">normal</notehead>
+        <notehead color="#C5AC9D" parentheses="no">normal</notehead>
         <staff>2</staff>
         <beam number="1">begin</beam>
         <beam number="2">begin</beam>
@@ -102168,7 +102168,7 @@
           <text>['4']</text>
         </lyric>
       </note>
-      <note color="#95F5C5" default-x="160.61" default-y="-130">
+      <note color="#C5AC9D" default-x="160.61" default-y="-130">
         <pitch>
           <step>C</step>
           <alter>1</alter>
@@ -102178,7 +102178,7 @@
         <voice>3</voice>
         <type>16th</type>
         <stem>up</stem>
-        <notehead color="#95F5C5" parentheses="no">normal</notehead>
+        <notehead color="#C5AC9D" parentheses="no">normal</notehead>
         <staff>2</staff>
         <beam number="1">continue</beam>
         <beam number="2">continue</beam>
@@ -102187,7 +102187,7 @@
           <text>['4']</text>
         </lyric>
       </note>
-      <note color="#95F5C5" default-x="190.33" default-y="-140">
+      <note color="#C5AC9D" default-x="190.33" default-y="-140">
         <pitch>
           <step>A</step>
           <octave>2</octave>
@@ -102196,7 +102196,7 @@
         <voice>3</voice>
         <type>16th</type>
         <stem>up</stem>
-        <notehead color="#95F5C5" parentheses="no">normal</notehead>
+        <notehead color="#C5AC9D" parentheses="no">normal</notehead>
         <staff>2</staff>
         <beam number="1">continue</beam>
         <beam number="2">continue</beam>
@@ -102205,7 +102205,7 @@
           <text>['4']</text>
         </lyric>
       </note>
-      <note color="#95F5C5" default-x="220.06" default-y="-130">
+      <note color="#C5AC9D" default-x="220.06" default-y="-130">
         <pitch>
           <step>C</step>
           <alter>1</alter>
@@ -102215,7 +102215,7 @@
         <voice>3</voice>
         <type>16th</type>
         <stem>up</stem>
-        <notehead color="#95F5C5" parentheses="no">normal</notehead>
+        <notehead color="#C5AC9D" parentheses="no">normal</notehead>
         <staff>2</staff>
         <beam number="1">end</beam>
         <beam number="2">end</beam>
@@ -102224,7 +102224,7 @@
           <text>['4']</text>
         </lyric>
       </note>
-      <note color="#95F5C5" default-x="253.14" default-y="-155">
+      <note color="#C5AC9D" default-x="253.14" default-y="-155">
         <pitch>
           <step>E</step>
           <alter>1</alter>
@@ -102235,7 +102235,7 @@
         <type>16th</type>
         <accidental>sharp</accidental>
         <stem>up</stem>
-        <notehead color="#95F5C5" parentheses="no">normal</notehead>
+        <notehead color="#C5AC9D" parentheses="no">normal</notehead>
         <staff>2</staff>
         <beam number="1">begin</beam>
         <beam number="2">begin</beam>
@@ -102244,7 +102244,7 @@
           <text>['4']</text>
         </lyric>
       </note>
-      <note color="#95F5C5" default-x="282.86" default-y="-130">
+      <note color="#C5AC9D" default-x="282.86" default-y="-130">
         <pitch>
           <step>C</step>
           <alter>1</alter>
@@ -102254,7 +102254,7 @@
         <voice>3</voice>
         <type>16th</type>
         <stem>up</stem>
-        <notehead color="#95F5C5" parentheses="no">normal</notehead>
+        <notehead color="#C5AC9D" parentheses="no">normal</notehead>
         <staff>2</staff>
         <beam number="1">continue</beam>
         <beam number="2">continue</beam>
@@ -102263,7 +102263,7 @@
           <text>['4']</text>
         </lyric>
       </note>
-      <note color="#95F5C5" default-x="312.58" default-y="-155">
+      <note color="#C5AC9D" default-x="312.58" default-y="-155">
         <pitch>
           <step>E</step>
           <alter>1</alter>
@@ -102273,7 +102273,7 @@
         <voice>3</voice>
         <type>16th</type>
         <stem>up</stem>
-        <notehead color="#95F5C5" parentheses="no">normal</notehead>
+        <notehead color="#C5AC9D" parentheses="no">normal</notehead>
         <staff>2</staff>
         <beam number="1">continue</beam>
         <beam number="2">continue</beam>
@@ -102282,7 +102282,7 @@
           <text>['4']</text>
         </lyric>
       </note>
-      <note color="#95F5C5" default-x="342.31" default-y="-130">
+      <note color="#C5AC9D" default-x="342.31" default-y="-130">
         <pitch>
           <step>C</step>
           <alter>1</alter>
@@ -102292,7 +102292,7 @@
         <voice>3</voice>
         <type>16th</type>
         <stem>up</stem>
-        <notehead color="#95F5C5" parentheses="no">normal</notehead>
+        <notehead color="#C5AC9D" parentheses="no">normal</notehead>
         <staff>2</staff>
         <beam number="1">end</beam>
         <beam number="2">end</beam>
@@ -102301,7 +102301,7 @@
           <text>['4']</text>
         </lyric>
       </note>
-      <note color="#95F5C5" default-x="372.03" default-y="-155">
+      <note color="#C5AC9D" default-x="372.03" default-y="-155">
         <pitch>
           <step>E</step>
           <alter>1</alter>
@@ -102311,7 +102311,7 @@
         <voice>3</voice>
         <type>16th</type>
         <stem>up</stem>
-        <notehead color="#95F5C5" parentheses="no">normal</notehead>
+        <notehead color="#C5AC9D" parentheses="no">normal</notehead>
         <staff>2</staff>
         <beam number="1">begin</beam>
         <beam number="2">begin</beam>
@@ -102320,7 +102320,7 @@
           <text>['4']</text>
         </lyric>
       </note>
-      <note color="#95F5C5" default-x="401.75" default-y="-130">
+      <note color="#C5AC9D" default-x="401.75" default-y="-130">
         <pitch>
           <step>C</step>
           <alter>1</alter>
@@ -102330,7 +102330,7 @@
         <voice>3</voice>
         <type>16th</type>
         <stem>up</stem>
-        <notehead color="#95F5C5" parentheses="no">normal</notehead>
+        <notehead color="#C5AC9D" parentheses="no">normal</notehead>
         <staff>2</staff>
         <beam number="1">continue</beam>
         <beam number="2">continue</beam>
@@ -102339,7 +102339,7 @@
           <text>['4']</text>
         </lyric>
       </note>
-      <note color="#95F5C5" default-x="431.47" default-y="-155">
+      <note color="#C5AC9D" default-x="431.47" default-y="-155">
         <pitch>
           <step>E</step>
           <alter>1</alter>
@@ -102349,7 +102349,7 @@
         <voice>3</voice>
         <type>16th</type>
         <stem>up</stem>
-        <notehead color="#95F5C5" parentheses="no">normal</notehead>
+        <notehead color="#C5AC9D" parentheses="no">normal</notehead>
         <staff>2</staff>
         <beam number="1">continue</beam>
         <beam number="2">continue</beam>
@@ -102358,7 +102358,7 @@
           <text>['4']</text>
         </lyric>
       </note>
-      <note color="#95F5C5" default-x="461.19" default-y="-130">
+      <note color="#C5AC9D" default-x="461.19" default-y="-130">
         <pitch>
           <step>C</step>
           <alter>1</alter>
@@ -102368,7 +102368,7 @@
         <voice>3</voice>
         <type>16th</type>
         <stem>up</stem>
-        <notehead color="#95F5C5" parentheses="no">normal</notehead>
+        <notehead color="#C5AC9D" parentheses="no">normal</notehead>
         <staff>2</staff>
         <beam number="1">end</beam>
         <beam number="2">end</beam>
@@ -102634,7 +102634,7 @@
       <backup>
         <duration>40320</duration>
       </backup>
-      <note color="#95F5C5">
+      <note color="#C5AC9D">
         <pitch>
           <step>F</step>
           <alter>1</alter>
@@ -102643,7 +102643,7 @@
         <duration>40320</duration>
         <voice>4</voice>
         <type>whole</type>
-        <notehead color="#95F5C5" parentheses="no">normal</notehead>
+        <notehead color="#C5AC9D" parentheses="no">normal</notehead>
         <staff>2</staff>
         <lyric name="1" number="1">
           <syllabic>single</syllabic>
@@ -103939,7 +103939,7 @@
       <backup>
         <duration>40320</duration>
       </backup>
-      <note color="#95F5C5">
+      <note color="#C5AC9D">
         <pitch>
           <step>F</step>
           <alter>2</alter>
@@ -103949,7 +103949,7 @@
         <voice>4</voice>
         <type>whole</type>
         <accidental>double-sharp</accidental>
-        <notehead color="#95F5C5" parentheses="no">normal</notehead>
+        <notehead color="#C5AC9D" parentheses="no">normal</notehead>
         <staff>2</staff>
         <lyric name="1" number="1">
           <syllabic>single</syllabic>
@@ -104388,7 +104388,7 @@
       <backup>
         <duration>40320</duration>
       </backup>
-      <note color="#95F5C5">
+      <note color="#C5AC9D">
         <pitch>
           <step>F</step>
           <alter>2</alter>
@@ -104397,7 +104397,7 @@
         <duration>40320</duration>
         <voice>5</voice>
         <type>whole</type>
-        <notehead color="#95F5C5" parentheses="no">normal</notehead>
+        <notehead color="#C5AC9D" parentheses="no">normal</notehead>
         <staff>2</staff>
         <lyric name="1" number="1">
           <syllabic>single</syllabic>
@@ -104696,7 +104696,7 @@
       <backup>
         <duration>40320</duration>
       </backup>
-      <note color="#95F5C5">
+      <note color="#C5AC9D">
         <pitch>
           <step>G</step>
           <alter>1</alter>
@@ -104705,7 +104705,7 @@
         <duration>40320</duration>
         <voice>4</voice>
         <type>whole</type>
-        <notehead color="#95F5C5" parentheses="no">normal</notehead>
+        <notehead color="#C5AC9D" parentheses="no">normal</notehead>
         <staff>2</staff>
         <lyric name="1" number="1">
           <syllabic>single</syllabic>

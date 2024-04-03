@@ -15,7 +15,12 @@ def distance(f, t):
 
 # assign voices across verticalities
     # direction is needed to find the verticalities connecting the contigs
+    # bfsItem is an item used in the frontier in crawlScore
 def assignVoices(bfsItem, dir):
+    toAssign = [] # notes of destination contig
+    toConnect = [] # notes of start contig
+    assignedPairs = [[],[]] # keep track of bin,group pairs already assigned
+
     if dir == "l":
         startV = bfsItem[0][0][0]
         destV = startV.previousVerticality
@@ -24,33 +29,29 @@ def assignVoices(bfsItem, dir):
         startV = bfsItem[0][0][-1]
         destV = startV.nextVerticality
         maxV = bfsItem[3][0][-1]
-    assignedPairs = [[],[]] # keep track of bin,group pairs already assigned
-    toAssign = [] # notes of destination contig
-    toConnect = [] # notes of start contig
     # print("start", startV.offset, "->", destV.offset)
 
     # populate toAssign with target notes
         # visited notes (groups already assigned) should be excluded and registered in assignedPairs
-    for t in destV.startAndOverlapTimespans:
-        element = t.element
-        if not len(element.groups) and not element.id in [t.element.id for t in startV.startAndOverlapTimespans]:
-            # print(f"appending1 {element.pitch} to toAssign with groups {element.groups}")
-            toAssign.append([element, []])  
-        elif len(element.groups):
-            assignedPairs[0].append(element)
-            assignedPairs[1].append(element.groups[0])
+    for n in [t.element for t in destV.startAndOverlapTimespans]:
+        if not len(n.groups) and not n.id in [t.element.id for t in startV.startAndOverlapTimespans]:
+            # print(f"appending1 {e.pitch} to toAssign with groups {e.groups}")
+            toAssign.append([n, []])  
+        elif len(n.groups):
+            assignedPairs[0].append(n)
+            assignedPairs[1].append(n.groups[0])
     if not len(toAssign):# whole contig visited already
         return
     # populate toConnect with reference notes
         # visited notes (groups already assigned) are excluded
-    for t in startV.startAndOverlapTimespans:
-        if len(t.element.groups) and t.element.groups[0] not in assignedPairs[1]:
-            # print(f"appending1 {t.element} to toConnect with groups {t.element.groups}")
-            toConnect.append(t.element)
+    for n in [t.element for t in startV.startAndOverlapTimespans]:
+        if len(n.groups) and n.groups[0] not in assignedPairs[1]:
+            # print(f"appending1 {n} to toConnect with groups {n.groups}")
+            toConnect.append(n)
 
 
     # naive assign first
-        # all notes won't be assigned if reference vaarticality has less notes (not enough groups to assign)
+        # all notes won't be assigned if reference verticality has less notes (not enough groups to assign)
     for a in toAssign:
         for c in toConnect:
             a[1].append((c.groups, distance(c, a[0])))
@@ -181,14 +182,15 @@ def crawlScore(frontier, contigs, currid):
 def segmentContigs(part):
     f = (note.Note,) # music21 class filter
     timespans = part.asTimespans(classList=f)
-    maxOverlap = timespans.maximumOverlap()
     verticalities = list(timespans.iterateVerticalities())
+    maxOverlap = timespans.maximumOverlap()
     maxContigs = []
     contigs = []
+    boundaries = set()
+    partdict = {}
 
     # make contigs instead of using verticalities
     ## step 1. put boundaries at places where the number of overlaps changes
-    boundaries = set()
     i = 0
     while i < len(verticalities):
         refV = verticalities[i]
@@ -198,10 +200,8 @@ def segmentContigs(part):
     ## step 2. look at notes overlapping boundaries, put another boundary at that note's start and end (where there aren't already boundaries)
     for o in boundaries.intersection(set(timespans.overlapTimePoints(includeStopPoints=True))):
         for e in timespans.elementsOverlappingOffset(o):
-            if e.offset not in boundaries: 
-                boundaries.add(e.offset)
-            if e.endTime not in boundaries: 
-                boundaries.add(e.endTime)
+            boundaries.add(e.offset)
+            boundaries.add(e.endTime)
     bList = sorted(boundaries)
     ## populate contigs using boundaries as reference
     vi = 0
@@ -220,16 +220,14 @@ def segmentContigs(part):
         bi += 1
 
     # generate dictionary of voices with streams and colors
-    partdict = {}
     for i in range(maxOverlap):
-        if i not in partdict:
-            partdict[str(i)] = {"stream": stream.Part(), "color": ""}
-            newcolor = ''
-            while (True):
-                newcolor = f"#{''.join(random.choices(string.hexdigits, k=6))}"
-                if newcolor not in [k["color"] for k in partdict.values()]:
-                    break
-            partdict[str(i)]["color"] = newcolor
+        partdict[str(i)] = {"stream": stream.Part(), "color": ""}
+        newcolor = ''
+        while (True):
+            newcolor = f"#{''.join(random.choices(string.hexdigits, k=6))}"
+            if newcolor not in [k["color"] for k in partdict.values()]:
+                break
+        partdict[str(i)]["color"] = newcolor
 
     return (maxContigs, contigs, partdict)
 
