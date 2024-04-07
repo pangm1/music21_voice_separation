@@ -153,7 +153,7 @@ def crawlScore(frontier, contigs, partdict):
     # maximal contigs (contigs having maximal overlap)
     # dictionary of voices (which will be separated into parts)
 # TODO?: recognize rests
-# TODO?: figure out how to recognize ties
+# TODO?: figure out how to recognize ties, slurs, beams, tuplets, etc
 def segmentContigs(part):
     f = (note.Note,) # music21 class filter
     timespans = part.asTimespans(classList=f)
@@ -197,7 +197,7 @@ def segmentContigs(part):
 
     # generate dictionary of voices with streams and colors
     for i in range(maxOverlap):
-        partdict[str(i)] = {"stream": stream.Part(), "color": ""}
+        partdict[str(i)] = {"stream": part.flatten().template(retainVoices=False, fillWithRests=False, removeClasses=['Clef', 'Part', 'GeneralNote', 'Dynamic', 'Expression']), "color": ""}
         newcolor = ''
         while (True):
             newcolor = f"#{''.join(random.choices(string.hexdigits, k=6))}"
@@ -220,7 +220,9 @@ def segmentContigs(part):
     return (maxContigs, contigs, partdict)
 
 # main algorithm
-# TODO: generate new parts for each group
+# generate a new part for each group
+# FIXME: some timing (like tuples, etc) are broken
+# TODO: had to take out stuff like dynamics and expressions because it would sound weird (just put them back in where they are supposed to be?)
 def separateVoices(part):
 
     (maxcontigs, contigs, partdict) = segmentContigs(part)
@@ -231,14 +233,17 @@ def separateVoices(part):
         frontier.append((m, "m"))
     crawlScore(frontier, contigs, partdict)
 
-    groups = set()
-    timetree = part.asTimespans(classList=(note.Note,))
-    for o in timetree.allOffsets():
-        groups.clear()
-        for n in (list(timetree.elementsStartingAt(o)) + list(timetree.elementsOverlappingOffset(o))):
-            groups.add(n.element.groups[0])
+    # color and assign parts
+    flat = part.flatten().notes
+    for n in flat:
+        n.style.color = partdict[n.groups[0]]["color"]
+        n.addLyric(n.groups)
+        partdict[n.groups[0]]["stream"].insert(n.offset, n)
+    parts = [p["stream"] for p in partdict.values()]
+    for p in parts:
+        p.makeNotation(inPlace=True)
 
-    return (part, partdict)
+    return parts
 
 # parse through music21 score to use in algorithm (in-place)
     # grace notes are on the same offset as the note, this messes up the maximal contigs
@@ -292,17 +297,24 @@ else:
     # parse musicxml
     song = converter.parse(argv[1])
     preprocessScore(song)
+    print(f"starting at {len(song.parts)} parts")
+    final = song.flatten().template(retainVoices=False, fillWithRests=False, removeClasses=['Clef', 'Part', 'GeneralNote', 'Dynamic', 'Expression'])
 
     # run algorithm
-    # TODO: run for each "part" (after updating preprocessScore)
-    (reduced, partdict) = separateVoices(song)
-    # color parts
-    for n in reduced.recurse(classFilter=note.Note):
-        if len(n.groups) and n.groups[0] in partdict:
-            n.style.color = partdict[n.groups[0]]["color"]
-            n.addLyric(n.groups)
+    # run for each "part"
+    if song.hasPartLikeStreams():
+        for p in song.parts:
+            reduced = separateVoices(p)
+            for r in reduced:
+                final.insert(p.offset, r)
+    else:
+        reduced = separateVoices(song)
+        for r in reduced:
+            final.insert(0.0, r)
+    final.makeNotation(inPlace=True, bestClef=True)
 
-    # TODO: combine resulting parts into one score (later)
-
-    # could also just show original score (object references intact)
-    reduced.write("musicxml", argv[2] + '_reduced.musicxml')
+    print(f"{len(final.parts)} parts produced")
+    song.write("musicxml", argv[2] + '_labeled.musicxml')
+    for n in final.flatten().notes:
+        n.lyrics = []
+    final.write("musicxml", argv[2] + '_separated.musicxml')

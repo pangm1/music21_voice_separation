@@ -168,4 +168,5 @@ before_music21.musicxml
 before_processed.musicxml
 before_processed_chordified.musicxml
 before_processed_parts.musicxml
+before_reduced.musicxml
 .metals
