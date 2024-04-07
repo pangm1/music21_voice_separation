@@ -95,6 +95,7 @@ def groupFragments(contig, dir):
         startV = contig[0][-1]
         destV = contig[0][0]
 
+    # assign across fragments
     for f in fragments:
         startN = None
         destN = None
@@ -274,7 +275,6 @@ def preprocessScore(song):
         if n.duration.isGrace:
             graceNotes.append(n)
             n.activeSite.remove(n, shiftOffsets=True)
-    
 
 
 # set up the environment
@@ -307,7 +307,7 @@ else:
             reduced = separateVoices(p)
             for r in reduced:
                 final.insert(p.offset, r)
-    else:
+    else: # single-part score
         reduced = separateVoices(song)
         for r in reduced:
             final.insert(0.0, r)
@@ -315,6 +315,6 @@ else:
 
     print(f"{len(final.parts)} parts produced")
     song.write("musicxml", argv[2] + '_labeled.musicxml')
-    for n in final.flatten().notes:
+    for n in final.flatten().notes: # lyrics take up space
         n.lyrics = []
     final.write("musicxml", argv[2] + '_separated.musicxml')
