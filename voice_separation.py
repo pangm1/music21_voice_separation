@@ -222,6 +222,7 @@ def segmentContigs(part):
 # main algorithm
 # TODO: generate new parts for each group
 def separateVoices(part):
+
     (maxcontigs, contigs, partdict) = segmentContigs(part)
     # bfs (queue) initialized with maxcontigs 
     frontier = []
@@ -242,8 +243,8 @@ def separateVoices(part):
 # parse through music21 score to use in algorithm (in-place)
     # grace notes are on the same offset as the note, this messes up the maximal contigs
 # FIXME: Notation messed up for output4 (this has to do with how music21 imports the musicxml)
-# TODO: recurse parts and clefs
-# TODO: as well as segments the song structure (where melodies and voicing change)
+# TODO: recurse parts and clefs (turn into parts and insert back into score)
+# TODO?: as well as segments the song structure (where melodies and voicing change)
 def preprocessScore(song):
     # dechordify
     for m in song.recurse(classFilter=(stream.Measure, stream.Voice)):
@@ -274,7 +275,7 @@ def preprocessScore(song):
 # set up the environment
 if platform == 'win32':
     # Windows
-    path = 'C:/Program Files/MuseScore 4/bin/Musescore4.exe' # (TODO: not hardcode the musicxml reader path?)
+    path = 'C:/Program Files/MuseScore 4/bin/Musescore4.exe' # (TODO?: not hardcode the musicxml reader path?)
 elif platform == 'darwin':
     # Mac OS - TODO
     pass
