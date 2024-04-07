@@ -6,22 +6,19 @@ import string
 
 # heuristic function for assigning voices
     # uses generic intervals so far
-# TODO: distance from the top and bottom of the ranges of two contigs (ex. jumping chords)
-# TODO: average pitch in fragment
+# TODO?: distance from the top and bottom of the ranges of two contigs (ex. jumping chords)
+# TODO?: average pitch in fragment
 def distance(f, t):
     res = interval.Interval(f, t).generic.undirected
     # print(t.pitch, f.pitch, res)
     return res
 
-# assign voices across verticalities
-    # direction is needed to find the verticalities connecting the contigs
-    # bfsItem is an item used in the frontier in crawlScore
+# assign voices based on a reference groups of notes
+    # start has a reference note for all of the voices
 def assignVoices(start, dest):
-    toAssign = [] # notes of destination contig
-    toConnect = [] # notes of start contig
+    toAssign = [] # dest notes
+    toConnect = [] # start notes
     assignedPairs = [[],[]] # keep track of bin,group pairs already assigned
-    # print([(n.pitch.nameWithOctave, n.groups) for n in start])
-    # print("assigning to:", [(n.pitch.nameWithOctave, n.groups) for n in dest])
 
     # populate toAssign with target notes
         # visited notes (groups already assigned) should be excluded and registered in assignedPairs
@@ -31,7 +28,7 @@ def assignVoices(start, dest):
         elif len(n.groups):
             assignedPairs[0].append(n)
             assignedPairs[1].append(n.groups[0])
-    if not len(toAssign):# whole contig visited already
+    if not len(toAssign):# all notes assigned already
         return
     # populate toConnect with reference notes
         # visited notes (groups already assigned) are excluded
@@ -39,8 +36,7 @@ def assignVoices(start, dest):
         if n.groups[0] not in assignedPairs[1]:
             toConnect.append(n)
 
-    # naive assign first
-        # all notes won't be assigned if reference verticality has less notes (not enough groups to assign)
+    # possible combinations of choices
     for a in toAssign:
         for c in toConnect:
             a[1].append((c.groups, distance(c, a[0])))
@@ -53,9 +49,6 @@ def assignVoices(start, dest):
             o[0].groups = o[1][0]
             assignedPairs[0].append(o[0])
             assignedPairs[1].append(o[1][0])
-    # print([(n.pitch.nameWithOctave, n.groups) for n in start])
-    # print([(n.pitch.nameWithOctave, n.groups) for n in dest])
-    # print("finish")
 
 # assign voices across fragments (in the notes' groups)
     #*** sorting order is important (notes with the same pitch and duration are considered equal even if they are different instances)
@@ -77,7 +70,6 @@ def groupFragments(contig, dir):
         e = (n for n in curr if n.id not in [p.id if p else None for p in prev])
         for i,n in enumerate(temp):
             if not temp[i]: temp[i] = next(e)
-        # print("appending", temp)
         grouphash.append(temp)
         prev = temp
     # transpose grouphash -> fragments
@@ -102,50 +94,35 @@ def groupFragments(contig, dir):
     elif dir == "r":
         startV = contig[0][-1]
         destV = contig[0][0]
-    # print(f"grouping {len(contig[0])} fragments {startV.offset}<->{destV.offset} of length {len(startV.startAndOverlapTimespans)},{len(destV.startAndOverlapTimespans)}")
-    # print("contig:", [(t.element.id, t.element.pitch.nameWithOctave, t.element.groups) for v in contig[0] for t in v.startAndOverlapTimespans])
-    # print("fragments:", [(n.id, n.pitch.nameWithOctave, n.groups) for f in fragments for n in f])
-    # make fragments non-empty and homogenous where there are groups
+
     for f in fragments:
         startN = None
         destN = None
         for n in f:
-            # print(n.pitch.nameWithOctave)
             if n.id in [t.element.id for t in startV.startAndOverlapTimespans]: 
                 startN = n
-                # print("start", startN.id, startN.pitch.nameWithOctave)
             if n.id in [t.element.id for t in destV.startAndOverlapTimespans]: 
                 destN = n
-                # print("dest", destN.id, destN.pitch.nameWithOctave)
-        if not startN or not destN: 
-            print(startN, destN)
-            # continue # this should not happen
         if startN and len(startN.groups): voice = startN.groups 
         if destN and len(destN.groups): voice = destN.groups 
-        # print(f"assigning group {voice}: ({startN.id}, {startN.pitch})<->({destN.pitch}, {destN.id})")
         for n in f:
             n.groups = voice 
-            # print(n.id, n.pitch, n.groups)
-    # temp1 = [(n.pitch.nameWithOctave, n.groups) for f in fragments for n in f if len(n.groups)]
-    # temp2 = [(n.pitch.nameWithOctave) for f in fragments for n in f if not len(n.groups)]
-    # if len(temp): print("assigned notes:", temp1)
-    # if len(temp): print("unassigned notes:", temp2)
 
 # score bfs
-    # assigns notes using helper function
     # frontier: [(contig, direction, ref)]
+    # assign notes bordering the contig given a reference group of voices
+    # groupFragments
+    # update ref voices to the most recent notes
 def crawlScore(frontier, contigs, partdict):
     while len(frontier):
         item = frontier.pop(0)
         leftIndex = contigs.index(item[0]) - 1
         rightIndex = contigs.index(item[0]) + 1
         if item[1] == "m": # both directions (maxcontigs)
-            # print("m")
             if leftIndex >= 0:
                 start = [t.element for t in item[0][0][0].startAndOverlapTimespans]
                 assignVoices(start, [t.element for t in contigs[leftIndex][0][-1].startAndOverlapTimespans])
                 groupFragments(contigs[leftIndex], "l")
-                # update ref
                 curr = [t.element for t in contigs[leftIndex][0][0].startAndOverlapTimespans]
                 ref = [next(n for n in curr if n.groups[0] == s.groups[0]) if s.groups[0] in [n.groups[0] for n in curr] else s for s in start]
                 frontier.append((contigs[leftIndex], "l", ref))
@@ -153,29 +130,20 @@ def crawlScore(frontier, contigs, partdict):
                 start = [t.element for t in item[0][0][-1].startAndOverlapTimespans]
                 assignVoices(start, [t.element for t in contigs[rightIndex][0][0].startAndOverlapTimespans])
                 groupFragments(contigs[rightIndex], "r")
-                # update ref
                 curr = [t.element for t in contigs[rightIndex][0][-1].startAndOverlapTimespans]
-                # print("start", [(s.id, s.pitch.nameWithOctave, s.groups) for s in start])
-                # print("curr", [(c.id, c.pitch.nameWithOctave, c.groups) for c in curr])
                 ref = [next(n for n in curr if n.groups[0] == s.groups[0]) if s.groups[0] in [n.groups[0] for n in curr] else s for s in start]
                 frontier.append((contigs[rightIndex], "r", ref))
         elif item[1] == "l": # go left
             if leftIndex >= 0:
-                # print("l")
-                # replace with ref
                 assignVoices(ref, [t.element for t in contigs[leftIndex][0][-1].startAndOverlapTimespans])
                 groupFragments(contigs[leftIndex], "l")
-                # update ref
                 curr = [t.element for t in contigs[leftIndex][0][0].startAndOverlapTimespans]
                 ref = [next(n for n in curr if n.groups[0] == s.groups[0]) if s.groups[0] in [n.groups[0] for n in curr] else s for s in ref]
                 frontier.append((contigs[leftIndex], "l", ref))
         elif item[1] == "r": # go right
             if rightIndex < len(contigs):
-                # print("r")
-                # replace with ref
                 assignVoices(ref, [t.element for t in contigs[rightIndex][0][0].startAndOverlapTimespans])
                 groupFragments(contigs[rightIndex], "r")
-                # update ref
                 curr = [t.element for t in contigs[rightIndex][0][-1].startAndOverlapTimespans]
                 ref = [next(n for n in curr if n.groups[0] == s.groups[0]) if s.groups[0] in [n.groups[0] for n in curr] else s for s in ref]
                 frontier.append((contigs[rightIndex], "r", ref))   
@@ -184,8 +152,8 @@ def crawlScore(frontier, contigs, partdict):
     # contigs  [[verticalities], (startBoundary, endBoundary)]
     # maximal contigs (contigs having maximal overlap)
     # dictionary of voices (which will be separated into parts)
-# TODO: recognize rests
-# TODO: figure out how to recognize ties
+# TODO?: recognize rests
+# TODO?: figure out how to recognize ties
 def segmentContigs(part):
     f = (note.Note,) # music21 class filter
     timespans = part.asTimespans(classList=f)
@@ -237,20 +205,17 @@ def segmentContigs(part):
                 break
         partdict[str(i)]["color"] = newcolor
 
+    # label contigs
     i = 0
     for c in contigs:
         for v in c[0]:
             for n in v.startTimespans:
                 n.element.addLyric(f"{i}")
-            # for n in v.overlapTimespans:
-            #     n.element.addLyric(f"{i}o")
         i += 1
     for c in maxContigs:
         for v in c[0]:
             for n in v.startTimespans:
                 n.element.addLyric("m")
-            # for n in v.overlapTimespans:
-            #     n.element.addLyric(f"mo")
 
     return (maxContigs, contigs, partdict)
 
@@ -262,19 +227,15 @@ def separateVoices(part):
     frontier = []
     for m in maxcontigs:
         groupFragments(m, "m")
-        frontier.append((m, "m", m))
+        frontier.append((m, "m"))
     crawlScore(frontier, contigs, partdict)
 
-    # FIXME: handle duplicate groups in verticalities
     groups = set()
     timetree = part.asTimespans(classList=(note.Note,))
     for o in timetree.allOffsets():
         groups.clear()
         for n in (list(timetree.elementsStartingAt(o)) + list(timetree.elementsOverlappingOffset(o))):
-            if len(n.element.groups): # FIXME: delete when all groups have been assigned
-                if n.element.groups[0] in groups:
-                    print(f"duplicate {n.element.groups} for {n.element} at offset {o}")
-                groups.add(n.element.groups[0])
+            groups.add(n.element.groups[0])
 
     return (part, partdict)
 
@@ -339,8 +300,6 @@ else:
         if len(n.groups) and n.groups[0] in partdict:
             n.style.color = partdict[n.groups[0]]["color"]
             n.addLyric(n.groups)
-        else: # unassigned notes
-            print(n)
 
     # TODO: combine resulting parts into one score (later)
 

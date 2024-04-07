@@ -1,6 +1,6 @@
 # segmentContigs
     # labels contigs
-label contigs
+# label contigs
 i = 0
 for c in contigs:
     for v in c[0]:
@@ -17,80 +17,6 @@ for c in maxContigs:
         #     n.element.addLyric(f"mo")
 part.show()
 
-# assignVoices
-    # check for duplicate groups in start and end verticalities
-used = set()
-for n in startV.startAndOverlapTimespans:
-    e = n.element
-    if len(e.groups) and eval(e.groups[0]) in used:
-        print(f"ERROR3; duplicate groups {e.groups} at {startV.offset}")
-    elif len(e.groups): used.add(eval(e.groups[0]))
-used = set()
-for n in destV.startAndOverlapTimespans:
-    e = n.element
-    if len(e.groups) and eval(e.groups[0]) in used:
-        print(f"ERROR3; duplicate groups {e.groups} at {destV.offset}")
-    elif len(e.groups): used.add(eval(e.groups[0]))
-    # print data structures
-print("toConnect", [(c.id, c.pitch.nameWithOctave, c.groups) for c in toConnect])
-print("toAssign", [(a[0].id, a[0].pitch.nameWithOctave, a[1]) for a in toAssign])
-print("options:", [(o[0].id, o[0].pitch.nameWithOctave, o[1]) for o in options])
-print("assigned pairs:", [(n.id, n.pitch.nameWithOctave, g) for ni,n in enumerate(assignedPairs[0]) for gi,g in enumerate(assignedPairs[1]) if ni == gi])
-print("assigned notes:", [[a[0].pitch.nameWithOctave] + a[1:] for a in toAssign if len(a[0].groups)])
-if len([a for a in toAssign if not len(a[0].groups)]):
-print("unassigned notes:", [[a[0].pitch.nameWithOctave] + a[1:] for a in toAssign if not len(a[0].groups)])
-
-# groupFragments
-    # checks for duplicate groups across fragments
-quit = False
-used = set()
-for n in startV.startAndOverlapTimespans:
-    e = n.element
-    if len(e.groups) and eval(e.groups[0]) in used:
-        print(f"ERROR1; duplicate groups {e.groups} at {startV.offset}")
-        quit = True
-    elif len(e.groups): used.add(eval(e.groups[0]))
-used = set()
-for n in destV.startAndOverlapTimespans:
-    e = n.element
-    if len(e.groups) and eval(e.groups[0]) in used:
-        print(f"ERROR1; duplicate groups {e.groups} at {destV.offset}")
-        quit = True
-    elif len(e.groups): used.add(eval(e.groups[0]))
-for f in fragments:
-    # print("fragment", [(n.id, n.pitch.nameWithOctave, n.groups) for n in f], len(f))
-    startN = None
-    destN = None
-    for n in f:
-        if n.id in [t.element.id for t in startV.startAndOverlapTimespans]: startN = n
-        elif n.id in [t.element.id for t in destV.startAndOverlapTimespans]: destN = n
-    if not startN or not destN: continue
-    if (len(startN.groups) and len(destN.groups)) and eval(startN.groups[0]) != eval(destN.groups[0]):
-        print(f"ERROR2; {startN.pitch}:{startN.groups} at {startV.offset} is not equal to {destN.pitch}:{destN.groups} at {destV.offset}")
-        quit = True
-if quit: 
-    print("quit")
-    return
-    # print data structures
-for r in grouphash:
-    print("vertical", [(c.id, c.pitch.nameWithOctave, c.groups) for c in r])
-
-# crawlScore
-    # print data structures
-for c in frontier:
-    print(f"id:{c[1]}", c[0])
-
-# preprocessScore
-    # idk what these do but it looked useful
-song.quantize((32,), recurse=True, inPlace=True)
-n.quarterLength = n.quarterLength # and inexpressible durations
-song.makeNotation(inPlace=True)
-    # print grace notes
-print(graceNotes)
-    # show preprocessed score
-song.write("musicxml", argv[2] + '_processed.musicxml')
-song.show("txt")
-exit()
 
 # MAIN
     # pitch ranges
