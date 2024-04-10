@@ -225,7 +225,7 @@ def segmentContigs(part):
 # FIXME: some timing (like tuples, etc) are broken
 # FIXME: corrupted musescore files (empty measures?)
 # FIXME: also the first two parts show as a piano part in musescore
-# FIXME: also didn't recognize pickup
+# FIXME: also didn't recognize pickup and repeats
 # TODO: had to take out stuff like dynamics and expressions because it would sound weird (just put them back in where they are supposed to be?)
 def separateVoices(part):
 
@@ -245,7 +245,9 @@ def separateVoices(part):
         partdict[n.groups[0]]["stream"].insert(n.offset, n)
     parts = [p["stream"] for p in partdict.values()]
     for p in parts:
-        p.makeNotation(inPlace=True)
+        p.makeRests(refStreamOrTimeRange=part, inPlace=True, fillGaps=True)
+        p.makeMeasures(refStreamOrTimeRange=part, inPlace=True)
+        p.makeNotation(refStreamOrTimeRange=part, inPlace=True, bestClef=True)
 
     return parts
 
@@ -313,8 +315,10 @@ else:
     else: # single-part score
         reduced = separateVoices(song)
         for r in reduced:
+            # r.makeMeasures(refStreamOrTimeRange=song, inPlace=True)
+            # r.makeRests(refStreamOrTimeRange=song, inPlace=True, fillGaps=True)
             final.insert(0.0, r)
-    final.makeNotation(inPlace=True, bestClef=True)
+    final.makeNotation(refStreamOrTimeRange=song, inPlace=True, bestClef=True)
 
     print(f"{len(final.parts)} parts produced")
     song.write("musicxml", argv[2] + '_labeled.musicxml')
