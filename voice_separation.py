@@ -223,6 +223,9 @@ def segmentContigs(part):
 # main algorithm
 # generate a new part for each group
 # FIXME: some timing (like tuples, etc) are broken
+# FIXME: corrupted musescore files (empty measures?)
+# FIXME: also the first two parts show as a piano part in musescore
+# FIXME: also didn't recognize pickup
 # TODO: had to take out stuff like dynamics and expressions because it would sound weird (just put them back in where they are supposed to be?)
 def separateVoices(part):
 

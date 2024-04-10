@@ -23,4 +23,6 @@ reduced.show()
 
     python3 ./voice_separation.py ./examples/nutcracker/before.mxl ./examples/nutcracker/before > output7
 
+    python3 ./voice_separation.py ./examples/bach/before.mxl ./examples/bach/before > output8
+
 '''
