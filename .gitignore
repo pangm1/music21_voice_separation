@@ -173,3 +173,4 @@ before_template*
 before_final*
 
 .metals
+.mscbackup/
