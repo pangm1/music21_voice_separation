@@ -3,20 +3,21 @@ from music21 import *
 import random
 import string
 
+
 # heuristic function for assigning voices
     # uses generic intervals so far
-# FIXME: Focus on minimizing ranges instead of the distances between notes (maybe 1st distance vs. 2nd distance)
-def distance(s, d):
-    pass
+# TODO?: distance from the top and bottom of the ranges of two contigs (ex. jumping chords)
+# TODO?: average pitch in fragment
+def distance(f, t):
+    res = interval.Interval(f, t).generic.undirected
+    # print(t.pitch, f.pitch, res)
+    return res
 
 # assign voices based on a reference groups of notes
     # start has a reference note for all of the voices
-# FIXME: use features in start and dest instead of single notes
-# FIXME: use permutatations of the assignments and figure out distance (or use dynamic programming to find least-cost assignments)
-# start represents fragments and dest represents voices to assign
 def assignVoices(start, dest):
-    toAssign = [] # dest
-    toConnect = [] # start
+    toAssign = [] # dest notes
+    toConnect = [] # start notes
     assignedPairs = [[],[]] # keep track of bin,group pairs already assigned
 
     # populate toAssign with target notes
@@ -52,7 +53,6 @@ def assignVoices(start, dest):
 # assign voices across fragments (in the notes' groups)
     #*** sorting order is important (notes with the same pitch and duration are considered equal even if they are different instances)
 # TODO: experiment with sorting order (something to do with melody being high notes, or soprano and bass notes varying more)
-# FIXME: use contig[2] to get fragments
 def groupFragments(contig, dir):
     grouphash = [] # verticalities with fragments as columns
     fragments = [] # transposed
@@ -109,27 +109,50 @@ def groupFragments(contig, dir):
         for n in f:
             n.groups = voice 
 
-# FIXME: write get fragments (using groupfragments)
-# return array of fragments
-def getFragments(contig):
-    pass
-
-# FIXME: write updating the part features
-def updatePartFeatures(contig, partdict):
-    pass
-
-# FIXME: write scanContigs
-# for each iteration:
-#   get features of incoming contig (put in array of tuples)
-#   run assignvoices
-#   tweak features
-def scanContigs(contigs, partdict):
-    pass
+# score bfs
+    # frontier: [(contig, direction, ref)]
+    # assign notes bordering the contig given a reference group of voices
+    # groupFragments
+    # update ref voices to the most recent notes
+def crawlScore(frontier, contigs, partdict):
+    while len(frontier):
+        item = frontier.pop(0)
+        leftIndex = contigs.index(item[0]) - 1
+        rightIndex = contigs.index(item[0]) + 1
+        if item[1] == "m": # both directions (maxcontigs)
+            if leftIndex >= 0:
+                start = [t.element for t in item[0][0][0].startAndOverlapTimespans]
+                assignVoices(start, [t.element for t in contigs[leftIndex][0][-1].startAndOverlapTimespans])
+                groupFragments(contigs[leftIndex], "l")
+                curr = [t.element for t in contigs[leftIndex][0][0].startAndOverlapTimespans]
+                ref = [next(n for n in curr if n.groups[0] == s.groups[0]) if s.groups[0] in [n.groups[0] for n in curr] else s for s in start]
+                frontier.append((contigs[leftIndex], "l", ref))
+            if rightIndex < len(contigs):
+                start = [t.element for t in item[0][0][-1].startAndOverlapTimespans]
+                assignVoices(start, [t.element for t in contigs[rightIndex][0][0].startAndOverlapTimespans])
+                groupFragments(contigs[rightIndex], "r")
+                curr = [t.element for t in contigs[rightIndex][0][-1].startAndOverlapTimespans]
+                ref = [next(n for n in curr if n.groups[0] == s.groups[0]) if s.groups[0] in [n.groups[0] for n in curr] else s for s in start]
+                frontier.append((contigs[rightIndex], "r", ref))
+        elif item[1] == "l": # go left
+            if leftIndex >= 0:
+                assignVoices(ref, [t.element for t in contigs[leftIndex][0][-1].startAndOverlapTimespans])
+                groupFragments(contigs[leftIndex], "l")
+                curr = [t.element for t in contigs[leftIndex][0][0].startAndOverlapTimespans]
+                ref = [next(n for n in curr if n.groups[0] == s.groups[0]) if s.groups[0] in [n.groups[0] for n in curr] else s for s in ref]
+                frontier.append((contigs[leftIndex], "l", ref))
+        elif item[1] == "r": # go right
+            if rightIndex < len(contigs):
+                assignVoices(ref, [t.element for t in contigs[rightIndex][0][0].startAndOverlapTimespans])
+                groupFragments(contigs[rightIndex], "r")
+                curr = [t.element for t in contigs[rightIndex][0][-1].startAndOverlapTimespans]
+                ref = [next(n for n in curr if n.groups[0] == s.groups[0]) if s.groups[0] in [n.groups[0] for n in curr] else s for s in ref]
+                frontier.append((contigs[rightIndex], "r", ref))   
     
 # given a part/score return 
-    # contigs  [[verticalities], (startBoundary, endBoundary), fragments]
+    # contigs  [[verticalities], (startBoundary, endBoundary)]
     # maximal contigs (contigs having maximal overlap)
-    # dictionary of voices (which will be separated into parts): {stream, color, features}
+    # dictionary of voices (which will be separated into parts)
 # TODO?: recognize rests
 # TODO?: figure out how to recognize ties, slurs, beams, tuplets, etc (this might fix the broken tuplet problem)
 def segmentContigs(part):
@@ -161,7 +184,7 @@ def segmentContigs(part):
     vi = 0
     bi = 1
     while vi < len(verticalities) and bi < len(bList):
-        contigs.append([[], (bList[bi - 1], bList[bi]), None])
+        contigs.append([[], (bList[bi - 1], bList[bi])])
         while vi < len(verticalities) and bi < len(bList) and verticalities[vi].offset < bList[bi]:
             contigs[-1][0].append(verticalities[vi])
             vi += 1
@@ -173,9 +196,9 @@ def segmentContigs(part):
             maxContigs.append(contigs[-1])
         bi += 1
 
-    # generate dictionary of voices with streams, colors, and empty features array
+    # generate dictionary of voices with streams and colors
     for i in range(maxOverlap):
-        partdict[str(i)] = {"stream": part.template(fillWithRests=False), "color": "", "features": {}}
+        partdict[str(i)] = {"stream": part.template(fillWithRests=False), "color": ""}
         newcolor = ''
         while (True):
             newcolor = f"#{''.join(random.choices(string.hexdigits, k=6))}"
@@ -190,13 +213,10 @@ def segmentContigs(part):
             for n in v.startTimespans:
                 n.element.addLyric(f"{i}")
         i += 1
-        c[2] = getFragments(c)
     for c in maxContigs:
         for v in c[0]:
             for n in v.startTimespans:
                 n.element.addLyric("m")
-        groupFragments(c, "m")
-        updatePartFeatures(c, partdict)
 
     return (maxContigs, contigs, partdict)
 
@@ -204,9 +224,13 @@ def segmentContigs(part):
 # generate a new part for each group
 # FIXME: some timing (like broken tuples, etc) are broken
 def separateVoices(part):
-    (_, contigs, partdict) = segmentContigs(part)
-    # scan contigs
-    scanContigs(contigs, partdict)
+    (maxcontigs, contigs, partdict) = segmentContigs(part)
+    # bfs (queue) initialized with maxcontigs 
+    frontier = []
+    for m in maxcontigs:
+        groupFragments(m, "m")
+        frontier.append((m, "m"))
+    crawlScore(frontier, contigs, partdict)
 
     parts = [p["stream"] for p in partdict.values()]
     # assign, color, and insert notes into their respective voices
