@@ -164,9 +164,12 @@ output*
 *melisma*
 algorithm.py
 *midi
-before_music21.musicxml
+before_music21*
 before_processed.musicxml
 before_processed_chordified.musicxml
 before_processed_parts.musicxml
 before_reduced.musicxml
+before_template*
+before_final*
+
 .metals

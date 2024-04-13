@@ -1,0 +1,1903 @@
+{0.0} <music21.text.TextBox 'Nocturne  ...'>
+{0.0} <music21.text.TextBox 'Chopin'>
+{0.0} <music21.metadata.Metadata object at 0x294d5626c50>
+{0.0} <music21.stream.PartStaff P1-Staff1>
+    {0.0} <music21.instrument.Piano 'P1: Piano: Piano'>
+    {0.0} <music21.stream.Measure 0 offset=0.0>
+        {0.0} <music21.expressions.TextExpression 'Andante'>
+        {0.0} <music21.expressions.TextExpression 'espress. d...'>
+        {0.0} <music21.layout.SystemLayout>
+        {0.0} <music21.clef.TrebleClef>
+        {0.0} <music21.tempo.MetronomeMark larghetto Quarter=60>
+        {0.0} <music21.key.KeySignature of 3 flats>
+        {0.0} <music21.meter.TimeSignature 12/8>
+        {0.0} <music21.dynamics.Dynamic p>
+        {0.0} <music21.note.Note B->
+    {0.0} <music21.spanner.Slur <music21.note.Note G><music21.note.Note E->>
+    {0.0} <music21.spanner.Slur <music21.note.Note B-><music21.note.Note G>>
+    {0.0} <music21.spanner.Slur <music21.chord.Chord G3 E-4><music21.chord.Chord B-3 E-4 G4>>
+    {0.0} <music21.spanner.Slur <music21.chord.Chord A-3 D4><music21.chord.Chord C-4 D4 A-4>>
+    {0.0} <music21.spanner.Slur <music21.chord.Chord G3 E-4><music21.chord.Chord B-3 E-4 G4>>
+    {0.0} <music21.spanner.Slur <music21.chord.Chord G3 E-4><music21.chord.Chord B-3 E-4 G4>>
+    {0.0} <music21.dynamics.Crescendo <music21.note.Note G><music21.note.Note C>>
+    {0.0} <music21.spanner.Slur <music21.note.Note G><music21.note.Note D>>
+    {0.0} <music21.spanner.Slur <music21.note.Note B-><music21.note.Note D>>
+    {0.0} <music21.spanner.Slur <music21.note.Note C><music21.note.Note A->>
+    {0.0} <music21.spanner.Slur <music21.note.Note C><music21.note.Note E->>
+    {0.0} <music21.spanner.Slur <music21.note.Note B-><music21.note.Note G>>
+    {0.0} <music21.dynamics.Crescendo <music21.note.Note G><music21.note.Note G>>
+    {0.0} <music21.spanner.Slur <music21.note.Note D-><music21.note.Note C>>
+    {0.0} <music21.spanner.Slur <music21.note.Note F><music21.note.Note E>>
+    {0.0} <music21.spanner.Slur <music21.note.Note A-><music21.note.Note G>>
+    {0.0} <music21.spanner.Slur <music21.note.Note D-><music21.note.Note B->>
+    {0.0} <music21.dynamics.Diminuendo <music21.note.Note B->>
+    {0.0} <music21.expressions.TrillExtension <music21.note.Note F>>
+    {0.0} <music21.spanner.Slur <music21.note.Note G><music21.note.Note D>>
+    {0.0} <music21.spanner.Slur <music21.note.Note E-><music21.note.Note C>>
+    {0.0} <music21.spanner.Slur <music21.note.Note B-><music21.note.Note D>>
+    {0.0} <music21.spanner.Slur <music21.note.Note C><music21.note.Note D>>
+    {0.0} <music21.spanner.Slur <music21.note.Note A-><music21.note.Note C>>
+    {0.0} <music21.spanner.Slur <music21.note.Note G><music21.note.Note F>>
+    {0.0} <music21.spanner.Slur <music21.note.Note F><music21.note.Note C>>
+    {0.0} <music21.spanner.Slur <music21.chord.Chord F3 D4><music21.chord.Chord B-3 D4 F4>>
+    {0.0} <music21.spanner.Slur <music21.chord.Chord F3 D4><music21.chord.Chord B-3 D4 F4>>
+    {0.0} <music21.spanner.Slur <music21.chord.Chord F3 C4><music21.chord.Chord C4 F4>>
+    {0.0} <music21.spanner.Slur <music21.chord.Chord F3 C4><music21.chord.Chord C4 F4>>
+    {0.0} <music21.spanner.Slur <music21.note.Note E-><music21.note.Note E->>
+    {0.0} <music21.spanner.Slur <music21.note.Note D><music21.note.Note E->>
+    {0.0} <music21.spanner.Slur <music21.chord.Chord G3 E-4><music21.chord.Chord B-3 E-4 G4>>
+    {0.0} <music21.spanner.Slur <music21.chord.Chord G3 E-4><music21.chord.Chord B-3 E-4 G4>>
+    {0.0} <music21.spanner.Slur <music21.chord.Chord A4 D5><music21.chord.Chord F4 B-4>>
+    {0.0} <music21.dynamics.Crescendo <music21.chord.Chord F#4 B4><music21.chord.Chord A-4 D5>>
+    {0.0} <music21.spanner.Slur <music21.chord.Chord F#4 B4><music21.chord.Chord A-4 D5>>
+    {0.0} <music21.spanner.Slur <music21.note.Note G><music21.note.Note B->>
+    {0.0} <music21.spanner.Slur <music21.note.Note A><music21.note.Note F>>
+    {0.0} <music21.dynamics.Crescendo <music21.note.Note G><music21.note.Note F>>
+    {0.0} <music21.spanner.Slur <music21.note.Note D-><music21.note.Note C>>
+    {0.0} <music21.spanner.Slur <music21.note.Note F><music21.note.Note E>>
+    {0.0} <music21.spanner.Slur <music21.note.Note A-><music21.note.Note G>>
+    {0.0} <music21.spanner.Slur <music21.note.Note D-><music21.note.Note B->>
+    {0.0} <music21.dynamics.Diminuendo <music21.note.Note A-><music21.note.Note G>>
+    {0.0} <music21.expressions.TrillExtension <music21.note.Note F>>
+    {0.0} <music21.spanner.Slur <music21.note.Note G><music21.note.Note D>>
+    {0.0} <music21.dynamics.Crescendo <music21.note.Note E-><music21.note.Note C>>
+    {0.0} <music21.spanner.Slur <music21.note.Note B-><music21.note.Note D>>
+    {0.0} <music21.spanner.Slur <music21.note.Note D-><music21.note.Note C->>
+    {0.0} <music21.spanner.Slur <music21.note.Note F><music21.note.Note F>>
+    {0.0} <music21.spanner.Slur <music21.note.Note F><music21.note.Note C>>
+    {0.0} <music21.spanner.Slur <music21.note.Note E-><music21.note.Note E->>
+    {0.0} <music21.dynamics.Crescendo <music21.note.Note B->>
+    {0.0} <music21.spanner.Slur <music21.note.Note B-><music21.note.Note A>>
+    {0.0} <music21.dynamics.Diminuendo <music21.chord.Chord A4 F5><music21.chord.Chord B-4 D5>>
+    {0.0} <music21.spanner.Slur <music21.chord.Chord A4 D5><music21.chord.Chord A4 D5>>
+    {0.0} <music21.dynamics.Crescendo <music21.chord.Chord F4 B-4><music21.chord.Chord A-4 D5>>
+    {0.0} <music21.spanner.Slur <music21.chord.Chord F4 B-4><music21.chord.Chord A-4 D5>>
+    {0.0} <music21.spanner.Slur <music21.note.Note G><music21.note.Note B->>
+    {0.0} <music21.spanner.Slur <music21.note.Note A><music21.note.Note F>>
+    {0.0} <music21.dynamics.Diminuendo <music21.note.Note F>>
+    {0.0} <music21.spanner.Slur <music21.note.Note E-><music21.note.Note E->>
+    {0.0} <music21.dynamics.Crescendo <music21.note.Note E-><music21.note.Note F>>
+    {0.0} <music21.spanner.Slur <music21.note.Note F><music21.note.Note G>>
+    {0.0} <music21.spanner.Slur <music21.note.Note D-><music21.note.Note C>>
+    {0.0} <music21.spanner.Slur <music21.note.Note F><music21.note.Note E>>
+    {0.0} <music21.dynamics.Crescendo <music21.note.Note E><music21.note.Note G>>
+    {0.0} <music21.spanner.Slur <music21.note.Note A-><music21.note.Note G>>
+    {0.0} <music21.spanner.Slur <music21.note.Note D-><music21.note.Note B->>
+    {0.0} <music21.expressions.TrillExtension <music21.note.Note F>>
+    {0.0} <music21.spanner.Slur <music21.note.Note G><music21.note.Note D>>
+    {0.0} <music21.spanner.Slur <music21.note.Note B-><music21.note.Note A>>
+    {0.0} <music21.spanner.Slur <music21.note.Note A><music21.note.Note E->>
+    {0.0} <music21.spanner.Slur <music21.note.Note F><music21.note.Note G>>
+    {0.0} <music21.spanner.Slur <music21.note.Note E-><music21.note.Note G>>
+    {0.0} <music21.spanner.Slur <music21.note.Note E-><music21.note.Note E->>
+    {0.0} <music21.spanner.Slur <music21.note.Note A><music21.note.Note A->>
+    {0.0} <music21.spanner.Slur <music21.note.Note F><music21.note.Note B-->>
+    {0.0} <music21.spanner.Slur <music21.note.Note B--><music21.note.Note A->>
+    {0.0} <music21.spanner.Slur <music21.note.Note A-><music21.note.Note G>>
+    {0.0} <music21.spanner.Slur <music21.note.Note G><music21.note.Note F>>
+    {0.0} <music21.spanner.Slur <music21.note.Note F><music21.note.Note E->>
+    {0.0} <music21.dynamics.Crescendo <music21.note.Note F><music21.note.Note F>>
+    {0.0} <music21.spanner.Slur <music21.note.Note F><music21.note.Note E->>
+    {0.0} <music21.spanner.Slur <music21.note.Note A-><music21.note.Note E->>
+    {0.0} <music21.spanner.Slur <music21.note.Note F><music21.note.Note E->>
+    {0.0} <music21.dynamics.Diminuendo <music21.chord.Chord E-6 E-7>>
+    {0.0} <music21.dynamics.Crescendo <music21.note.Note C-><music21.note.Note A>>
+    {0.0} <music21.dynamics.Diminuendo <music21.note.Note C-><music21.note.Note C>>
+    {0.0} <music21.spanner.Slur <music21.note.Note F><music21.note.Note D>>
+    {0.0} <music21.spanner.Slur <music21.chord.Chord G4 E-5><music21.note.Note G>>
+    {0.0} <music21.spanner.Slur <music21.note.Note E-><music21.note.Note B->>
+    {0.0} <music21.spanner.Slur <music21.note.Note E-><music21.chord.Chord E-3 B-3>>
+    {0.0} <music21.spanner.Ottava 8va non-transposing<music21.chord.Chord D6 D7><music21.chord.Chord C6 C7><music21.chord.Chord C-6 C-7><music21.chord.Chord B-5 B-6><music21.chord.Chord B--5 B--6><music21.chord.Chord A-5 A-6><music21.chord.Chord G5 G6><music21.chord.Chord D5 D6><music21.chord.Chord E-5 E-6><music21.chord.Chord E-6 E-7><music21.chord.Chord F5 F6><music21.chord.Chord C6 C7><music21.chord.Chord C-6 C-7><music21.chord.Chord B-5 B-6><music21.note.Note C-><music21.note.Note B-><music21.note.Note C><music21.note.Note A><music21.note.Note C-><music21.note.Note B-><music21.note.Note C><music21.note.Note A><music21.note.Note C-><music21.note.Note B-><music21.note.Note C><music21.note.Note A><music21.note.Note C-><music21.note.Note B-><music21.note.Note C><music21.note.Note A><music21.note.Note C-><music21.note.Note B-><music21.note.Note C><music21.note.Note A><music21.note.Note C-><music21.note.Note B-><music21.note.Note C><music21.note.Note A><music21.note.Note C-><music21.note.Note B-><music21.note.Note C><music21.note.Note A><music21.note.Note C-><music21.note.Note B-><music21.note.Note C><music21.note.Note A><music21.note.Note C-><music21.note.Note B-><music21.note.Note C><music21.note.Note A><music21.note.Note C-><music21.note.Note B-><music21.note.Note C><music21.note.Note A><music21.note.Note C-><music21.note.Note B-><music21.note.Note C><music21.note.Note A><music21.note.Note C-><music21.note.Note B-><music21.note.Note C><music21.note.Note A><music21.note.Note C-><music21.note.Note B-><music21.note.Note D><music21.note.Note C><music21.note.Note B-><music21.note.Note A><music21.note.Note A-><music21.note.Note G><music21.note.Note F><music21.note.Note D><music21.note.Note E-><music21.note.Note C><music21.note.Note B-><music21.note.Note A-><music21.note.Note C><music21.note.Note D>>
+    {0.5} <music21.stream.Measure 1 offset=0.5>
+        {0.0} <music21.note.Note G>
+        {1.5} <music21.note.Note G>
+        {2.0} <music21.note.Note F>
+        {2.5} <music21.note.Note G>
+        {3.0} <music21.note.Note F>
+        {4.5} <music21.note.Note E->
+        {5.5} <music21.note.Note B->
+    {6.5} <music21.stream.Measure 2 offset=6.5>
+        {0.0} <music21.note.Note G>
+        {1.0} <music21.note.Note C>
+        {1.5} <music21.note.Note C>
+        {2.5} <music21.note.Note G>
+        {3.0} <music21.note.Note B->
+        {4.5} <music21.note.Note A->
+        {5.5} <music21.note.Note G>
+    {12.5} <music21.stream.Measure 3 offset=12.5>
+        {0.0} <music21.layout.SystemLayout>
+        {0.0} <music21.note.Note F>
+        {1.5} <music21.note.Note G>
+        {2.5} <music21.note.Note D>
+        {3.0} <music21.note.Note E->
+        {4.5} <music21.note.Note C>
+    {18.5} <music21.stream.Measure 4 offset=18.5>
+        {0.0} <music21.note.Note B->
+        {0.5} <music21.note.Note D>
+        {1.0} <music21.note.Note C>
+        {1.5} <music21.note.Note B->
+        {1.75} <music21.note.Note A->
+        {2.0} <music21.note.Note G>
+        {2.25} <music21.note.Note A->
+        {2.5} <music21.note.Note C>
+        {2.75} <music21.note.Note D>
+        {3.0} <music21.note.Note E->
+        {4.5} <music21.note.Rest quarter>
+        {5.5} <music21.note.Note B->
+    {24.5} <music21.stream.Measure 5 offset=24.5>
+        {0.0} <music21.layout.SystemLayout>
+        {0.0} <music21.dynamics.Dynamic p>
+        {0.0} <music21.note.Note G>
+        {1.5} <music21.note.Note F>
+        {1.75} <music21.note.Note G>
+        {2.0} <music21.note.Note F>
+        {2.25} <music21.note.Note E>
+        {2.5} <music21.note.Note F>
+        {2.75} <music21.note.Note G>
+        {3.0} <music21.note.Note F>
+        {3.5} <music21.note.Note E->
+        {4.5} <music21.note.Note E->
+        {4.75} <music21.note.Note F>
+        {5.0} <music21.note.Note E->
+        {5.25} <music21.note.Note D>
+        {5.5} <music21.note.Note E->
+        {5.75} <music21.note.Note F>
+    {30.5} <music21.stream.Measure 6 offset=30.5>
+        {0.0} <music21.expressions.TextExpression 'cresc.'>
+        {0.0} <music21.note.Note G>
+        {0.25} <music21.note.Note B>
+        {0.5} <music21.note.Note C>
+        {0.75} <music21.note.Note D->
+        {1.0} <music21.note.Note C>
+        {1.25} <music21.note.Note F>
+        {1.5} <music21.note.Note E>
+        {1.75} <music21.note.Note A->
+        {2.0} <music21.note.Note G>
+        {2.25} <music21.note.Note D->
+        {2.5} <music21.note.Note C>
+        {2.75} <music21.note.Note G>
+        {3.0} <music21.note.Note B->
+        {4.5} <music21.note.Note A->
+        {5.5} <music21.note.Note G>
+    {36.5} <music21.stream.Measure 7 offset=36.5>
+        {0.0} <music21.layout.SystemLayout>
+        {0.0} <music21.note.Note F>
+        {1.5} <music21.note.Note G>
+        {2.0} <music21.note.Note G>
+        {2.5} <music21.note.Note D>
+        {3.0} <music21.note.Note E->
+        {4.5} <music21.note.Note C>
+    {42.5} <music21.stream.Measure 8 offset=42.5>
+        {0.0} <music21.note.Note B->
+        {0.5} <music21.note.Note D>
+        {1.0} <music21.note.Note C>
+        {1.5} <music21.note.Note B->
+        {1.75} <music21.note.Note A->
+        {2.0} <music21.note.Note G>
+        {2.25} <music21.note.Note A->
+        {2.5} <music21.note.Note C>
+        {2.75} <music21.note.Note D>
+        {3.0} <music21.note.Note E->
+        {4.5} <music21.note.Note E->
+        {5.0} <music21.note.Note D>
+        {5.5} <music21.note.Note E->
+    {48.5} <music21.stream.Measure 9 offset=48.5>
+        {0.0} <music21.layout.PageLayout>
+        {0.0} <music21.layout.SystemLayout>
+        {0.0} <music21.dynamics.Dynamic p>
+        {0.0} <music21.note.Note F>
+        {1.5} <music21.note.Note G>
+        {2.5} <music21.note.Note F>
+        {3.0} <music21.dynamics.Dynamic pp>
+        {3.0} <music21.note.Note F>
+        {4.5} <music21.note.Note C>
+    {54.5} <music21.stream.Measure 10 offset=54.5>
+        {0.0} <music21.expressions.TextExpression 'simile'>
+        {0.0} <music21.expressions.TextExpression 'poco rit.'>
+        {0.0} <music21.note.Note E->
+        {0.5} <music21.note.Note E->
+        {1.0} <music21.note.Note E->
+        {1.5} <music21.note.Note E->
+        {2.0} <music21.note.Note D>
+        {2.25} <music21.note.Note E->
+        {2.5} <music21.note.Note F>
+        {2.875} <music21.note.Note E->
+        {3.0} <music21.note.Note E->
+        {4.5} <music21.note.Note B->
+    {60.5} <music21.stream.Measure 11 offset=60.5>
+        {0.0} <music21.expressions.TextExpression 'a tempo'>
+        {0.0} <music21.stream.Voice 0x294d5faee00>
+            {0.0} <music21.note.Note B->
+            {1.5} <music21.note.Note A>
+            {2.5} <music21.note.Note G>
+            {3.0} <music21.note.Note A>
+            {4.5} <music21.note.Note B->
+        {0.0} <music21.stream.Voice 0x294d5faf190>
+            {0.0} <music21.note.Rest dotted-half>
+            {3.0} <music21.note.Note F>
+            {4.5} <music21.note.Note D>
+        {0.0} <music21.dynamics.Dynamic f>
+    {66.5} <music21.stream.Measure 12 offset=66.5>
+        {0.0} <music21.layout.SystemLayout>
+        {0.0} <music21.stream.Voice 0x294d5faf700>
+            {0.0} <music21.note.Note G>
+            {1.5} <music21.note.Note A>
+            {2.0} <music21.note.Note A>
+            {2.5} <music21.note.Note A>
+            {3.0} <music21.note.Note F>
+            {3.5} <music21.note.Note F#>
+            {4.0} <music21.note.Note E>
+            {4.5} <music21.note.Note E>
+            {5.0} <music21.note.Note F>
+            {5.5} <music21.note.Note A->
+        {0.0} <music21.stream.Voice 0x294d5faf640>
+            {0.0} <music21.note.Note E->
+            {1.5} <music21.note.Note D>
+            {2.0} <music21.note.Note C>
+            {2.5} <music21.note.Note D>
+            {3.0} <music21.note.Note B->
+            {3.5} <music21.note.Note B>
+            {4.0} <music21.note.Note B>
+            {4.5} <music21.note.Note B->
+            {5.0} <music21.note.Note A>
+            {5.5} <music21.note.Note D>
+        {0.0} <music21.stream.Voice 0x294d5fafe20>
+            {0.0} <music21.note.Rest 4.5ql>
+            {4.5} <music21.note.Note C>
+            {5.0} <music21.note.Note C>
+            {5.5} <music21.note.Rest eighth>
+        {3.5} <music21.expressions.TextExpression 'poco ralle...'>
+    {72.5} <music21.stream.Measure 13 offset=72.5>
+        {0.0} <music21.expressions.TextExpression 'a tempo'>
+        {0.0} <music21.dynamics.Dynamic fp>
+        {0.0} <music21.dynamics.Dynamic other-dynamics>
+        {0.0} <music21.note.Note G>
+        {1.0} <music21.note.Note A>
+        {1.25} <music21.note.Note B->
+        {1.5} <music21.note.Note C->
+        {1.75} <music21.note.Note B->
+        {2.0} <music21.note.Note C#>
+        {2.25} <music21.note.Note D>
+        {2.5} <music21.note.Note G>
+        {2.875} <music21.note.Note F>
+        {3.0} <music21.note.Note F>
+        {4.0} <music21.note.Note E->
+        {4.5} <music21.note.Note E->
+        {4.75} <music21.note.Note F>
+        {5.0} <music21.note.Note E->
+        {5.25} <music21.note.Note D>
+        {5.5} <music21.note.Note E->
+        {5.75} <music21.note.Note F>
+    {78.5} <music21.stream.Measure 14 offset=78.5>
+        {0.0} <music21.layout.SystemLayout>
+        {0.0} <music21.note.Note G>
+        {0.25} <music21.note.Note B>
+        {0.5} <music21.note.Note C>
+        {0.75} <music21.note.Note D->
+        {1.0} <music21.note.Note C>
+        {1.25} <music21.note.Note F>
+        {1.5} <music21.expressions.TextExpression 'cresc.'>
+        {1.5} <music21.note.Note E>
+        {1.75} <music21.note.Note A->
+        {2.0} <music21.note.Note G>
+        {2.25} <music21.note.Note D->
+        {2.5} <music21.note.Note C>
+        {2.75} <music21.note.Note G>
+        {3.0} <music21.note.Note B->
+        {4.5} <music21.note.Note A->
+        {5.5} <music21.note.Note G>
+    {84.5} <music21.stream.Measure 15 offset=84.5>
+        {0.0} <music21.dynamics.Dynamic p>
+        {0.0} <music21.note.Note F>
+        {1.5} <music21.note.Note G>
+        {2.0} <music21.note.Note G>
+        {2.5} <music21.note.Note D>
+        {3.0} <music21.note.Note E->
+        {4.5} <music21.note.Note C>
+    {90.5} <music21.stream.Measure 16 offset=90.5>
+        {0.0} <music21.layout.SystemLayout>
+        {0.0} <music21.note.Note B->
+        {0.5} <music21.note.Note D>
+        {1.0} <music21.note.Note D->
+        {1.5} <music21.note.Note C>
+        {1.625} <music21.note.Note B>
+        {1.75} <music21.note.Note B->
+        {1.875} <music21.note.Note A>
+        {2.0} <music21.note.Note A->
+        {2.125} <music21.note.Note F>
+        {2.25} <music21.note.Note D>
+        {2.375} <music21.note.Note C->
+        {2.5} <music21.note.Note B->
+        {2.625} <music21.note.Note D>
+        {2.75} <music21.note.Note G>
+        {2.8333} <music21.note.Note F>
+        {2.9167} <music21.note.Note E->
+        {3.0} <music21.note.Note E->
+        {4.5} <music21.note.Note E->
+        {5.0} <music21.note.Note D>
+        {5.5} <music21.note.Note E->
+    {96.5} <music21.stream.Measure 17 offset=96.5>
+        {0.0} <music21.note.Note F>
+        {1.5} <music21.note.Note G>
+        {2.5} <music21.note.Note F>
+        {3.0} <music21.note.Note F>
+        {4.5} <music21.note.Note C>
+    {102.5} <music21.stream.Measure 18 offset=102.5>
+        {0.0} <music21.layout.SystemLayout>
+        {0.0} <music21.note.Note E->
+        {0.375} <music21.note.Note E->
+        {0.75} <music21.note.Note E->
+        {1.125} <music21.note.Note E->
+        {1.5} <music21.note.Note E->
+        {2.0} <music21.note.Note D>
+        {2.25} <music21.note.Note E->
+        {2.5} <music21.note.Note F>
+        {2.875} <music21.note.Note E->
+        {3.0} <music21.note.Note E->
+        {4.5} <music21.note.Note B->
+    {108.5} <music21.stream.Measure 19 offset=108.5>
+        {0.0} <music21.stream.Voice 0x294d5fafa60>
+            {0.0} <music21.note.Note B->
+            {1.5} <music21.note.Note A>
+            {2.5} <music21.note.Note G>
+            {3.0} <music21.note.Note A>
+            {4.5} <music21.note.Note B->
+        {0.0} <music21.stream.Voice 0x294d5fafa30>
+            {0.0} <music21.note.Rest dotted-half>
+            {3.0} <music21.note.Note F>
+            {4.5} <music21.note.Note D>
+        {0.0} <music21.dynamics.Dynamic f>
+    {114.5} <music21.stream.Measure 20 offset=114.5>
+        {0.0} <music21.layout.PageLayout>
+        {0.0} <music21.layout.SystemLayout>
+        {0.0} <music21.stream.Voice 0x294d5faf820>
+            {0.0} <music21.note.Note G>
+            {1.5} <music21.note.Note A>
+            {2.0} <music21.note.Note A>
+            {2.5} <music21.note.Note A>
+            {3.0} <music21.note.Note F>
+            {3.5} <music21.note.Note F#>
+            {4.0} <music21.note.Note E>
+            {4.5} <music21.note.Note E>
+            {5.0} <music21.note.Note F>
+            {5.5} <music21.note.Note A->
+        {0.0} <music21.stream.Voice 0x294d5faf730>
+            {0.0} <music21.note.Note E->
+            {1.5} <music21.note.Note D>
+            {2.0} <music21.note.Note C>
+            {2.5} <music21.note.Note D>
+            {3.0} <music21.note.Note B->
+            {3.5} <music21.note.Note B>
+            {4.0} <music21.note.Note B>
+            {4.5} <music21.note.Note B->
+            {5.0} <music21.note.Note A>
+            {5.5} <music21.note.Note D>
+        {0.0} <music21.stream.Voice 0x294d5faf010>
+            {0.0} <music21.note.Rest 4.5ql>
+            {4.5} <music21.note.Note C>
+            {5.0} <music21.note.Note C>
+            {5.5} <music21.note.Rest eighth>
+        {3.5} <music21.expressions.TextExpression 'poco ralle...'>
+    {120.5} <music21.stream.Measure 21 offset=120.5>
+        {0.0} <music21.expressions.TextExpression 'a tempo'>
+        {0.0} <music21.dynamics.Dynamic fp>
+        {0.0} <music21.dynamics.Dynamic other-dynamics>
+        {0.0} <music21.note.Note G>
+        {1.0} <music21.note.Note A>
+        {1.25} <music21.note.Note B->
+        {1.5} <music21.note.Note C->
+        {1.75} <music21.note.Note B->
+        {2.0} <music21.note.Note C#>
+        {2.25} <music21.note.Note D>
+        {2.5} <music21.note.Note G>
+        {2.875} <music21.note.Note F>
+        {3.0} <music21.note.Note F>
+        {4.0} <music21.note.Note E->
+        {4.5} <music21.note.Note E->
+        {4.75} <music21.note.Note F>
+        {5.0} <music21.note.Note E->
+        {5.25} <music21.note.Note D>
+        {5.5} <music21.note.Note E->
+        {5.75} <music21.note.Note F>
+    {126.5} <music21.stream.Measure 22 offset=126.5>
+        {0.0} <music21.layout.SystemLayout>
+        {0.0} <music21.note.Note G>
+        {0.25} <music21.note.Note B>
+        {0.5} <music21.note.Note C>
+        {0.75} <music21.note.Note D->
+        {1.0} <music21.note.Note C>
+        {1.25} <music21.note.Note F>
+        {1.5} <music21.note.Note E>
+        {1.75} <music21.note.Note A->
+        {2.0} <music21.note.Note G>
+        {2.25} <music21.note.Note D->
+        {2.5} <music21.note.Note C>
+        {2.75} <music21.note.Note G>
+        {3.0} <music21.note.Note B->
+        {4.5} <music21.note.Note A->
+        {5.5} <music21.note.Note G>
+    {132.5} <music21.stream.Measure 23 offset=132.5>
+        {0.0} <music21.note.Note F>
+        {1.5} <music21.note.Note G>
+        {2.0} <music21.note.Note G>
+        {2.5} <music21.note.Note D>
+        {3.0} <music21.note.Note E->
+        {4.5} <music21.note.Note C>
+    {138.5} <music21.stream.Measure 24 offset=138.5>
+        {0.0} <music21.layout.SystemLayout>
+        {0.0} <music21.note.Note B->
+        {0.25} <music21.note.Note D>
+        {0.75} <music21.note.Note C#>
+        {1.0} <music21.note.Note C>
+        {1.25} <music21.note.Note B>
+        {1.5} <music21.note.Note B->
+        {1.75} <music21.note.Note A>
+        {2.0} <music21.note.Note A->
+        {2.25} <music21.note.Note A>
+        {2.3333} <music21.note.Note B->
+        {2.4167} <music21.note.Note C>
+        {2.5} <music21.note.Note C#>
+        {2.625} <music21.note.Note D>
+        {2.75} <music21.note.Note G>
+        {2.8333} <music21.note.Note F>
+        {2.9167} <music21.note.Note E->
+        {3.0} <music21.note.Note E->
+    {144.5} <music21.stream.Measure 25 offset=144.5>
+        {0.0} <music21.dynamics.Dynamic p>
+        {0.0} <music21.note.Note E->
+        {1.5} <music21.note.Note F>
+        {2.0} <music21.note.Note E->
+        {2.5} <music21.note.Note F>
+        {3.0} <music21.note.Note G>
+    {150.5} <music21.stream.Measure 26 offset=150.5>
+        {0.0} <music21.layout.SystemLayout>
+        {0.0} <music21.dynamics.Dynamic pp>
+        {0.0} <music21.note.Note E->
+        {1.5} <music21.note.Note E->
+        {1.75} <music21.note.Note F>
+        {2.0} <music21.note.Note E->
+        {2.25} <music21.note.Note F>
+        {2.5} <music21.note.Note E->
+        {2.75} <music21.note.Note F>
+        {3.0} <music21.expressions.TextExpression 'poco rubato'>
+        {3.0} <music21.note.Note G>
+        {4.0} <music21.note.Note E->
+        {4.5} <music21.note.Note E->
+        {5.0} <music21.note.Note D>
+        {5.5} <music21.note.Note C>
+    {156.5} <music21.stream.Measure 27 offset=156.5>
+        {0.0} <music21.note.Note B->
+        {1.0} <music21.note.Note A>
+        {1.5} <music21.note.Note A->
+        {2.0} <music21.note.Note C>
+        {2.5} <music21.note.Note D>
+        {3.0} <music21.note.Note E->
+        {3.5} <music21.note.Note F>
+        {3.75} <music21.note.Note E->
+        {4.0} <music21.note.Note D>
+        {4.25} <music21.note.Note E->
+        {4.5} <music21.expressions.TextExpression 'dolciss.'>
+        {4.5} <music21.note.Note G>
+        {5.0} <music21.note.Note F>
+        {5.25} <music21.note.Note E->
+        {5.5} <music21.note.Note D>
+        {5.75} <music21.note.Note C>
+    {162.5} <music21.stream.Measure 28 offset=162.5>
+        {0.0} <music21.layout.SystemLayout>
+        {0.0} <music21.note.Note C->
+        {0.5} <music21.note.Note B->
+        {1.0} <music21.note.Note B-->
+        {1.5} <music21.note.Note B-->
+        {1.75} <music21.note.Note A->
+        {2.0} <music21.note.Note A->
+        {2.25} <music21.note.Note G>
+        {2.5} <music21.note.Note G>
+        {2.875} <music21.note.Note F>
+        {3.0} <music21.note.Note E->
+    {168.5} <music21.stream.Measure 29 offset=168.5>
+        {0.0} <music21.dynamics.Dynamic p>
+        {0.0} <music21.note.Note E->
+        {1.5} <music21.note.Note E->
+        {1.6875} <music21.note.Note F>
+        {1.875} <music21.note.Note E->
+        {2.0625} <music21.note.Note F>
+        {2.25} <music21.note.Note E->
+        {2.4375} <music21.note.Note F>
+        {2.625} <music21.note.Note E->
+        {2.8125} <music21.note.Note F>
+        {3.0} <music21.note.Note E->
+    {174.5} <music21.stream.Measure 30 offset=174.5>
+        {0.0} <music21.expressions.TextExpression 'con forza'>
+        {0.0} <music21.layout.PageLayout>
+        {0.0} <music21.layout.SystemLayout>
+        {0.0} <music21.stream.Voice 0x294d5faff70>
+            {0.0} <music21.note.Note E->
+            {0.5} <music21.note.Note A->
+            {0.75} <music21.note.Note B->
+            {1.0} <music21.note.Note A->
+            {1.25} <music21.note.Note G>
+            {1.5} <music21.note.Note A->
+            {1.75} <music21.note.Note C->
+            {2.0} <music21.note.Note E->
+            {2.25} <music21.note.Note A->
+            {2.5} <music21.note.Note E->
+            {2.75} <music21.note.Rest 32nd>
+            {2.875} <music21.note.Note F>
+            {3.0} <music21.note.Note G>
+            {3.5} <music21.note.Note E->
+            {4.0} <music21.note.Note E->
+            {5.0} <music21.note.Note D>
+            {5.5} <music21.note.Note C>
+        {0.0} <music21.stream.Voice 0x294d5fafa90>
+            {0.0} <music21.note.Rest whole>
+            {4.0} <music21.note.Note E->
+            {5.0} <music21.note.Note D>
+            {5.5} <music21.note.Note C>
+        {0.0} <music21.dynamics.Dynamic f>
+        {5.5} <music21.expressions.TextExpression 'stretto'>
+    {180.5} <music21.stream.Measure 31 offset=180.5>
+        {0.0} <music21.stream.Voice 0x294d5fd1150>
+            {0.0} <music21.note.Note C->
+            {0.5} <music21.note.Note B->
+            {1.0} <music21.note.Note B-->
+            {1.5} <music21.note.Note A->
+            {2.0} <music21.note.Note G>
+            {2.5} <music21.note.Note D>
+            {3.0} <music21.note.Note E->
+            {3.5} <music21.note.Note E->
+            {5.0} <music21.note.Note F>
+            {5.5} <music21.note.Note C>
+        {0.0} <music21.stream.Voice 0x294d5fd0a00>
+            {0.0} <music21.note.Note C->
+            {0.5} <music21.note.Note B->
+            {1.0} <music21.note.Note B-->
+            {1.5} <music21.note.Note A->
+            {2.0} <music21.note.Note G>
+            {2.5} <music21.note.Note D>
+            {3.0} <music21.note.Note E->
+            {3.5} <music21.note.Note E->
+            {5.0} <music21.note.Note F>
+            {5.5} <music21.note.Note C>
+    {186.5} <music21.stream.Measure 32 offset=186.5>
+        {0.0} <music21.layout.SystemLayout>
+        {0.0} <music21.stream.Voice 0x294d5fafe80>
+            {0.0} <music21.note.Note C->
+            {3.0} <music21.note.Note B->
+        {0.0} <music21.stream.Voice 0x294d5fd0340>
+            {0.0} <music21.note.Note C->
+            {3.0} <music21.note.Note B->
+        {0.0} <music21.dynamics.Dynamic ff>
+    {192.5} <music21.stream.Measure 33 offset=192.5>
+        {0.0} <music21.expressions.TextExpression 'Senza tempo'>
+        {0.0} <music21.tempo.MetronomeMark Quarter=35>
+        {0.0} <music21.meter.TimeSignature 6/4>
+        {0.0} <music21.note.Note C->
+        {0.125} <music21.note.Note B->
+        {0.25} <music21.note.Note C>
+        {0.375} <music21.note.Note A>
+        {0.5} <music21.tempo.MetronomeMark grave Quarter=40>
+        {0.5} <music21.note.Note C->
+        {0.625} <music21.note.Note B->
+        {0.75} <music21.note.Note C>
+        {0.875} <music21.note.Note A>
+        {1.0} <music21.tempo.MetronomeMark larghetto Quarter=60>
+        {1.0} <music21.note.Note C->
+        {1.125} <music21.note.Note B->
+        {1.25} <music21.note.Note C>
+        {1.375} <music21.note.Note A>
+        {1.5} <music21.note.Note C->
+        {1.625} <music21.note.Note B->
+        {1.75} <music21.note.Note C>
+        {1.875} <music21.note.Note A>
+        {2.0} <music21.tempo.MetronomeMark andante Quarter=70>
+        {2.0} <music21.note.Note C->
+        {2.125} <music21.note.Note B->
+        {2.25} <music21.note.Note C>
+        {2.375} <music21.note.Note A>
+        {2.5} <music21.note.Note C->
+        {2.625} <music21.note.Note B->
+        {2.75} <music21.note.Note C>
+        {2.875} <music21.note.Note A>
+    {195.5} <music21.stream.Measure 34 offset=195.5>
+        {0.0} <music21.layout.SystemLayout>
+        {0.0} <music21.note.Note C->
+        {0.125} <music21.note.Note B->
+        {0.25} <music21.note.Note C>
+        {0.375} <music21.note.Note A>
+        {0.5} <music21.tempo.MetronomeMark andantino Quarter=80>
+        {0.5} <music21.note.Note C->
+        {0.625} <music21.note.Note B->
+        {0.75} <music21.note.Note C>
+        {0.875} <music21.note.Note A>
+        {1.0} <music21.note.Note C->
+        {1.125} <music21.note.Note B->
+        {1.25} <music21.note.Note C>
+        {1.375} <music21.note.Note A>
+        {1.5} <music21.note.Note C->
+        {1.625} <music21.note.Note B->
+        {1.75} <music21.note.Note C>
+        {1.875} <music21.note.Note A>
+        {2.0} <music21.note.Note C->
+        {2.125} <music21.note.Note B->
+        {2.25} <music21.note.Note C>
+        {2.375} <music21.note.Note A>
+        {2.5} <music21.note.Note C->
+        {2.625} <music21.note.Note B->
+        {2.75} <music21.note.Note C>
+        {2.875} <music21.note.Note A>
+    {198.5} <music21.stream.Measure 35 offset=198.5>
+        {0.0} <music21.layout.SystemLayout>
+        {0.0} <music21.tempo.MetronomeMark lento Quarter=50>
+        {0.0} <music21.meter.TimeSignature 2/4>
+        {0.0} <music21.note.Note C->
+        {0.125} <music21.note.Note B->
+        {0.25} <music21.note.Note D>
+        {0.375} <music21.note.Note C>
+        {0.5} <music21.expressions.TextExpression 'rallent. s...'>
+        {0.5} <music21.note.Note B->
+        {0.625} <music21.note.Note A>
+        {0.75} <music21.note.Note A->
+        {0.875} <music21.note.Note G>
+        {1.0} <music21.tempo.MetronomeMark Quarter=35>
+        {1.0} <music21.note.Note F>
+        {1.125} <music21.note.Note D>
+        {1.25} <music21.note.Note E->
+        {1.375} <music21.note.Note C>
+        {1.5} <music21.tempo.MetronomeMark Quarter=20>
+        {1.5} <music21.note.Note B->
+        {1.625} <music21.note.Note A->
+        {1.75} <music21.note.Note C>
+        {1.875} <music21.note.Note D>
+    {200.5} <music21.stream.Measure 36 offset=200.5>
+        {0.0} <music21.expressions.TextExpression 'a tempo'>
+        {0.0} <music21.tempo.MetronomeMark larghetto Quarter=60>
+        {0.0} <music21.meter.TimeSignature 12/8>
+        {0.0} <music21.stream.Voice 0x294d5fd1b40>
+            {0.0} <music21.note.Note G>
+            {0.5} <music21.note.Note B->
+            {1.0} <music21.note.Note G>
+            {1.5} <music21.note.Note G>
+            {2.0} <music21.note.Note B->
+            {2.5} <music21.note.Note G>
+            {3.0} <music21.note.Note G>
+            {3.5} <music21.note.Note B->
+            {4.0} <music21.note.Note G>
+            {4.5} <music21.note.Note G>
+            {5.0} <music21.note.Note B->
+            {5.5} <music21.note.Note G>
+        {0.0} <music21.stream.Voice 0x294d5fd1ae0>
+            {0.0} <music21.note.Note E->
+            {0.5} <music21.note.Rest quarter>
+            {1.5} <music21.note.Note E->
+            {2.0} <music21.note.Rest quarter>
+            {3.0} <music21.note.Note E->
+            {3.5} <music21.note.Rest quarter>
+            {4.5} <music21.note.Note E->
+            {5.0} <music21.note.Rest quarter>
+        {0.0} <music21.dynamics.Dynamic pp>
+    {206.5} <music21.stream.Measure 37 offset=206.5>
+        {0.0} <music21.stream.Voice 0x294d5fd24d0>
+            {0.0} <music21.note.Note G>
+            {1.5} <music21.note.Note G>
+            {3.0} <music21.note.Note G>
+        {0.0} <music21.stream.Voice 0x294d5fd2410>
+            {0.0} <music21.note.Note E->
+            {1.5} <music21.note.Note E->
+            {3.0} <music21.note.Note E->
+        {0.0} <music21.dynamics.Dynamic ppp>
+        {3.5} <music21.bar.Barline type=final>
+{0.0} <music21.stream.PartStaff P1-Staff2>
+    {0.0} <music21.instrument.Piano 'P1: Piano: Piano'>
+    {0.0} <music21.stream.Measure 0 offset=0.0>
+        {0.0} <music21.layout.SystemLayout>
+        {0.0} <music21.layout.StaffLayout distance 103.8, staffNumber 2, staffSize None, staffLines None>
+        {0.0} <music21.clef.BassClef>
+        {0.0} <music21.key.KeySignature of 3 flats>
+        {0.0} <music21.meter.TimeSignature 12/8>
+        {0.0} <music21.note.Rest eighth>
+    {0.5} <music21.stream.Measure 1 offset=0.5>
+        {0.0} <music21.stream.Voice 0x294d5fd21d0>
+            {0.0} <music21.note.Note E->
+            {0.5} <music21.note.Note G>
+            {1.0} <music21.note.Note B->
+            {1.5} <music21.note.Note E->
+            {2.0} <music21.note.Note A->
+            {2.5} <music21.note.Note C->
+            {3.0} <music21.note.Note E->
+            {3.5} <music21.note.Note G>
+            {4.0} <music21.note.Note B->
+            {4.5} <music21.note.Note D>
+            {5.0} <music21.note.Note G>
+            {5.5} <music21.note.Note B->
+        {0.0} <music21.stream.Voice 0x294d5fd2200>
+            {0.0} <music21.note.Rest eighth>
+            {0.5} <music21.note.Note E->
+            {1.0} <music21.note.Note E->
+            {1.5} <music21.note.Rest eighth>
+            {2.0} <music21.note.Note D>
+            {2.5} <music21.note.Note D>
+            {3.0} <music21.note.Rest eighth>
+            {3.5} <music21.note.Note E->
+            {4.0} <music21.note.Note E->
+            {4.5} <music21.note.Rest eighth>
+            {5.0} <music21.note.Note E->
+            {5.5} <music21.note.Note E->
+        {0.0} <music21.stream.Voice 0x294d5fd1060>
+            {0.0} <music21.note.Rest quarter>
+            {1.0} <music21.note.Note G>
+            {1.5} <music21.note.Rest quarter>
+            {2.5} <music21.note.Note A->
+            {3.0} <music21.note.Rest quarter>
+            {4.0} <music21.note.Note G>
+            {4.5} <music21.note.Rest quarter>
+            {5.5} <music21.note.Note G>
+    {6.5} <music21.stream.Measure 2 offset=6.5>
+        {0.0} <music21.expressions.TextExpression 'Ped. simile'>
+        {0.0} <music21.stream.Voice 0x294d5fd2b00>
+            {0.0} <music21.note.Note C>
+            {0.5} <music21.note.Note G>
+            {1.0} <music21.note.Note B->
+            {1.5} <music21.note.Note C>
+            {2.0} <music21.note.Note G>
+            {2.5} <music21.note.Note C>
+            {3.0} <music21.note.Note F>
+            {3.5} <music21.note.Note F>
+            {4.0} <music21.note.Note B->
+            {4.5} <music21.note.Note F>
+            {5.0} <music21.note.Note F>
+            {5.5} <music21.note.Note A->
+        {0.0} <music21.stream.Voice 0x294d5fd06a0>
+            {0.0} <music21.note.Rest eighth>
+            {0.5} <music21.note.Note E>
+            {1.0} <music21.note.Note E>
+            {1.5} <music21.note.Rest eighth>
+            {2.0} <music21.note.Note E>
+            {2.5} <music21.note.Note E>
+            {3.0} <music21.note.Rest eighth>
+            {3.5} <music21.note.Note D->
+            {4.0} <music21.note.Note D->
+            {4.5} <music21.note.Rest eighth>
+            {5.0} <music21.note.Note C>
+            {5.5} <music21.note.Note C>
+        {0.0} <music21.stream.Voice 0x294d5fd2f20>
+            {0.0} <music21.note.Rest quarter>
+            {1.0} <music21.note.Note G>
+            {1.5} <music21.note.Rest quarter>
+            {2.5} <music21.note.Note B->
+            {3.0} <music21.note.Rest quarter>
+            {4.0} <music21.note.Note E>
+            {4.5} <music21.note.Rest quarter>
+            {5.5} <music21.note.Note F>
+    {12.5} <music21.stream.Measure 3 offset=12.5>
+        {0.0} <music21.layout.SystemLayout>
+        {0.0} <music21.layout.StaffLayout distance 103.8, staffNumber 2, staffSize None, staffLines None>
+        {0.0} <music21.stream.Voice 0x294d5fd2050>
+            {0.0} <music21.note.Note B->
+            {0.5} <music21.note.Note F>
+            {1.0} <music21.note.Note B->
+            {1.5} <music21.note.Note B>
+            {2.0} <music21.note.Note G>
+            {2.5} <music21.note.Note D>
+            {3.0} <music21.note.Note C>
+            {3.5} <music21.note.Note G>
+            {4.0} <music21.note.Note C>
+            {4.5} <music21.note.Note A>
+            {5.0} <music21.note.Note G->
+            {5.5} <music21.note.Note C>
+        {0.0} <music21.stream.Voice 0x294d5fd34c0>
+            {0.0} <music21.note.Rest eighth>
+            {0.5} <music21.note.Note D>
+            {1.0} <music21.note.Note D>
+            {1.5} <music21.note.Rest eighth>
+            {2.0} <music21.note.Note F>
+            {2.5} <music21.note.Note F>
+            {3.0} <music21.note.Rest eighth>
+            {3.5} <music21.note.Note E->
+            {4.0} <music21.note.Note E->
+            {4.5} <music21.note.Rest eighth>
+            {5.0} <music21.note.Note E->
+            {5.5} <music21.note.Note E->
+        {0.0} <music21.stream.Voice 0x294d5fd2320>
+            {0.0} <music21.note.Rest quarter>
+            {1.0} <music21.note.Note A->
+            {1.5} <music21.note.Rest quarter>
+            {2.5} <music21.note.Note G>
+            {3.0} <music21.note.Rest quarter>
+            {4.0} <music21.note.Note G>
+            {4.5} <music21.note.Rest quarter>
+            {5.5} <music21.note.Note G->
+    {18.5} <music21.stream.Measure 4 offset=18.5>
+        {0.0} <music21.stream.Voice 0x294d5fd3d30>
+            {0.0} <music21.note.Note B->
+            {0.5} <music21.note.Note F>
+            {1.0} <music21.note.Note B->
+            {1.5} <music21.note.Note B->
+            {2.0} <music21.note.Note F>
+            {2.5} <music21.note.Note B->
+            {3.0} <music21.note.Note E->
+            {3.5} <music21.note.Note G>
+            {4.0} <music21.note.Note B->
+            {4.5} <music21.note.Note E->
+            {5.0} <music21.note.Note G>
+            {5.5} <music21.note.Note B->
+        {0.0} <music21.stream.Voice 0x294d5fd3d00>
+            {0.0} <music21.note.Rest eighth>
+            {0.5} <music21.note.Note E->
+            {1.0} <music21.note.Note E->
+            {1.5} <music21.note.Rest eighth>
+            {2.0} <music21.note.Note D>
+            {2.5} <music21.note.Note A->
+            {3.0} <music21.note.Rest eighth>
+            {3.5} <music21.note.Note E->
+            {4.0} <music21.note.Note E->
+            {4.5} <music21.note.Rest eighth>
+            {5.0} <music21.note.Note E->
+            {5.5} <music21.note.Note E->
+        {0.0} <music21.stream.Voice 0x294d5fd3820>
+            {0.0} <music21.note.Rest quarter>
+            {1.0} <music21.note.Note A->
+            {1.5} <music21.note.Rest 2.5ql>
+            {4.0} <music21.note.Note G>
+            {4.5} <music21.note.Rest quarter>
+            {5.5} <music21.note.Note G>
+    {24.5} <music21.stream.Measure 5 offset=24.5>
+        {0.0} <music21.layout.SystemLayout>
+        {0.0} <music21.layout.StaffLayout distance 103.8, staffNumber 2, staffSize None, staffLines None>
+        {0.0} <music21.stream.Voice 0x294d5fd3fa0>
+            {0.0} <music21.note.Note E->
+            {0.5} <music21.note.Note G>
+            {1.0} <music21.note.Note B->
+            {1.5} <music21.note.Note E->
+            {2.0} <music21.note.Note A->
+            {2.5} <music21.note.Note C->
+            {3.0} <music21.note.Note E->
+            {3.5} <music21.note.Note G>
+            {4.0} <music21.note.Note B->
+            {4.5} <music21.note.Note D>
+            {5.0} <music21.note.Note G>
+            {5.5} <music21.note.Note B->
+        {0.0} <music21.stream.Voice 0x294d5fd3b20>
+            {0.0} <music21.note.Rest eighth>
+            {0.5} <music21.note.Note E->
+            {1.0} <music21.note.Note E->
+            {1.5} <music21.note.Rest eighth>
+            {2.0} <music21.note.Note D>
+            {2.5} <music21.note.Note D>
+            {3.0} <music21.note.Rest eighth>
+            {3.5} <music21.note.Note E->
+            {4.0} <music21.note.Note E->
+            {4.5} <music21.note.Rest eighth>
+            {5.0} <music21.note.Note E->
+            {5.5} <music21.note.Note E->
+        {0.0} <music21.stream.Voice 0x294d5fd1db0>
+            {0.0} <music21.note.Rest quarter>
+            {1.0} <music21.note.Note G>
+            {1.5} <music21.note.Rest quarter>
+            {2.5} <music21.note.Note A->
+            {3.0} <music21.note.Rest quarter>
+            {4.0} <music21.note.Note G>
+            {4.5} <music21.note.Rest quarter>
+            {5.5} <music21.note.Note G>
+    {30.5} <music21.stream.Measure 6 offset=30.5>
+        {0.0} <music21.stream.Voice 0x294d5fd3cd0>
+            {0.0} <music21.note.Note C>
+            {0.5} <music21.note.Note G>
+            {1.0} <music21.note.Note B->
+            {1.5} <music21.note.Note C>
+            {2.0} <music21.note.Note G>
+            {2.5} <music21.note.Note C>
+            {3.0} <music21.note.Note F>
+            {3.5} <music21.note.Note F>
+            {4.0} <music21.note.Note B->
+            {4.5} <music21.note.Note F>
+            {5.0} <music21.note.Note F>
+            {5.5} <music21.note.Note A->
+        {0.0} <music21.stream.Voice 0x294d5fd3e80>
+            {0.0} <music21.note.Rest eighth>
+            {0.5} <music21.note.Note E>
+            {1.0} <music21.note.Note E>
+            {1.5} <music21.note.Rest eighth>
+            {2.0} <music21.note.Note E>
+            {2.5} <music21.note.Note E>
+            {3.0} <music21.note.Rest eighth>
+            {3.5} <music21.note.Note D->
+            {4.0} <music21.note.Note D->
+            {4.5} <music21.note.Rest eighth>
+            {5.0} <music21.note.Note C>
+            {5.5} <music21.note.Note C>
+        {0.0} <music21.stream.Voice 0x294d6228910>
+            {0.0} <music21.note.Rest quarter>
+            {1.0} <music21.note.Note G>
+            {1.5} <music21.note.Rest quarter>
+            {2.5} <music21.note.Note B->
+            {3.0} <music21.note.Rest quarter>
+            {4.0} <music21.note.Note E>
+            {4.5} <music21.note.Rest quarter>
+            {5.5} <music21.note.Note F>
+    {36.5} <music21.stream.Measure 7 offset=36.5>
+        {0.0} <music21.layout.SystemLayout>
+        {0.0} <music21.layout.StaffLayout distance 103.8, staffNumber 2, staffSize None, staffLines None>
+        {0.0} <music21.stream.Voice 0x294d62287f0>
+            {0.0} <music21.note.Note B->
+            {0.5} <music21.note.Note F>
+            {1.0} <music21.note.Note B->
+            {1.5} <music21.note.Note B>
+            {2.0} <music21.note.Note G>
+            {2.5} <music21.note.Note D>
+            {3.0} <music21.note.Note C>
+            {3.5} <music21.note.Note G>
+            {4.0} <music21.note.Note C>
+            {4.5} <music21.note.Note A>
+            {5.0} <music21.note.Note G->
+            {5.5} <music21.note.Note C>
+        {0.0} <music21.stream.Voice 0x294d6229600>
+            {0.0} <music21.note.Rest eighth>
+            {0.5} <music21.note.Note D>
+            {1.0} <music21.note.Note D>
+            {1.5} <music21.note.Rest eighth>
+            {2.0} <music21.note.Note F>
+            {2.5} <music21.note.Note F>
+            {3.0} <music21.note.Rest eighth>
+            {3.5} <music21.note.Note E->
+            {4.0} <music21.note.Note E->
+            {4.5} <music21.note.Rest eighth>
+            {5.0} <music21.note.Note E->
+            {5.5} <music21.note.Note E->
+        {0.0} <music21.stream.Voice 0x294d6229150>
+            {0.0} <music21.note.Rest quarter>
+            {1.0} <music21.note.Note A->
+            {1.5} <music21.note.Rest quarter>
+            {2.5} <music21.note.Note G>
+            {3.0} <music21.note.Rest quarter>
+            {4.0} <music21.note.Note G>
+            {4.5} <music21.note.Rest quarter>
+            {5.5} <music21.note.Note G->
+    {42.5} <music21.stream.Measure 8 offset=42.5>
+        {0.0} <music21.stream.Voice 0x294d6229e40>
+            {0.0} <music21.note.Note B->
+            {0.5} <music21.note.Note F>
+            {1.0} <music21.note.Note B->
+            {1.5} <music21.note.Note B->
+            {2.0} <music21.note.Note F>
+            {2.5} <music21.note.Note B->
+            {3.0} <music21.note.Note E->
+            {3.5} <music21.note.Note G>
+            {4.0} <music21.note.Note B->
+            {4.5} <music21.note.Note E->
+            {5.0} <music21.note.Note G>
+            {5.5} <music21.note.Note B->
+        {0.0} <music21.stream.Voice 0x294d6229ea0>
+            {0.0} <music21.note.Rest eighth>
+            {0.5} <music21.note.Note E->
+            {1.0} <music21.note.Note E->
+            {1.5} <music21.note.Rest eighth>
+            {2.0} <music21.note.Note D>
+            {2.5} <music21.note.Note A->
+            {3.0} <music21.note.Rest eighth>
+            {3.5} <music21.note.Note E->
+            {4.0} <music21.note.Note E->
+            {4.5} <music21.note.Rest eighth>
+            {5.0} <music21.note.Note E->
+            {5.5} <music21.note.Note E->
+        {0.0} <music21.stream.Voice 0x294d6228550>
+            {0.0} <music21.note.Rest quarter>
+            {1.0} <music21.note.Note A->
+            {1.5} <music21.note.Rest 2.5ql>
+            {4.0} <music21.note.Note G>
+            {4.5} <music21.note.Rest quarter>
+            {5.5} <music21.note.Note G>
+    {48.5} <music21.stream.Measure 9 offset=48.5>
+        {0.0} <music21.layout.PageLayout>
+        {0.0} <music21.layout.SystemLayout>
+        {0.0} <music21.layout.StaffLayout distance 103.8, staffNumber 2, staffSize None, staffLines None>
+        {0.0} <music21.stream.Voice 0x294d6228100>
+            {0.0} <music21.note.Note B->
+            {0.5} <music21.note.Note F>
+            {1.0} <music21.note.Note B->
+            {1.5} <music21.note.Note B->
+            {2.0} <music21.note.Note F>
+            {2.5} <music21.note.Note B->
+            {3.0} <music21.note.Note A>
+            {3.5} <music21.note.Note F>
+            {4.0} <music21.note.Note C>
+            {4.5} <music21.note.Note A>
+            {5.0} <music21.note.Note F>
+            {5.5} <music21.note.Note C>
+        {0.0} <music21.stream.Voice 0x294d622a5f0>
+            {0.0} <music21.note.Rest eighth>
+            {0.5} <music21.note.Note D>
+            {1.0} <music21.note.Note D>
+            {1.5} <music21.note.Rest eighth>
+            {2.0} <music21.note.Note D>
+            {2.5} <music21.note.Note D>
+            {3.0} <music21.note.Rest eighth>
+            {3.5} <music21.note.Note C>
+            {4.0} <music21.note.Note F>
+            {4.5} <music21.note.Rest eighth>
+            {5.0} <music21.note.Note C>
+            {5.5} <music21.note.Note F>
+        {0.0} <music21.stream.Voice 0x294d62298a0>
+            {0.0} <music21.note.Rest quarter>
+            {1.0} <music21.note.Note F>
+            {1.5} <music21.note.Rest quarter>
+            {2.5} <music21.note.Note F>
+            {3.0} <music21.note.Rest dotted-half>
+    {54.5} <music21.stream.Measure 10 offset=54.5>
+        {0.0} <music21.stream.Voice 0x294d622ad10>
+            {0.0} <music21.note.Note A->
+            {0.5} <music21.note.Note E->
+            {1.0} <music21.note.Note A->
+            {1.5} <music21.note.Note A->
+            {2.0} <music21.note.Note E->
+            {2.5} <music21.note.Note A->
+            {3.0} <music21.note.Note E->
+            {3.5} <music21.note.Note G>
+            {4.0} <music21.note.Note B->
+            {4.5} <music21.note.Note E->
+            {5.0} <music21.note.Note G>
+            {5.5} <music21.note.Note B->
+        {0.0} <music21.stream.Voice 0x294d622ad70>
+            {0.0} <music21.note.Rest eighth>
+            {0.5} <music21.note.Note C>
+            {1.0} <music21.note.Note C>
+            {1.5} <music21.note.Rest eighth>
+            {2.0} <music21.note.Note C->
+            {2.5} <music21.note.Note C->
+            {3.0} <music21.note.Rest eighth>
+            {3.5} <music21.note.Note E->
+            {4.0} <music21.note.Note E->
+            {4.5} <music21.note.Rest eighth>
+            {5.0} <music21.note.Note E->
+            {5.5} <music21.note.Note E->
+        {0.0} <music21.stream.Voice 0x294d622b160>
+            {0.0} <music21.note.Rest quarter>
+            {1.0} <music21.note.Note E->
+            {1.5} <music21.note.Rest quarter>
+            {2.5} <music21.note.Note E->
+            {3.0} <music21.note.Rest quarter>
+            {4.0} <music21.note.Note G>
+            {4.5} <music21.note.Rest quarter>
+            {5.5} <music21.note.Note G>
+    {60.5} <music21.stream.Measure 11 offset=60.5>
+        {0.0} <music21.stream.Voice 0x294d6228580>
+            {0.0} <music21.note.Note E>
+            {0.5} <music21.note.Note E>
+            {1.0} <music21.note.Note B->
+            {1.5} <music21.note.Note E>
+            {2.0} <music21.note.Note E>
+            {2.5} <music21.note.Note B->
+            {3.0} <music21.note.Note F>
+            {3.5} <music21.note.Note F>
+            {4.0} <music21.note.Note C>
+            {4.5} <music21.note.Note G>
+            {5.0} <music21.note.Note G>
+            {5.5} <music21.note.Note B->
+        {0.0} <music21.stream.Voice 0x294d622b610>
+            {0.0} <music21.note.Rest eighth>
+            {0.5} <music21.note.Note D->
+            {1.0} <music21.note.Note D->
+            {1.5} <music21.note.Rest eighth>
+            {2.0} <music21.note.Note C>
+            {2.5} <music21.note.Note C>
+            {3.0} <music21.note.Rest eighth>
+            {3.5} <music21.note.Note E->
+            {4.0} <music21.note.Note E->
+            {4.5} <music21.note.Rest eighth>
+            {5.0} <music21.note.Note D>
+            {5.5} <music21.note.Note D>
+        {0.0} <music21.stream.Voice 0x294d622ba00>
+            {0.0} <music21.note.Rest quarter>
+            {1.0} <music21.note.Note G>
+            {1.5} <music21.note.Rest quarter>
+            {2.5} <music21.note.Note G>
+            {3.0} <music21.note.Rest quarter>
+            {4.0} <music21.note.Note A>
+            {4.5} <music21.note.Rest quarter>
+            {5.5} <music21.note.Note B->
+    {66.5} <music21.stream.Measure 12 offset=66.5>
+        {0.0} <music21.layout.SystemLayout>
+        {0.0} <music21.layout.StaffLayout distance 103.8, staffNumber 2, staffSize None, staffLines None>
+        {0.0} <music21.stream.Voice 0x294d62283a0>
+            {0.0} <music21.note.Note C>
+            {0.5} <music21.note.Note G>
+            {1.0} <music21.note.Note C>
+            {1.5} <music21.note.Note F>
+            {2.0} <music21.note.Note F>
+            {2.5} <music21.note.Note C>
+            {3.0} <music21.note.Note B->
+            {3.5} <music21.note.Note A>
+            {4.0} <music21.note.Note G#>
+            {4.5} <music21.note.Note G>
+            {5.0} <music21.note.Note F>
+            {5.5} <music21.note.Note B->
+        {0.0} <music21.stream.Voice 0x294d622bd00>
+            {0.0} <music21.note.Rest eighth>
+            {0.5} <music21.note.Note E->
+            {1.0} <music21.note.Note E->
+            {1.5} <music21.note.Rest eighth>
+            {2.0} <music21.note.Note E->
+            {2.5} <music21.note.Note E->
+            {3.0} <music21.note.Note D>
+            {3.5} <music21.note.Note D#>
+            {4.0} <music21.note.Rest quarter>
+            {5.0} <music21.note.Note C>
+            {5.5} <music21.note.Note F>
+        {0.0} <music21.stream.Voice 0x294d622bcd0>
+            {0.0} <music21.note.Rest quarter>
+            {1.0} <music21.note.Note G>
+            {1.5} <music21.note.Rest quarter>
+            {2.5} <music21.note.Note F>
+            {3.0} <music21.note.Rest half>
+            {5.0} <music21.note.Note E->
+            {5.5} <music21.note.Rest eighth>
+    {72.5} <music21.stream.Measure 13 offset=72.5>
+        {0.0} <music21.stream.Voice 0x294d6228250>
+            {0.0} <music21.note.Note E->
+            {0.5} <music21.note.Note G>
+            {1.0} <music21.note.Note B->
+            {1.5} <music21.note.Note E->
+            {2.0} <music21.note.Note A->
+            {2.5} <music21.note.Note B->
+            {3.0} <music21.note.Note E->
+            {3.5} <music21.note.Note G>
+            {4.0} <music21.note.Note B->
+            {4.5} <music21.note.Note D>
+            {5.0} <music21.note.Note G>
+            {5.5} <music21.note.Note B->
+        {0.0} <music21.stream.Voice 0x294d6229e70>
+            {0.0} <music21.note.Rest eighth>
+            {0.5} <music21.note.Note E->
+            {1.0} <music21.note.Note E->
+            {1.5} <music21.note.Rest eighth>
+            {2.0} <music21.note.Note D>
+            {2.5} <music21.note.Note D>
+            {3.0} <music21.note.Rest eighth>
+            {3.5} <music21.note.Note E->
+            {4.0} <music21.note.Note E->
+            {4.5} <music21.note.Rest eighth>
+            {5.0} <music21.note.Note E->
+            {5.5} <music21.note.Note E->
+        {0.0} <music21.stream.Voice 0x294d6228520>
+            {0.0} <music21.note.Rest quarter>
+            {1.0} <music21.note.Note G>
+            {1.5} <music21.note.Rest quarter>
+            {2.5} <music21.note.Note A->
+            {3.0} <music21.note.Rest quarter>
+            {4.0} <music21.note.Note G>
+            {4.5} <music21.note.Rest quarter>
+            {5.5} <music21.note.Note G>
+    {78.5} <music21.stream.Measure 14 offset=78.5>
+        {0.0} <music21.layout.SystemLayout>
+        {0.0} <music21.layout.StaffLayout distance 103.8, staffNumber 2, staffSize None, staffLines None>
+        {0.0} <music21.stream.Voice 0x294d622be50>
+            {0.0} <music21.note.Note C>
+            {0.5} <music21.note.Note G>
+            {1.0} <music21.note.Note B->
+            {1.5} <music21.note.Note C>
+            {2.0} <music21.note.Note G>
+            {2.5} <music21.note.Note C>
+            {3.0} <music21.note.Note F>
+            {3.5} <music21.note.Note F>
+            {4.0} <music21.note.Note B->
+            {4.5} <music21.note.Note F>
+            {5.0} <music21.note.Note F>
+            {5.5} <music21.note.Note A->
+        {0.0} <music21.stream.Voice 0x294d6229a80>
+            {0.0} <music21.note.Rest eighth>
+            {0.5} <music21.note.Note E>
+            {1.0} <music21.note.Note E>
+            {1.5} <music21.note.Rest eighth>
+            {2.0} <music21.note.Note E>
+            {2.5} <music21.note.Note E>
+            {3.0} <music21.note.Rest eighth>
+            {3.5} <music21.note.Note D->
+            {4.0} <music21.note.Note D->
+            {4.5} <music21.note.Rest eighth>
+            {5.0} <music21.note.Note C>
+            {5.5} <music21.note.Note C>
+        {0.0} <music21.stream.Voice 0x294d6229120>
+            {0.0} <music21.note.Rest quarter>
+            {1.0} <music21.note.Note G>
+            {1.5} <music21.note.Rest quarter>
+            {2.5} <music21.note.Note B->
+            {3.0} <music21.note.Rest quarter>
+            {4.0} <music21.note.Note E>
+            {4.5} <music21.note.Rest quarter>
+            {5.5} <music21.note.Note F>
+    {84.5} <music21.stream.Measure 15 offset=84.5>
+        {0.0} <music21.stream.Voice 0x294d622a9e0>
+            {0.0} <music21.note.Note B->
+            {0.5} <music21.note.Note F>
+            {1.0} <music21.note.Note B->
+            {1.5} <music21.note.Note B>
+            {2.0} <music21.note.Note G>
+            {2.5} <music21.note.Note D>
+            {3.0} <music21.note.Note C>
+            {3.5} <music21.note.Note G>
+            {4.0} <music21.note.Note C>
+            {4.5} <music21.note.Note A>
+            {5.0} <music21.note.Note G->
+            {5.5} <music21.note.Note C>
+        {0.0} <music21.stream.Voice 0x294d6228fd0>
+            {0.0} <music21.note.Rest eighth>
+            {0.5} <music21.note.Note D>
+            {1.0} <music21.note.Note D>
+            {1.5} <music21.note.Rest eighth>
+            {2.0} <music21.note.Note F>
+            {2.5} <music21.note.Note F>
+            {3.0} <music21.note.Rest eighth>
+            {3.5} <music21.note.Note E->
+            {4.0} <music21.note.Note E->
+            {4.5} <music21.note.Rest eighth>
+            {5.0} <music21.note.Note E->
+            {5.5} <music21.note.Note E->
+        {0.0} <music21.stream.Voice 0x294d622aa70>
+            {0.0} <music21.note.Rest quarter>
+            {1.0} <music21.note.Note A->
+            {1.5} <music21.note.Rest quarter>
+            {2.5} <music21.note.Note G>
+            {3.0} <music21.note.Rest quarter>
+            {4.0} <music21.note.Note G>
+            {4.5} <music21.note.Rest quarter>
+            {5.5} <music21.note.Note G->
+    {90.5} <music21.stream.Measure 16 offset=90.5>
+        {0.0} <music21.layout.SystemLayout>
+        {0.0} <music21.layout.StaffLayout distance 103.8, staffNumber 2, staffSize None, staffLines None>
+        {0.0} <music21.stream.Voice 0x294d626dba0>
+            {0.0} <music21.note.Note B->
+            {0.5} <music21.note.Note F>
+            {1.0} <music21.note.Note B->
+            {1.5} <music21.note.Note B->
+            {2.0} <music21.note.Note F>
+            {2.5} <music21.note.Note B->
+            {3.0} <music21.note.Note E->
+            {3.5} <music21.note.Note G>
+            {4.0} <music21.note.Note B->
+            {4.5} <music21.note.Note E->
+            {5.0} <music21.note.Note G>
+            {5.5} <music21.note.Note B->
+        {0.0} <music21.stream.Voice 0x294d626cb50>
+            {0.0} <music21.note.Rest eighth>
+            {0.5} <music21.note.Note E->
+            {1.0} <music21.note.Note E->
+            {1.5} <music21.note.Rest eighth>
+            {2.0} <music21.note.Note D>
+            {2.5} <music21.note.Note D>
+            {3.0} <music21.note.Rest eighth>
+            {3.5} <music21.note.Note E->
+            {4.0} <music21.note.Note E->
+            {4.5} <music21.note.Rest eighth>
+            {5.0} <music21.note.Note E->
+            {5.5} <music21.note.Note E->
+        {0.0} <music21.stream.Voice 0x294d626e020>
+            {0.0} <music21.note.Rest quarter>
+            {1.0} <music21.note.Note A->
+            {1.5} <music21.note.Rest quarter>
+            {2.5} <music21.note.Note A->
+            {3.0} <music21.note.Rest quarter>
+            {4.0} <music21.note.Note G>
+            {4.5} <music21.note.Rest quarter>
+            {5.5} <music21.note.Note G>
+    {96.5} <music21.stream.Measure 17 offset=96.5>
+        {0.0} <music21.stream.Voice 0x294d626c460>
+            {0.0} <music21.note.Note B->
+            {0.5} <music21.note.Note F>
+            {1.0} <music21.note.Note B->
+            {1.5} <music21.note.Note B->
+            {2.0} <music21.note.Note F>
+            {2.5} <music21.note.Note B->
+            {3.0} <music21.note.Note A>
+            {3.5} <music21.note.Note F>
+            {4.0} <music21.note.Note C>
+            {4.5} <music21.note.Note A>
+            {5.0} <music21.note.Note F>
+            {5.5} <music21.note.Note C>
+        {0.0} <music21.stream.Voice 0x294d626c310>
+            {0.0} <music21.note.Rest eighth>
+            {0.5} <music21.note.Note D>
+            {1.0} <music21.note.Note D>
+            {1.5} <music21.note.Rest eighth>
+            {2.0} <music21.note.Note D>
+            {2.5} <music21.note.Note D>
+            {3.0} <music21.note.Rest eighth>
+            {3.5} <music21.note.Note C>
+            {4.0} <music21.note.Note F>
+            {4.5} <music21.note.Rest eighth>
+            {5.0} <music21.note.Note C>
+            {5.5} <music21.note.Note F>
+        {0.0} <music21.stream.Voice 0x294d626e650>
+            {0.0} <music21.note.Rest quarter>
+            {1.0} <music21.note.Note F>
+            {1.5} <music21.note.Rest quarter>
+            {2.5} <music21.note.Note F>
+            {3.0} <music21.note.Rest dotted-half>
+    {102.5} <music21.stream.Measure 18 offset=102.5>
+        {0.0} <music21.layout.SystemLayout>
+        {0.0} <music21.layout.StaffLayout distance 103.8, staffNumber 2, staffSize None, staffLines None>
+        {0.0} <music21.stream.Voice 0x294d622bc10>
+            {0.0} <music21.note.Note A->
+            {0.5} <music21.note.Note E->
+            {1.0} <music21.note.Note A->
+            {1.5} <music21.note.Note A->
+            {2.0} <music21.note.Note E->
+            {2.5} <music21.note.Note A->
+            {3.0} <music21.note.Note E->
+            {3.5} <music21.note.Note G>
+            {4.0} <music21.note.Note B->
+            {4.5} <music21.note.Note E->
+            {5.0} <music21.note.Note G>
+            {5.5} <music21.note.Note B->
+        {0.0} <music21.stream.Voice 0x294d622a0e0>
+            {0.0} <music21.note.Rest eighth>
+            {0.5} <music21.note.Note C>
+            {1.0} <music21.note.Note C>
+            {1.5} <music21.note.Rest eighth>
+            {2.0} <music21.note.Note C->
+            {2.5} <music21.note.Note C->
+            {3.0} <music21.note.Note E->
+            {3.5} <music21.note.Note E->
+            {4.0} <music21.note.Note E->
+            {4.5} <music21.note.Note E->
+            {5.0} <music21.note.Note E->
+            {5.5} <music21.note.Note E->
+        {0.0} <music21.stream.Voice 0x294d626f040>
+            {0.0} <music21.note.Rest quarter>
+            {1.0} <music21.note.Note E->
+            {1.5} <music21.note.Rest quarter>
+            {2.5} <music21.note.Note E->
+            {3.0} <music21.note.Rest quarter>
+            {4.0} <music21.note.Note G>
+            {4.5} <music21.note.Rest quarter>
+            {5.5} <music21.note.Note G>
+    {108.5} <music21.stream.Measure 19 offset=108.5>
+        {0.0} <music21.stream.Voice 0x294d626f490>
+            {0.0} <music21.note.Note E>
+            {0.5} <music21.note.Note E>
+            {1.0} <music21.note.Note B->
+            {1.5} <music21.note.Note E>
+            {2.0} <music21.note.Note E>
+            {2.5} <music21.note.Note B->
+            {3.0} <music21.note.Note F>
+            {3.5} <music21.note.Note F>
+            {4.0} <music21.note.Note C>
+            {4.5} <music21.note.Note G>
+            {5.0} <music21.note.Note G>
+            {5.5} <music21.note.Note B->
+        {0.0} <music21.stream.Voice 0x294d626f460>
+            {0.0} <music21.note.Rest eighth>
+            {0.5} <music21.note.Note D->
+            {1.0} <music21.note.Note D->
+            {1.5} <music21.note.Rest eighth>
+            {2.0} <music21.note.Note C>
+            {2.5} <music21.note.Note C>
+            {3.0} <music21.note.Rest eighth>
+            {3.5} <music21.note.Note E->
+            {4.0} <music21.note.Note E->
+            {4.5} <music21.note.Rest eighth>
+            {5.0} <music21.note.Note D>
+            {5.5} <music21.note.Note D>
+        {0.0} <music21.stream.Voice 0x294d626ceb0>
+            {0.0} <music21.note.Rest quarter>
+            {1.0} <music21.note.Note G>
+            {1.5} <music21.note.Rest quarter>
+            {2.5} <music21.note.Note G>
+            {3.0} <music21.note.Rest quarter>
+            {4.0} <music21.note.Note A>
+            {4.5} <music21.note.Rest quarter>
+            {5.5} <music21.note.Note B->
+    {114.5} <music21.stream.Measure 20 offset=114.5>
+        {0.0} <music21.layout.PageLayout>
+        {0.0} <music21.layout.SystemLayout>
+        {0.0} <music21.layout.StaffLayout distance 103.8, staffNumber 2, staffSize None, staffLines None>
+        {0.0} <music21.stream.Voice 0x294d626fc10>
+            {0.0} <music21.note.Note C>
+            {0.5} <music21.note.Note G>
+            {1.0} <music21.note.Note C>
+            {1.5} <music21.note.Note F>
+            {2.0} <music21.note.Note F>
+            {2.5} <music21.note.Note C>
+            {3.0} <music21.note.Note B->
+            {3.5} <music21.note.Note A>
+            {4.0} <music21.note.Note G#>
+            {4.5} <music21.note.Note G>
+            {5.0} <music21.note.Note F>
+            {5.5} <music21.note.Note B->
+        {0.0} <music21.stream.Voice 0x294d626ebc0>
+            {0.0} <music21.note.Rest eighth>
+            {0.5} <music21.note.Note E->
+            {1.0} <music21.note.Note E->
+            {1.5} <music21.note.Rest eighth>
+            {2.0} <music21.note.Note E->
+            {2.5} <music21.note.Note E->
+            {3.0} <music21.note.Note D>
+            {3.5} <music21.note.Note D#>
+            {4.0} <music21.note.Rest quarter>
+            {5.0} <music21.note.Note C>
+            {5.5} <music21.note.Note F>
+        {0.0} <music21.stream.Voice 0x294d626f8b0>
+            {0.0} <music21.note.Rest quarter>
+            {1.0} <music21.note.Note G>
+            {1.5} <music21.note.Rest quarter>
+            {2.5} <music21.note.Note F>
+            {3.0} <music21.note.Rest half>
+            {5.0} <music21.note.Note E->
+            {5.5} <music21.note.Rest eighth>
+    {120.5} <music21.stream.Measure 21 offset=120.5>
+        {0.0} <music21.stream.Voice 0x294d626f550>
+            {0.0} <music21.note.Note E->
+            {0.5} <music21.note.Note G>
+            {1.0} <music21.note.Note B->
+            {1.5} <music21.note.Note E->
+            {2.0} <music21.note.Note A->
+            {2.5} <music21.note.Note B->
+            {3.0} <music21.note.Note E->
+            {3.5} <music21.note.Note G>
+            {4.0} <music21.note.Note B->
+            {4.5} <music21.note.Note D>
+            {5.0} <music21.note.Note G>
+            {5.5} <music21.note.Note B->
+        {0.0} <music21.stream.Voice 0x294d626ea70>
+            {0.0} <music21.note.Rest eighth>
+            {0.5} <music21.note.Note E->
+            {1.0} <music21.note.Note E->
+            {1.5} <music21.note.Rest eighth>
+            {2.0} <music21.note.Note D>
+            {2.5} <music21.note.Note D>
+            {3.0} <music21.note.Rest eighth>
+            {3.5} <music21.note.Note E->
+            {4.0} <music21.note.Note E->
+            {4.5} <music21.note.Rest eighth>
+            {5.0} <music21.note.Note E->
+            {5.5} <music21.note.Note E->
+        {0.0} <music21.stream.Voice 0x294d626f520>
+            {0.0} <music21.note.Rest quarter>
+            {1.0} <music21.note.Note G>
+            {1.5} <music21.note.Rest quarter>
+            {2.5} <music21.note.Note A->
+            {3.0} <music21.note.Rest quarter>
+            {4.0} <music21.note.Note G>
+            {4.5} <music21.note.Rest quarter>
+            {5.5} <music21.note.Note G>
+    {126.5} <music21.stream.Measure 22 offset=126.5>
+        {0.0} <music21.layout.SystemLayout>
+        {0.0} <music21.layout.StaffLayout distance 103.8, staffNumber 2, staffSize None, staffLines None>
+        {0.0} <music21.stream.Voice 0x294d62b8820>
+            {0.0} <music21.note.Note C>
+            {0.5} <music21.note.Note G>
+            {1.0} <music21.note.Note B->
+            {1.5} <music21.note.Note C>
+            {2.0} <music21.note.Note G>
+            {2.5} <music21.note.Note C>
+            {3.0} <music21.note.Note F>
+            {3.5} <music21.note.Note F>
+            {4.0} <music21.note.Note B->
+            {4.5} <music21.note.Note F>
+            {5.0} <music21.note.Note F>
+            {5.5} <music21.note.Note A->
+        {0.0} <music21.stream.Voice 0x294d62b90c0>
+            {0.0} <music21.note.Rest eighth>
+            {0.5} <music21.note.Note E>
+            {1.0} <music21.note.Note E>
+            {1.5} <music21.note.Rest eighth>
+            {2.0} <music21.note.Note E>
+            {2.5} <music21.note.Note E>
+            {3.0} <music21.note.Rest eighth>
+            {3.5} <music21.note.Note D->
+            {4.0} <music21.note.Note D->
+            {4.5} <music21.note.Rest eighth>
+            {5.0} <music21.note.Note C>
+            {5.5} <music21.note.Note C>
+        {0.0} <music21.stream.Voice 0x294d62b8dc0>
+            {0.0} <music21.note.Rest quarter>
+            {1.0} <music21.note.Note G>
+            {1.5} <music21.note.Rest quarter>
+            {2.5} <music21.note.Note B->
+            {3.0} <music21.note.Rest quarter>
+            {4.0} <music21.note.Note E>
+            {4.5} <music21.note.Rest quarter>
+            {5.5} <music21.note.Note F>
+    {132.5} <music21.stream.Measure 23 offset=132.5>
+        {0.0} <music21.stream.Voice 0x294d62b8370>
+            {0.0} <music21.note.Note B->
+            {0.5} <music21.note.Note F>
+            {1.0} <music21.note.Note B->
+            {1.5} <music21.note.Note B>
+            {2.0} <music21.note.Note G>
+            {2.5} <music21.note.Note D>
+            {3.0} <music21.note.Note C>
+            {3.5} <music21.note.Note G>
+            {4.0} <music21.note.Note C>
+            {4.5} <music21.note.Note A>
+            {5.0} <music21.note.Note G->
+            {5.5} <music21.note.Note C>
+        {0.0} <music21.stream.Voice 0x294d62b9630>
+            {0.0} <music21.note.Rest eighth>
+            {0.5} <music21.note.Note D>
+            {1.0} <music21.note.Note D>
+            {1.5} <music21.note.Rest eighth>
+            {2.0} <music21.note.Note F>
+            {2.5} <music21.note.Note F>
+            {3.0} <music21.note.Rest eighth>
+            {3.5} <music21.note.Note E->
+            {4.0} <music21.note.Note E->
+            {4.5} <music21.note.Rest eighth>
+            {5.0} <music21.note.Note E->
+            {5.5} <music21.note.Note E->
+        {0.0} <music21.stream.Voice 0x294d62b9600>
+            {0.0} <music21.note.Rest quarter>
+            {1.0} <music21.note.Note A->
+            {1.5} <music21.note.Rest quarter>
+            {2.5} <music21.note.Note G>
+            {3.0} <music21.note.Rest quarter>
+            {4.0} <music21.note.Note G>
+            {4.5} <music21.note.Rest quarter>
+            {5.5} <music21.note.Note G->
+    {138.5} <music21.stream.Measure 24 offset=138.5>
+        {0.0} <music21.layout.SystemLayout>
+        {0.0} <music21.layout.StaffLayout distance 103.8, staffNumber 2, staffSize None, staffLines None>
+        {0.0} <music21.stream.Voice 0x294d62b9540>
+            {0.0} <music21.note.Note B->
+            {0.5} <music21.note.Note F>
+            {1.0} <music21.note.Note B->
+            {1.5} <music21.note.Note B->
+            {2.0} <music21.note.Note F>
+            {2.5} <music21.note.Note B->
+            {3.0} <music21.note.Note E->
+            {3.5} <music21.note.Note G>
+            {4.0} <music21.note.Note B->
+            {4.5} <music21.note.Note E->
+            {5.0} <music21.note.Note G>
+            {5.5} <music21.note.Note B->
+        {0.0} <music21.stream.Voice 0x294d62ba170>
+            {0.0} <music21.note.Rest eighth>
+            {0.5} <music21.note.Note E->
+            {1.0} <music21.note.Note E->
+            {1.5} <music21.note.Rest eighth>
+            {2.0} <music21.note.Note D>
+            {2.5} <music21.note.Note D>
+            {3.0} <music21.note.Rest eighth>
+            {3.5} <music21.note.Note E->
+            {4.0} <music21.note.Note E->
+            {4.5} <music21.note.Rest eighth>
+            {5.0} <music21.note.Note E->
+            {5.5} <music21.note.Note E->
+        {0.0} <music21.stream.Voice 0x294d62b8940>
+            {0.0} <music21.note.Rest quarter>
+            {1.0} <music21.note.Note A->
+            {1.5} <music21.note.Rest quarter>
+            {2.5} <music21.note.Note A->
+            {3.0} <music21.note.Rest quarter>
+            {4.0} <music21.note.Note G>
+            {4.5} <music21.note.Rest quarter>
+            {5.5} <music21.note.Note G>
+    {144.5} <music21.stream.Measure 25 offset=144.5>
+        {0.0} <music21.stream.Voice 0x294d62b82e0>
+            {0.0} <music21.note.Note E->
+            {0.5} <music21.note.Note A->
+            {1.0} <music21.note.Note C->
+            {1.5} <music21.note.Note E->
+            {2.0} <music21.note.Note A->
+            {2.5} <music21.note.Note C->
+            {3.0} <music21.note.Note E->
+            {3.5} <music21.note.Note G>
+            {4.0} <music21.note.Note B->
+            {4.5} <music21.note.Note E->
+            {5.0} <music21.note.Note G>
+            {5.5} <music21.note.Note B->
+        {0.0} <music21.stream.Voice 0x294d62ba9e0>
+            {0.0} <music21.note.Rest eighth>
+            {0.5} <music21.note.Note C->
+            {1.0} <music21.note.Note E->
+            {1.5} <music21.note.Rest eighth>
+            {2.0} <music21.note.Note C->
+            {2.5} <music21.note.Note E->
+            {3.0} <music21.note.Rest eighth>
+            {3.5} <music21.note.Note E->
+            {4.0} <music21.note.Note E->
+            {4.5} <music21.note.Rest eighth>
+            {5.0} <music21.note.Note E->
+            {5.5} <music21.note.Note E->
+        {0.0} <music21.stream.Voice 0x294d62b81c0>
+            {0.0} <music21.note.Rest eighth>
+            {0.5} <music21.note.Note E->
+            {1.0} <music21.note.Note A->
+            {1.5} <music21.note.Rest eighth>
+            {2.0} <music21.note.Note E->
+            {2.5} <music21.note.Note A->
+            {3.0} <music21.note.Rest quarter>
+            {4.0} <music21.note.Note G>
+            {4.5} <music21.note.Rest quarter>
+            {5.5} <music21.note.Note G>
+    {150.5} <music21.stream.Measure 26 offset=150.5>
+        {0.0} <music21.layout.SystemLayout>
+        {0.0} <music21.layout.StaffLayout distance 103.8, staffNumber 2, staffSize None, staffLines None>
+        {0.0} <music21.stream.Voice 0x294d62bb040>
+            {0.0} <music21.note.Note E->
+            {0.5} <music21.note.Note A->
+            {1.0} <music21.note.Note C->
+            {1.5} <music21.note.Note E->
+            {2.0} <music21.note.Note A->
+            {2.5} <music21.note.Note C->
+            {3.0} <music21.note.Note E->
+            {3.5} <music21.note.Note G>
+            {4.0} <music21.note.Note B->
+            {4.5} <music21.note.Note E->
+            {5.0} <music21.note.Note G>
+            {5.5} <music21.note.Note B->
+        {0.0} <music21.stream.Voice 0x294d62bb280>
+            {0.0} <music21.note.Rest eighth>
+            {0.5} <music21.note.Note C->
+            {1.0} <music21.note.Note E->
+            {1.5} <music21.note.Rest eighth>
+            {2.0} <music21.note.Note C->
+            {2.5} <music21.note.Note E->
+            {3.0} <music21.note.Rest eighth>
+            {3.5} <music21.note.Note B->
+            {4.0} <music21.note.Note E->
+            {4.5} <music21.note.Rest eighth>
+            {5.0} <music21.note.Note E->
+            {5.5} <music21.note.Note E->
+        {0.0} <music21.stream.Voice 0x294d62ba5c0>
+            {0.0} <music21.note.Rest eighth>
+            {0.5} <music21.note.Note E->
+            {1.0} <music21.note.Note A->
+            {1.5} <music21.note.Rest eighth>
+            {2.0} <music21.note.Note E->
+            {2.5} <music21.note.Note A->
+            {3.0} <music21.note.Rest eighth>
+            {3.5} <music21.note.Note E->
+            {4.0} <music21.note.Note G>
+            {4.5} <music21.note.Rest quarter>
+            {5.5} <music21.note.Note G>
+    {156.5} <music21.stream.Measure 27 offset=156.5>
+        {0.0} <music21.stream.Voice 0x294d62bbb20>
+            {0.0} <music21.note.Note E->
+            {0.5} <music21.note.Note F>
+            {1.0} <music21.note.Note B->
+            {1.5} <music21.note.Note E->
+            {2.0} <music21.note.Note F>
+            {2.5} <music21.note.Note B->
+            {3.0} <music21.note.Note E->
+            {3.5} <music21.note.Note G>
+            {4.0} <music21.note.Note B->
+            {4.5} <music21.note.Note A>
+            {5.0} <music21.note.Note F>
+            {5.5} <music21.note.Note C>
+        {0.0} <music21.stream.Voice 0x294d62bbb80>
+            {0.0} <music21.note.Rest eighth>
+            {0.5} <music21.note.Note D>
+            {1.0} <music21.note.Note A->
+            {1.5} <music21.note.Rest eighth>
+            {2.0} <music21.note.Note D>
+            {2.5} <music21.note.Note A->
+            {3.0} <music21.note.Rest eighth>
+            {3.5} <music21.note.Note E->
+            {4.0} <music21.note.Note G>
+            {4.5} <music21.note.Rest eighth>
+            {5.0} <music21.note.Note E->
+            {5.5} <music21.note.Note E->
+        {0.0} <music21.stream.Voice 0x294d62bacb0>
+            {0.0} <music21.note.Rest 5.5ql>
+            {5.5} <music21.note.Note F>
+    {162.5} <music21.stream.Measure 28 offset=162.5>
+        {0.0} <music21.layout.SystemLayout>
+        {0.0} <music21.layout.StaffLayout distance 103.8, staffNumber 2, staffSize None, staffLines None>
+        {0.0} <music21.stream.Voice 0x294d62bb850>
+            {0.0} <music21.note.Note B->
+            {0.5} <music21.note.Note F>
+            {1.0} <music21.note.Note B->
+            {1.5} <music21.note.Note B->
+            {2.0} <music21.note.Note F>
+            {2.5} <music21.note.Note B->
+            {3.0} <music21.note.Note E->
+            {3.5} <music21.note.Note G>
+            {4.0} <music21.note.Note B->
+            {4.5} <music21.note.Note E->
+            {5.0} <music21.note.Note G>
+            {5.5} <music21.note.Note B->
+        {0.0} <music21.stream.Voice 0x294d62b9ae0>
+            {0.0} <music21.note.Rest eighth>
+            {0.5} <music21.note.Note E->
+            {1.0} <music21.note.Note E->
+            {1.5} <music21.note.Rest eighth>
+            {2.0} <music21.note.Note D>
+            {2.5} <music21.note.Note D>
+            {3.0} <music21.note.Rest eighth>
+            {3.5} <music21.note.Note E->
+            {4.0} <music21.note.Note E->
+            {4.5} <music21.note.Rest eighth>
+            {5.0} <music21.note.Note E->
+            {5.5} <music21.note.Note E->
+        {0.0} <music21.stream.Voice 0x294d62bb5b0>
+            {0.0} <music21.note.Rest quarter>
+            {1.0} <music21.note.Note A->
+            {1.5} <music21.note.Rest quarter>
+            {2.5} <music21.note.Note A->
+            {3.0} <music21.note.Rest quarter>
+            {4.0} <music21.note.Note G>
+            {4.5} <music21.note.Rest quarter>
+            {5.5} <music21.note.Note G>
+    {168.5} <music21.stream.Measure 29 offset=168.5>
+        {0.0} <music21.stream.Voice 0x294d626e4d0>
+            {0.0} <music21.note.Note A->
+            {0.5} <music21.note.Note E->
+            {1.0} <music21.note.Note A->
+            {1.5} <music21.note.Note C->
+            {2.0} <music21.note.Note A->
+            {2.5} <music21.note.Note E->
+            {3.0} <music21.note.Note E->
+            {3.5} <music21.note.Note G>
+            {4.0} <music21.note.Note B->
+            {4.5} <music21.note.Note E->
+            {5.0} <music21.note.Note G>
+            {5.5} <music21.note.Note B->
+        {0.0} <music21.stream.Voice 0x294d626e530>
+            {0.0} <music21.note.Rest eighth>
+            {0.5} <music21.note.Note A->
+            {1.0} <music21.note.Note C->
+            {1.5} <music21.note.Note E->
+            {2.0} <music21.note.Note C->
+            {2.5} <music21.note.Note A->
+            {3.0} <music21.note.Rest eighth>
+            {3.5} <music21.note.Note E->
+            {4.0} <music21.note.Note E->
+            {4.5} <music21.note.Rest eighth>
+            {5.0} <music21.note.Note E->
+            {5.5} <music21.note.Note E->
+        {0.0} <music21.stream.Voice 0x294d626e440>
+            {0.0} <music21.note.Rest eighth>
+            {0.5} <music21.note.Note C->
+            {1.0} <music21.note.Note E->
+            {1.5} <music21.note.Note A->
+            {2.0} <music21.note.Note E->
+            {2.5} <music21.note.Note C->
+            {3.0} <music21.note.Rest quarter>
+            {4.0} <music21.note.Note G>
+            {4.5} <music21.note.Rest quarter>
+            {5.5} <music21.note.Note G>
+    {174.5} <music21.stream.Measure 30 offset=174.5>
+        {0.0} <music21.layout.PageLayout>
+        {0.0} <music21.layout.SystemLayout>
+        {0.0} <music21.layout.StaffLayout distance 103.8, staffNumber 2, staffSize None, staffLines None>
+        {0.0} <music21.stream.Voice 0x294d62b8520>
+            {0.0} <music21.note.Note A->
+            {0.5} <music21.note.Note E->
+            {1.0} <music21.note.Note A->
+            {1.5} <music21.note.Note C->
+            {2.0} <music21.note.Note A->
+            {2.5} <music21.note.Note E->
+            {3.0} <music21.note.Note E->
+            {3.5} <music21.note.Note G>
+            {4.0} <music21.note.Note B->
+            {4.5} <music21.note.Note A>
+            {5.0} <music21.note.Note G>
+            {5.5} <music21.note.Note C>
+        {0.0} <music21.stream.Voice 0x294d62bace0>
+            {0.0} <music21.note.Rest eighth>
+            {0.5} <music21.note.Note A->
+            {1.0} <music21.note.Note C->
+            {1.5} <music21.note.Note E->
+            {2.0} <music21.note.Note C->
+            {2.5} <music21.note.Note A->
+            {3.0} <music21.note.Rest eighth>
+            {3.5} <music21.note.Note E->
+            {4.0} <music21.note.Note E->
+            {4.5} <music21.note.Rest eighth>
+            {5.0} <music21.note.Note E->
+            {5.5} <music21.note.Note E->
+        {0.0} <music21.stream.Voice 0x294d62bad40>
+            {0.0} <music21.note.Rest quarter>
+            {1.0} <music21.note.Note E->
+            {1.5} <music21.note.Note A->
+            {2.0} <music21.note.Note E->
+            {2.5} <music21.note.Note C->
+            {3.0} <music21.note.Rest quarter>
+            {4.0} <music21.note.Note G>
+            {4.5} <music21.note.Rest quarter>
+            {5.5} <music21.note.Note F>
+    {180.5} <music21.stream.Measure 31 offset=180.5>
+        {0.0} <music21.stream.Voice 0x294d626ec20>
+            {0.0} <music21.note.Note B->
+            {0.5} <music21.note.Note F>
+            {1.0} <music21.note.Note B->
+            {1.5} <music21.note.Note B>
+            {2.0} <music21.note.Note G>
+            {2.5} <music21.note.Note D>
+            {3.0} <music21.note.Note C>
+            {3.5} <music21.note.Note G>
+            {4.0} <music21.note.Note C>
+            {4.5} <music21.note.Note A>
+            {5.0} <music21.note.Note F>
+            {5.5} <music21.note.Note C>
+        {0.0} <music21.stream.Voice 0x294d626eef0>
+            {0.0} <music21.note.Rest eighth>
+            {0.5} <music21.note.Note B->
+            {1.0} <music21.note.Note E->
+            {1.5} <music21.note.Rest eighth>
+            {2.0} <music21.note.Note F>
+            {2.5} <music21.note.Note F>
+            {3.0} <music21.note.Rest eighth>
+            {3.5} <music21.note.Note E->
+            {4.0} <music21.note.Note G>
+            {4.5} <music21.note.Rest eighth>
+            {5.0} <music21.note.Note C>
+            {5.5} <music21.note.Note E->
+        {0.0} <music21.stream.Voice 0x294d622a290>
+            {0.0} <music21.note.Rest eighth>
+            {0.5} <music21.note.Note E->
+            {1.0} <music21.note.Note A->
+            {1.5} <music21.note.Rest quarter>
+            {2.5} <music21.note.Note G>
+            {3.0} <music21.note.Rest half>
+            {5.0} <music21.note.Note E->
+            {5.5} <music21.note.Note F>
+    {186.5} <music21.stream.Measure 32 offset=186.5>
+        {0.0} <music21.layout.SystemLayout>
+        {0.0} <music21.layout.StaffLayout distance 103.8, staffNumber 2, staffSize None, staffLines None>
+        {0.0} <music21.note.Note B->
+        {0.375} <music21.note.Note B->
+        {0.75} <music21.note.Note F>
+        {1.125} <music21.note.Note A->
+        {1.5} <music21.note.Note D>
+        {1.875} <music21.note.Note B->
+        {2.25} <music21.note.Note F>
+        {2.625} <music21.note.Note A->
+        {3.0} <music21.note.Note D>
+    {192.5} <music21.stream.Measure 33 offset=192.5>
+        {0.0} <music21.meter.TimeSignature 6/4>
+        {0.0} <music21.note.Rest dotted-half>
+    {195.5} <music21.stream.Measure 34 offset=195.5>
+        {0.0} <music21.layout.SystemLayout>
+        {0.0} <music21.layout.StaffLayout distance 103.8, staffNumber 2, staffSize None, staffLines None>
+        {0.0} <music21.note.Rest dotted-half>
+    {198.5} <music21.stream.Measure 35 offset=198.5>
+        {0.0} <music21.layout.SystemLayout>
+        {0.0} <music21.layout.StaffLayout distance 103.8, staffNumber 2, staffSize None, staffLines None>
+        {0.0} <music21.meter.TimeSignature 2/4>
+        {0.0} <music21.note.Rest half>
+    {200.5} <music21.stream.Measure 36 offset=200.5>
+        {0.0} <music21.meter.TimeSignature 12/8>
+        {0.0} <music21.note.Note E->
+        {0.5} <music21.note.Note B->
+        {1.0} <music21.note.Note B->
+        {1.5} <music21.note.Note E->
+        {2.0} <music21.note.Note B->
+        {2.5} <music21.note.Note B->
+        {3.0} <music21.note.Note E->
+        {3.5} <music21.note.Note B->
+        {4.0} <music21.note.Note B->
+        {4.5} <music21.note.Note E->
+        {5.0} <music21.note.Note B->
+        {5.5} <music21.note.Note B->
+    {206.5} <music21.stream.Measure 37 offset=206.5>
+        {0.0} <music21.stream.Voice 0x294d62f5e10>
+            {0.0} <music21.note.Note E->
+            {1.5} <music21.note.Note E->
+            {3.0} <music21.note.Note E->
+        {0.0} <music21.stream.Voice 0x294d62f6410>
+            {0.0} <music21.note.Note B->
+            {1.5} <music21.note.Note B->
+            {3.0} <music21.note.Note B->
+        {3.5} <music21.bar.Barline type=final>
+{0.0} <music21.layout.ScoreLayout>
+{0.0} <music21.layout.StaffGroup <music21.stream.PartStaff P1-Staff1><music21.stream.PartStaff P1-Staff2>>

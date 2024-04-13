@@ -154,7 +154,7 @@ def crawlScore(frontier, contigs, partdict):
     # maximal contigs (contigs having maximal overlap)
     # dictionary of voices (which will be separated into parts)
 # TODO?: recognize rests
-# TODO?: figure out how to recognize ties, slurs, beams, tuplets, etc
+# TODO?: figure out how to recognize ties, slurs, beams, tuplets, etc (this might fix the broken tuplet problem)
 def segmentContigs(part):
     f = (note.Note,) # music21 class filter
     timespans = part.asTimespans(classList=f)
@@ -198,7 +198,7 @@ def segmentContigs(part):
 
     # generate dictionary of voices with streams and colors
     for i in range(maxOverlap):
-        partdict[str(i)] = {"stream": part.flatten().template(retainVoices=False, fillWithRests=False, removeClasses=['Clef', 'Part', 'GeneralNote', 'Dynamic', 'Expression']), "color": ""}
+        partdict[str(i)] = {"stream": part.template(fillWithRests=False), "color": ""}
         newcolor = ''
         while (True):
             newcolor = f"#{''.join(random.choices(string.hexdigits, k=6))}"
@@ -222,13 +222,8 @@ def segmentContigs(part):
 
 # main algorithm
 # generate a new part for each group
-# FIXME: some timing (like tuples, etc) are broken
-# FIXME: corrupted musescore files (empty measures?)
-# FIXME: also the first two parts show as a piano part in musescore
-# FIXME: also didn't recognize pickup and repeats
-# TODO: had to take out stuff like dynamics and expressions because it would sound weird (just put them back in where they are supposed to be?)
+# FIXME: some timing (like broken tuples, etc) are broken
 def separateVoices(part):
-
     (maxcontigs, contigs, partdict) = segmentContigs(part)
     # bfs (queue) initialized with maxcontigs 
     frontier = []
@@ -237,23 +232,22 @@ def separateVoices(part):
         frontier.append((m, "m"))
     crawlScore(frontier, contigs, partdict)
 
-    # color and assign parts
-    flat = part.flatten().notes
-    for n in flat:
+    parts = [p["stream"] for p in partdict.values()]
+    # assign, color, and insert notes into their respective voices
+    for (n, o, t) in [(t.element, t.offset, t) for t in part.asTimespans(classList=(note.Note,))]:
         n.style.color = partdict[n.groups[0]]["color"]
         n.addLyric(n.groups)
-        partdict[n.groups[0]]["stream"].insert(n.offset, n)
-    parts = [p["stream"] for p in partdict.values()]
-    for p in parts:
-        p.makeRests(refStreamOrTimeRange=part, inPlace=True, fillGaps=True)
-        p.makeMeasures(refStreamOrTimeRange=part, inPlace=True)
-        p.makeNotation(refStreamOrTimeRange=part, inPlace=True, bestClef=True)
+        partdict[n.groups[0]]["stream"].measure(t.measureNumber).insert(n)
 
+    # for t in parts:
+    #     t[1].makeRests(refStreamOrTimeRange=part, inPlace=True, fillGaps=True)
+    #     t[1].makeMeasures(refStreamOrTimeRange=part, inPlace=True)
     return parts
 
 # parse through music21 score to use in algorithm (in-place)
     # grace notes are on the same offset as the note, this messes up the maximal contigs
 # FIXME: Notation messed up for output4 (this has to do with how music21 imports the musicxml)
+# FIXME: Repeats are messed up (this might have to do with how music21 imports the musicxml)
 # TODO: recurse parts and clefs (turn into parts and insert back into score)
 # TODO?: as well as segments the song structure (where melodies and voicing change)
 def preprocessScore(song):
@@ -303,7 +297,7 @@ else:
     song = converter.parse(argv[1])
     preprocessScore(song)
     print(f"starting at {len(song.parts)} parts")
-    final = song.flatten().template(retainVoices=False, fillWithRests=False, removeClasses=['Clef', 'Part', 'GeneralNote', 'Dynamic', 'Expression'])
+    final = stream.Score()
 
     # run algorithm
     # run for each "part"
@@ -311,17 +305,17 @@ else:
         for p in song.parts:
             reduced = separateVoices(p)
             for r in reduced:
-                final.insert(p.offset, r)
+                final.insert(r)
     else: # single-part score
         reduced = separateVoices(song)
         for r in reduced:
-            # r.makeMeasures(refStreamOrTimeRange=song, inPlace=True)
-            # r.makeRests(refStreamOrTimeRange=song, inPlace=True, fillGaps=True)
-            final.insert(0.0, r)
+            final.insert(r)
     final.makeNotation(refStreamOrTimeRange=song, inPlace=True, bestClef=True)
 
     print(f"{len(final.parts)} parts produced")
-    song.write("musicxml", argv[2] + '_labeled.musicxml')
+    # FIXME: this doesn't work for output8 for some reason (duplicate measure at the end?)
+    # song.write("musicxml", argv[2] + '_labeled.musicxml')
     for n in final.flatten().notes: # lyrics take up space
         n.lyrics = []
     final.write("musicxml", argv[2] + '_separated.musicxml')
+    final.write("txt", argv[2] + "_separated.txt")
