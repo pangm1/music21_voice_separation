@@ -2,58 +2,144 @@ from sys import argv, platform
 from music21 import *
 import random
 import string
+from statistics import mean
+from scipy.optimize import linear_sum_assignment
 
-# heuristic function for assigning voices
-    # uses generic intervals so far
-# FIXME: Focus on minimizing ranges instead of the distances between notes (maybe 1st distance vs. 2nd distance)
-def distance(s, d):
+# features: range of notes, average, start and last notes, length (for updating average)
+# return dictionary with # fragments as keys: {voice: {fragment: val, feature1: val1, feature2: val2, ...}}
+# arbitrary=false is for contigs where the fragments are expected to be already assigned
+def getFeatures(contig, arbitrary=False):
+    features = {}
+    i = 0
+    for fragment in contig[2]:
+        if arbitrary:
+            features[str(i)] = {"fragment": fragment}
+            i += 1
+        else:
+            features[f[0].groups[0]] = {"fragment": fragment}
+
+    for f in features:
+        # range
+        f["range"] = [min(f["fragment"], key=lambda n: n.pitch), max(f["fragment"], key=lambda n: n.pitch)]
+        # # notes (for updating the average)
+        f["length"] = len(f["fragment"])
+        # average
+        f["average"] = mean([n.pitch.ps for n in f["fragment"]])
+        # first note
+        f["first note"] = f["fragment"][0]
+        # last note
+        f["last note"] = f["fragment"][-1]
+
+    return features
+
+# update the features of voices with incoming features dictionary
+# assuming that the features are not arbitrary and could not equal the total voices, match the voices
+def updatePartFeatures(features, partdict):
+    for f in features:
+        ref = partdict[f]["features"]
+        dict = features[f]
+        if not len(ref):
+            ref = dict
+        else:
+            # range
+            ref["range"] = [min(dict["range"][0], ref["range"][0]), max(dict["range"][1], ref["range"][1])]
+            # average
+            ref["average"] = (ref["average"] * ref["length"] + sum([n.pitch.ps for n in dict["fragment"]])) / (ref["length"] + dict["length"])
+            # # notes
+            ref["length"] += dict["length"]
+            # last note
+            ref["last note"] = dict["last_note"]
+
+# get the distance between two ranges
+def hausdorff(r1, r2):
     pass
+
+# get distance (normalized euclidean distance?) between feature vectors
+#   connecting notes (s[last], d[first])
+#   average
+#   range
+def distance(s, d):
+    # distance vector
+    # dist = [interval.Interval(s["last note"], d["first note"]).generic.undirected, s["average"]-d["average"], hausdorff(s["range"], d["range"])]
+
+    return 
 
 # assign voices based on a reference groups of notes
     # start has a reference note for all of the voices
-# FIXME: use features in start and dest instead of single notes
-# FIXME: use permutatations of the assignments and figure out distance (or use dynamic programming to find least-cost assignments)
-# start represents fragments and dest represents voices to assign
-def assignVoices(start, dest):
-    toAssign = [] # dest
-    toConnect = [] # start
-    assignedPairs = [[],[]] # keep track of bin,group pairs already assigned
+def assignVoices(contig, partdict):
+    # get features for both
+    start = {k: v["features"] for (k,v) in partdict.items()}
+    dest = getFeatures(contig, True)
 
-    # populate toAssign with target notes
-        # visited notes (groups already assigned) should be excluded and registered in assignedPairs
-    for n in dest:
-        if not len(n.groups) and not n.id in start:
-            toAssign.append([n, []])  
-        elif len(n.groups):
-            assignedPairs[0].append(n)
-            assignedPairs[1].append(n.groups[0])
-    if not len(toAssign):# all notes assigned already
+    # assigned fragments (already connected previously, or part of a held note) should be excluded
+    for k in dest.copy():
+        refNote = dest[k]["fragment"][0]
+        if refNote.id in [n.id for f in start for n in f["fragment"]]:
+            del dest[k]
+            start.pop(refNote.groups[0])
+    if not len(dest):# all notes assigned already
         return
-    # populate toConnect with reference notes
-        # visited notes (groups already assigned) are excluded
-    for n in start:
-        if n.groups[0] not in assignedPairs[1]:
-            toConnect.append(n)
 
-    # possible combinations of choices
-    for a in toAssign:
-        for c in toConnect:
-            a[1].append((c.groups, distance(c, a[0])))
-    # all permutations sorted by distance [(note, groups)]
-    options = sorted([(a[0], g) for a in toAssign for g in a[1]], key=lambda t: t[1][1])
+    # assignment problem
+    # cost matrix (start x dest) -> 
+    start_array = [[k, start[k]] for k in start]
+    dest_array = [dest[k] for k in dest]
+    cost_matrix = [[distance(s[1], d) for d in dest_array] for s in start_array]
 
-    # select options with lowest penalty
-    for o in options:
-        if o[0].id not in [a.id for a in assignedPairs[0]] and o[1][0] not in assignedPairs[1]:
-            o[0].groups = o[1][0]
-            assignedPairs[0].append(o[0])
-            assignedPairs[1].append(o[1][0])
+    start_ind, dest_ind = linear_sum_assignment(cost_matrix)
+    
+    for i in range(len(start_ind)):
+        voice = start_array[start_ind[i]][0]
+        dest_array[dest_ind[i]]["fragment"][0].groups.append(voice)
+
+    groupFragments(contig)
+    
 
 # assign voices across fragments (in the notes' groups)
     #*** sorting order is important (notes with the same pitch and duration are considered equal even if they are different instances)
 # TODO: experiment with sorting order (something to do with melody being high notes, or soprano and bass notes varying more)
-# FIXME: use contig[2] to get fragments
-def groupFragments(contig, dir):
+def groupFragments(contig, isMaxContig=False):
+    fragments = contig[2]
+
+    if isMaxContig: # populate maximum contigs
+        i = 0
+        used = set(eval(n.groups[0]) for f in fragments for n in f if len(n.groups))
+        for n in [n for n in [f[0] for f in fragments] if not len(n.groups)]:
+            while i in used:
+                i = (i + 1) % len(fragments)
+            n.groups = [str(i)]
+            used.add(i)
+    startV = contig[0][0]
+    destV = contig[0][-1]
+
+    # assign across fragments
+    for f in fragments:
+        startN = None
+        destN = None
+        for n in f:
+            if n.id in [t.element.id for t in startV.startAndOverlapTimespans]: 
+                startN = n
+            if n.id in [t.element.id for t in destV.startAndOverlapTimespans]: 
+                destN = n
+        if startN and len(startN.groups): voice = startN.groups 
+        if destN and len(destN.groups): voice = destN.groups 
+        for n in f:
+            n.groups = voice 
+
+# for each iteration:
+#   get features of incoming contig (put in array of tuples)
+#   run assignvoices
+#   tweak features
+def scanContigs(maxcontigs, contigs, partdict):
+    for c in contigs:
+        # maxcontigs already assigned
+        if c in maxcontigs: continue
+        assignVoices(c, partdict)
+        updatePartFeatures(getFeatures(c), partdict)
+
+# return array of fragments for the contig
+# these should be in order of verticality
+def getFragments(contig):
     grouphash = [] # verticalities with fragments as columns
     fragments = [] # transposed
 
@@ -78,54 +164,8 @@ def groupFragments(contig, dir):
         for row in grouphash:
             fragments[-1].append(row[i])
 
-    if dir == "m": # populate maximum contigs
-        i = 0
-        used = set(eval(n.groups[0]) for n in grouphash[0] if len(n.groups))
-        for n in [n for n in grouphash[0] if not len(n.groups)]:
-            while i in used:
-                i = (i + 1) % len(grouphash[0])
-            n.groups = [str(i)]
-            used.add(i)
-        startV = contig[0][0]
-        destV = contig[0][-1]
-    elif dir == "l":
-        startV = contig[0][0]
-        destV = contig[0][-1]
-    elif dir == "r":
-        startV = contig[0][-1]
-        destV = contig[0][0]
+    return fragments    
 
-    # assign across fragments
-    for f in fragments:
-        startN = None
-        destN = None
-        for n in f:
-            if n.id in [t.element.id for t in startV.startAndOverlapTimespans]: 
-                startN = n
-            if n.id in [t.element.id for t in destV.startAndOverlapTimespans]: 
-                destN = n
-        if startN and len(startN.groups): voice = startN.groups 
-        if destN and len(destN.groups): voice = destN.groups 
-        for n in f:
-            n.groups = voice 
-
-# FIXME: write get fragments (using groupfragments)
-# return array of fragments
-def getFragments(contig):
-    pass
-
-# FIXME: write updating the part features
-def updatePartFeatures(contig, partdict):
-    pass
-
-# FIXME: write scanContigs
-# for each iteration:
-#   get features of incoming contig (put in array of tuples)
-#   run assignvoices
-#   tweak features
-def scanContigs(contigs, partdict):
-    pass
-    
 # given a part/score return 
     # contigs  [[verticalities], (startBoundary, endBoundary), fragments]
     # maximal contigs (contigs having maximal overlap)
@@ -195,8 +235,8 @@ def segmentContigs(part):
         for v in c[0]:
             for n in v.startTimespans:
                 n.element.addLyric("m")
-        groupFragments(c, "m")
-        updatePartFeatures(c, partdict)
+        groupFragments(c, True)
+        updatePartFeatures(getFeatures(c), partdict)
 
     return (maxContigs, contigs, partdict)
 
@@ -204,9 +244,9 @@ def segmentContigs(part):
 # generate a new part for each group
 # FIXME: some timing (like broken tuples, etc) are broken
 def separateVoices(part):
-    (_, contigs, partdict) = segmentContigs(part)
+    (maxcontig, contigs, partdict) = segmentContigs(part)
     # scan contigs
-    scanContigs(contigs, partdict)
+    scanContigs(maxcontig, contigs, partdict)
 
     parts = [p["stream"] for p in partdict.values()]
     # assign, color, and insert notes into their respective voices
