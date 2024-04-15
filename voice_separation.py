@@ -22,7 +22,8 @@ def getFeatures(contig, arbitrary=False):
 
     for f in features:
         # range
-        features[f]["range"] = [int(min([n.pitch.ps for n in features[f]["fragment"]])), int(max([n.pitch.ps for n in features[f]["fragment"]]))]
+        features[f]["min"] = int(min([n.pitch.ps for n in features[f]["fragment"]]))
+        features[f]["max"] = int(max([n.pitch.ps for n in features[f]["fragment"]]))
         # # notes (for updating the average)
         features[f]["length"] = len(features[f]["fragment"])
         # average
@@ -36,14 +37,15 @@ def getFeatures(contig, arbitrary=False):
 # update the features of voices with incoming features dictionary
 # assuming that the features are not arbitrary and could not equal the total voices, match the voices
 def updatePartFeatures(features, partdict):
-    for f in features:
-        ref = partdict[f]["features"]
-        dict = features[f]
+    for v in features:
+        ref = partdict[v]["features"]
+        dict = features[v]
         if not len(ref):
-            partdict[f]["features"] = dict
+            partdict[v]["features"] = dict
         else:
             # range
-            ref["range"] = [int(min(dict["range"][0], ref["range"][0])), int(max(dict["range"][1], ref["range"][1]))]
+            ref["min"] = int(min(dict["range"][0], ref["range"][0]))
+            ref["max"] = int(max(dict["range"][1], ref["range"][1]))
             # average
             ref["average"] = (ref["average"] * ref["length"] + sum([n.pitch.ps for n in dict["fragment"]])) / (ref["length"] + dict["length"])
             # # notes
@@ -57,15 +59,13 @@ def updatePartFeatures(features, partdict):
 #   range
 def distance(s, d):
     # vectors
-    dist = [interval.Interval(s["last note"], d["first note"]).generic.undirected, abs(s["average"] - d["average"]), directed_hausdorff([[p] for p in range(s["range"][0], s["range"][1] + 1)], [[p] for p in range(d["range"][0], d["range"][1] + 1)])[0]]
+    dist = [interval.Interval(s["last note"], d["first note"]).generic.undirected, abs(s["average"] - d["average"]), directed_hausdorff([[p] for p in range(s["min"], s["max"] + 1)], [[p] for p in range(d["min"], d["max"] + 1)])[0]]
 
     # calculate distance (euclidean for now)
-    # FIXME: change to something relative like cosine or normalize vector somehow
-    res = math.sqrt(dist[0]**2 + dist[1]**2 + dist[2]**2)
-    return res
+    # FIXME: change to something relative like cosine or normalize vector somehow 
+    return math.sqrt(dist[0]**2 + dist[1]**2 + dist[2]**2)
 
-# assign voices based on a reference groups of notes
-    # start has a reference note for all of the voices
+# assign voices in partdict to the fragments in contig
 def assignVoices(contig, partdict):
     # get features for both
     start = {k: partdict[k]["features"] for k in partdict}
