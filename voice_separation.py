@@ -4,6 +4,8 @@ import random
 import string
 from statistics import mean
 from scipy.optimize import linear_sum_assignment
+from scipy.spatial.distance import directed_hausdorff
+import math
 
 # features: range of notes, average, start and last notes, length (for updating average)
 # return dictionary with # fragments as keys: {voice: {fragment: val, feature1: val1, feature2: val2, ...}}
@@ -16,20 +18,19 @@ def getFeatures(contig, arbitrary=False):
             features[str(i)] = {"fragment": fragment}
             i += 1
         else:
-            features[f[0].groups[0]] = {"fragment": fragment}
+            features[fragment[0].groups[0]] = {"fragment": fragment}
 
     for f in features:
         # range
-        f["range"] = [min(f["fragment"], key=lambda n: n.pitch), max(f["fragment"], key=lambda n: n.pitch)]
+        features[f]["range"] = [int(min([n.pitch.ps for n in features[f]["fragment"]])), int(max([n.pitch.ps for n in features[f]["fragment"]]))]
         # # notes (for updating the average)
-        f["length"] = len(f["fragment"])
+        features[f]["length"] = len(features[f]["fragment"])
         # average
-        f["average"] = mean([n.pitch.ps for n in f["fragment"]])
+        features[f]["average"] = mean([n.pitch.ps for n in features[f]["fragment"]])
         # first note
-        f["first note"] = f["fragment"][0]
+        features[f]["first note"] = features[f]["fragment"][0]
         # last note
-        f["last note"] = f["fragment"][-1]
-
+        features[f]["last note"] = features[f]["fragment"][-1]
     return features
 
 # update the features of voices with incoming features dictionary
@@ -39,61 +40,58 @@ def updatePartFeatures(features, partdict):
         ref = partdict[f]["features"]
         dict = features[f]
         if not len(ref):
-            ref = dict
+            partdict[f]["features"] = dict
         else:
             # range
-            ref["range"] = [min(dict["range"][0], ref["range"][0]), max(dict["range"][1], ref["range"][1])]
+            ref["range"] = [int(min(dict["range"][0], ref["range"][0])), int(max(dict["range"][1], ref["range"][1]))]
             # average
             ref["average"] = (ref["average"] * ref["length"] + sum([n.pitch.ps for n in dict["fragment"]])) / (ref["length"] + dict["length"])
             # # notes
             ref["length"] += dict["length"]
             # last note
-            ref["last note"] = dict["last_note"]
+            ref["last note"] = dict["last note"]
 
-# get the distance between two ranges
-def hausdorff(r1, r2):
-    pass
-
-# get distance (normalized euclidean distance?) between feature vectors
+# get distance between feature vectors
 #   connecting notes (s[last], d[first])
 #   average
 #   range
 def distance(s, d):
-    # distance vector
-    # dist = [interval.Interval(s["last note"], d["first note"]).generic.undirected, s["average"]-d["average"], hausdorff(s["range"], d["range"])]
+    # vectors
+    dist = [interval.Interval(s["last note"], d["first note"]).generic.undirected, abs(s["average"] - d["average"]), directed_hausdorff([[p] for p in range(s["range"][0], s["range"][1] + 1)], [[p] for p in range(d["range"][0], d["range"][1] + 1)])[0]]
 
-    return 
+    # calculate distance (euclidean for now)
+    # FIXME: change to something relative like cosine or normalize vector somehow
+    res = math.sqrt(dist[0]**2 + dist[1]**2 + dist[2]**2)
+    return res
 
 # assign voices based on a reference groups of notes
     # start has a reference note for all of the voices
 def assignVoices(contig, partdict):
     # get features for both
-    start = {k: v["features"] for (k,v) in partdict.items()}
+    start = {k: partdict[k]["features"] for k in partdict}
     dest = getFeatures(contig, True)
 
     # assigned fragments (already connected previously, or part of a held note) should be excluded
     for k in dest.copy():
         refNote = dest[k]["fragment"][0]
-        if refNote.id in [n.id for f in start for n in f["fragment"]]:
+        if len(refNote.groups):
             del dest[k]
             start.pop(refNote.groups[0])
     if not len(dest):# all notes assigned already
         return
 
     # assignment problem
-    # cost matrix (start x dest) -> 
+    # cost matrix (start x dest)
     start_array = [[k, start[k]] for k in start]
     dest_array = [dest[k] for k in dest]
     cost_matrix = [[distance(s[1], d) for d in dest_array] for s in start_array]
-
     start_ind, dest_ind = linear_sum_assignment(cost_matrix)
     
+    # assign voices to the correct fragments
     for i in range(len(start_ind)):
         voice = start_array[start_ind[i]][0]
         dest_array[dest_ind[i]]["fragment"][0].groups.append(voice)
-
     groupFragments(contig)
-    
 
 # assign voices across fragments (in the notes' groups)
     #*** sorting order is important (notes with the same pitch and duration are considered equal even if they are different instances)
@@ -171,7 +169,7 @@ def getFragments(contig):
     # maximal contigs (contigs having maximal overlap)
     # dictionary of voices (which will be separated into parts): {stream, color, features}
 # TODO?: recognize rests
-# TODO?: figure out how to recognize ties, slurs, beams, tuplets, etc (this might fix the broken tuplet problem)
+# TODO?: figure out how to recognize ties, slurs, beams, tuplets, etc (this might fix the broken tuplet problem) (music21 Spanners?)
 def segmentContigs(part):
     f = (note.Note,) # music21 class filter
     timespans = part.asTimespans(classList=f)
@@ -243,6 +241,7 @@ def segmentContigs(part):
 # main algorithm
 # generate a new part for each group
 # FIXME: some timing (like broken tuples, etc) are broken
+# FIXME: notation for output3 messed up (notes changed octave in the crazy part)
 def separateVoices(part):
     (maxcontig, contigs, partdict) = segmentContigs(part)
     # scan contigs
@@ -255,9 +254,12 @@ def separateVoices(part):
         n.addLyric(n.groups)
         partdict[n.groups[0]]["stream"].measure(t.measureNumber).insert(n)
 
-    # for t in parts:
-    #     t[1].makeRests(refStreamOrTimeRange=part, inPlace=True, fillGaps=True)
-    #     t[1].makeMeasures(refStreamOrTimeRange=part, inPlace=True)
+    # FIXME: dynamics are off (maybe just copy them to all of the outputted parts)
+    # # insert dynamics (and expressions?) into all voices
+    # for (n, o, t) in [(t.element, t.offset, t) for t in part.asTimespans(classList=(dynamics.Dynamic,expressions.Expression))]:
+    #     for p in partdict:
+    #         next(m for m in partdict[p]["stream"].getElementsByClass(stream.Measure) if m.number >= t.measureNumber).insert(n)
+            
     return parts
 
 # parse through music21 score to use in algorithm (in-place)
