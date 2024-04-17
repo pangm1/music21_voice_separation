@@ -4,9 +4,6 @@ PITCH_MAX = int(pitch.Pitch('B9').ps)
 PITCH_MIN = int(pitch.Pitch('C0').ps)
     # write scores
 song.write("musicxml", argv[2] + '_music21.musicxml')
-print("reduced score:")
-reduced.show("t")
-reduced.show()
 
 ''' TEST COMMANDs
     python3 ./voice_separation.py ./examples/carol_of_the_bells/before.mxl ./examples/carol_of_the_bells/before > output
@@ -24,5 +21,24 @@ reduced.show()
     python3 ./voice_separation.py ./examples/nutcracker/before.mxl ./examples/nutcracker/before > output7
 
     python3 ./voice_separation.py ./examples/bach/before.mxl ./examples/bach/before > output8
+
+'''
+
+''' TEST COMMANDs (OLD)
+    python3 ./voice_separation.py -v1 ./examples/carol_of_the_bells/before.mxl ./examples/carol_of_the_bells/before > output
+    
+    python3 ./voice_separation.py -v1 ./examples/puttin_on_the_ritz/before.mxl ./examples/puttin_on_the_ritz/before > output2
+
+    python3 ./voice_separation.py -v1 ./examples/fur_elise/before.mxl ./examples/fur_elise/before > output3
+
+    python3 ./voice_separation.py -v1 ./examples/moonlight/before.mxl ./examples/moonlight/before > output4
+
+    python3 ./voice_separation.py -v1 ./examples/clair_de_lune/before.mxl ./examples/clair_de_lune/before > output5
+
+    python3 ./voice_separation.py -v1 ./examples/nocturne/before.mxl ./examples/nocturne/before > output6
+
+    python3 ./voice_separation.py -v1 ./examples/nutcracker/before.mxl ./examples/nutcracker/before > output7
+
+    python3 ./voice_separation.py -v1 ./examples/bach/before.mxl ./examples/bach/before > output8
 
 '''

@@ -7,6 +7,87 @@ from scipy.optimize import linear_sum_assignment
 from scipy.spatial.distance import directed_hausdorff
 import math
 
+''' 
+Old Version Starts Here
+'''
+# assign voices based on a reference group of notes to notes in the contig
+    # start has a reference note for all of the voices
+    # look at crawlScore for direction
+def assignVoices(start, contig, dir):
+    dest = [f[-1] if dir == "l" else f[0] for f in contig[2]]
+    toAssign = [] # dest notes
+    toConnect = [] # start notes
+    assignedPairs = [[],[]] # keep track of bin,group pairs already assigned
+
+    # populate toAssign with target notes
+        # visited notes (groups already assigned) should be excluded and registered in assignedPairs
+    for n in dest:
+        if not len(n.groups) and not n.id in start:
+            toAssign.append(n)  
+        elif len(n.groups):
+            assignedPairs[0].append(n)
+            assignedPairs[1].append(n.groups[0])
+    if not len(toAssign):# all notes assigned already
+        return
+    # populate toConnect with reference notes
+        # visited notes (groups already assigned) are excluded
+    for n in start:
+        if n.groups[0] not in assignedPairs[1]:
+            toConnect.append(n)
+
+    # possible combinations of choices
+    cost_matrix = [[interval.Interval(a, c).generic.undirected for a in toAssign] for c in toConnect]
+    start_ind, dest_ind = linear_sum_assignment(cost_matrix)
+
+    # assign voices to the correct fragments
+    for i in range(len(start_ind)):
+        voice = toConnect[start_ind[i]].groups[0]
+        toAssign[dest_ind[i]].groups.append(voice)
+    groupFragments(contig)
+
+# score bfs
+    # frontier: [(contig, direction, ref)]
+        # should be initialized outside this function
+    # assign notes bordering the contig given a reference group of voices
+    # groupFragments
+    # update ref voices to the most recent notes
+def crawlScore(frontier, contigs, partdict):
+    while len(frontier):
+        item = frontier.pop(0)
+        leftIndex = contigs.index(item[0]) - 1
+        rightIndex = contigs.index(item[0]) + 1
+        if item[1] == "m": # both directions (maxcontigs)
+            if leftIndex >= 0:
+                start = [t.element for t in item[0][0][0].startAndOverlapTimespans]
+                assignVoices(start, contigs[leftIndex], "l")
+                curr = [t.element for t in contigs[leftIndex][0][0].startAndOverlapTimespans]
+                ref = [next(n for n in curr if n.groups[0] == s.groups[0]) if s.groups[0] in [n.groups[0] for n in curr] else s for s in start]
+                frontier.append((contigs[leftIndex], "l", ref))
+            if rightIndex < len(contigs):
+                start = [t.element for t in item[0][0][-1].startAndOverlapTimespans]
+                assignVoices(start, contigs[rightIndex], "r")
+                curr = [t.element for t in contigs[rightIndex][0][-1].startAndOverlapTimespans]
+                ref = [next(n for n in curr if n.groups[0] == s.groups[0]) if s.groups[0] in [n.groups[0] for n in curr] else s for s in start]
+                frontier.append((contigs[rightIndex], "r", ref))
+        elif item[1] == "l": # go left
+            if leftIndex >= 0:
+                assignVoices(ref, contigs[leftIndex], "l")
+                curr = [t.element for t in contigs[leftIndex][0][0].startAndOverlapTimespans]
+                ref = [next(n for n in curr if n.groups[0] == s.groups[0]) if s.groups[0] in [n.groups[0] for n in curr] else s for s in ref]
+                frontier.append((contigs[leftIndex], "l", ref))
+        elif item[1] == "r": # go right
+            if rightIndex < len(contigs):
+                assignVoices(ref, contigs[rightIndex], "r")
+                curr = [t.element for t in contigs[rightIndex][0][-1].startAndOverlapTimespans]
+                ref = [next(n for n in curr if n.groups[0] == s.groups[0]) if s.groups[0] in [n.groups[0] for n in curr] else s for s in ref]
+                frontier.append((contigs[rightIndex], "r", ref))   
+
+
+
+''' 
+Current Version Starts Here
+'''
+
 # features: range of notes, average, start and last notes, length (for updating average)
 # return dictionary with # fragments as keys: {voice: {fragment: val, feature1: val1, feature2: val2, ...}}
 # arbitrary=false is for contigs where the fragments are expected to be already assigned
@@ -44,8 +125,8 @@ def updatePartFeatures(features, partdict):
             partdict[v]["features"] = dict
         else:
             # range
-            ref["min"] = int(min(dict["range"][0], ref["range"][0]))
-            ref["max"] = int(max(dict["range"][1], ref["range"][1]))
+            ref["min"] = min(dict["min"], ref["min"])
+            ref["max"] = max(dict["max"], ref["max"])
             # average
             ref["average"] = (ref["average"] * ref["length"] + sum([n.pitch.ps for n in dict["fragment"]])) / (ref["length"] + dict["length"])
             # # notes
@@ -57,16 +138,16 @@ def updatePartFeatures(features, partdict):
 #   connecting notes (s[last], d[first])
 #   average
 #   range
-def distance(s, d):
+def distanceWithFeatures(s, d):
     # vectors
     dist = [interval.Interval(s["last note"], d["first note"]).generic.undirected, abs(s["average"] - d["average"]), directed_hausdorff([[p] for p in range(s["min"], s["max"] + 1)], [[p] for p in range(d["min"], d["max"] + 1)])[0]]
 
     # calculate distance (euclidean for now)
-    # FIXME: change to something relative like cosine or normalize vector somehow 
+    # TODO: change to something relative like cosine or normalize vector somehow 
     return math.sqrt(dist[0]**2 + dist[1]**2 + dist[2]**2)
 
 # assign voices in partdict to the fragments in contig
-def assignVoices(contig, partdict):
+def assignVoicesWithFeatures(contig, partdict):
     # get features for both
     start = {k: partdict[k]["features"] for k in partdict}
     dest = getFeatures(contig, True)
@@ -84,7 +165,7 @@ def assignVoices(contig, partdict):
     # cost matrix (start x dest)
     start_array = [[k, start[k]] for k in start]
     dest_array = [dest[k] for k in dest]
-    cost_matrix = [[distance(s[1], d) for d in dest_array] for s in start_array]
+    cost_matrix = [[distanceWithFeatures(s[1], d) for d in dest_array] for s in start_array]
     start_ind, dest_ind = linear_sum_assignment(cost_matrix)
     
     # assign voices to the correct fragments
@@ -132,7 +213,7 @@ def scanContigs(maxcontigs, contigs, partdict):
     for c in contigs:
         # maxcontigs already assigned
         if c in maxcontigs: continue
-        assignVoices(c, partdict)
+        assignVoicesWithFeatures(c, partdict)
         updatePartFeatures(getFeatures(c), partdict)
 
 # return array of fragments for the contig
@@ -169,7 +250,7 @@ def getFragments(contig):
     # maximal contigs (contigs having maximal overlap)
     # dictionary of voices (which will be separated into parts): {stream, color, features}
 # TODO?: recognize rests
-# TODO?: figure out how to recognize ties, slurs, beams, tuplets, etc (this might fix the broken tuplet problem) (music21 Spanners?)
+# TODO?: figure out how to recognize ties, slurs, beams, tuplets, etc (this might fix the broken tuplet problem) (also look into music21 Spanners?)
 def segmentContigs(part):
     f = (note.Note,) # music21 class filter
     timespans = part.asTimespans(classList=f)
@@ -242,10 +323,17 @@ def segmentContigs(part):
 # generate a new part for each group
 # FIXME: some timing (like broken tuples, etc) are broken
 # FIXME: notation for output3 messed up (notes changed octave in the crazy part)
-def separateVoices(part):
-    (maxcontig, contigs, partdict) = segmentContigs(part)
-    # scan contigs
-    scanContigs(maxcontig, contigs, partdict)
+def separateVoices(part, version):
+    (maxcontigs, contigs, partdict) = segmentContigs(part)
+    match version:
+        case 1:
+            frontier = []
+            for m in maxcontigs:
+                frontier.append((m, "m"))
+            crawlScore(frontier, contigs, partdict)
+        case _:
+            # scan contigs
+            scanContigs(maxcontigs, contigs, partdict)
 
     parts = [p["stream"] for p in partdict.values()]
     # assign, color, and insert notes into their respective voices
@@ -307,25 +395,34 @@ else:
 env = environment.Environment()
 env['musicxmlPath'] = path
 
+# choose version of algorithm 
+''' put "-v1" in command-line arguments to run the old version '''
+version = 2
+if "-v1" in argv:
+    version = 1
+    argv.remove("-v1")
+
 argc = len(argv)
 if argc < 3:
     print('arguments: [input file] [output name (no extension)]')
 else:
+    print(f"Running version {version}")
     # parse musicxml
     song = converter.parse(argv[1])
     preprocessScore(song)
     print(f"starting at {len(song.parts)} parts")
+    # FIXME: insert all top-level notation (title, etc.)
     final = stream.Score()
 
     # run algorithm
     # run for each "part"
     if song.hasPartLikeStreams():
         for p in song.parts:
-            reduced = separateVoices(p)
+            reduced = separateVoices(p, version)
             for r in reduced:
                 final.insert(r)
     else: # single-part score
-        reduced = separateVoices(song)
+        reduced = separateVoices(song, version)
         for r in reduced:
             final.insert(r)
     final.makeNotation(refStreamOrTimeRange=song, inPlace=True, bestClef=True)
