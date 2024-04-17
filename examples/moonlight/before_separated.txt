@@ -1,7 +1,7 @@
 {0.0} <music21.text.TextBox 'Sonata No....'>
 {0.0} <music21.text.TextBox 'Mondschein'>
 {0.0} <music21.text.TextBox 'Ludwig Van...'>
-{0.0} <music21.metadata.Metadata object at 0x2474ca1fd00>
+{0.0} <music21.metadata.Metadata object at 0x2f302874040>
 {0.0} <music21.stream.PartStaff P1-Staff1>
     {0.0} <music21.instrument.Piano 'P1: Piano: Piano'>
     {0.0} <music21.stream.Measure 1 offset=0.0>

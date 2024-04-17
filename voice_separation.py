@@ -360,6 +360,7 @@ def separateVoices(part, version):
     # grace notes are on the same offset as the note, this messes up the maximal contigs
 # FIXME: Notation messed up for output4 (this has to do with how music21 imports the musicxml)
 # FIXME: Repeats are messed up (this might have to do with how music21 imports the musicxml)
+# FIXME: combine ties into single notes (some of them are separated out into multiple notes)
 # TODO: recurse parts and clefs (turn into parts and insert back into score)
 # TODO?: as well as segments the song structure (where melodies and voicing change)
 def preprocessScore(song):
@@ -402,20 +403,29 @@ env = environment.Environment()
 env['musicxmlPath'] = path
 
 # choose version of algorithm 
-''' put "-v1" in command-line arguments to run the old version '''
+''' put "--v1" in command-line arguments to run the old version '''
 version = 2
-if "-v1" in argv:
+if "--v1" in argv:
     version = 1
-    argv.remove("-v1")
+    argv.remove("--v1")
+
+# tie adjacent notes
+''' put "--tie" in command-line arguments to tie together adjacent notes '''
+tie = False
+if "--tie" in argv:
+    tie = True
+    argv.remove("--tie")
 
 argc = len(argv)
 if argc < 3:
     print('arguments: [input file] [output name (no extension)]')
 else:
     print(f"Running version {version}")
+    if tie: print("Tying adjacent notes")
     # parse musicxml
     song = converter.parse(argv[1])
     preprocessScore(song)
+    # song.show()
     print(f"starting at {len(song.parts)} parts")
     # result score with top-level notation
     final = song.template()
@@ -428,10 +438,14 @@ else:
         for p in song.parts:
             reduced = separateVoices(p, version)
             for r in reduced:
+                if tie: r.extendTies()
+                r.makeBeams(inPlace=True)
                 final.insert(r)
     else: # single-part score
         reduced = separateVoices(song, version)
         for r in reduced:
+            if tie: r.extendTies()
+            r.makeBeams(inPlace=True)
             final.insert(r)
     final.makeNotation(refStreamOrTimeRange=song, inPlace=True, bestClef=True)
 

@@ -1,3 +1,4 @@
+{0.0} <music21.metadata.Metadata object at 0x1f6806363e0>
 {0.0} <music21.stream.Part Piano>
     {0.0} <music21.instrument.Piano 'P1: Piano: Piano'>
     {0.0} <music21.stream.Measure 1 offset=0.0>

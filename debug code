@@ -22,6 +22,8 @@ song.write("musicxml", argv[2] + '_music21.musicxml')
 
     python3 ./voice_separation.py ./examples/bach/before.mxl ./examples/bach/before > output8
 
+    python3 ./voice_separation.py --tie ./examples/entertainer/before.mxl ./examples/entertainer/before > output9
+
 '''
 
 ''' TEST COMMANDs (OLD)
@@ -40,5 +42,7 @@ song.write("musicxml", argv[2] + '_music21.musicxml')
     python3 ./voice_separation.py -v1 ./examples/nutcracker/before.mxl ./examples/nutcracker/before > output7
 
     python3 ./voice_separation.py -v1 ./examples/bach/before.mxl ./examples/bach/before > output8
+
+    python3 ./voice_separation.py -v1 --tie ./examples/entertainer/before.mxl ./examples/entertainer/before > output9
 
 '''
