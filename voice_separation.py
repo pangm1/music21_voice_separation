@@ -417,8 +417,10 @@ else:
     song = converter.parse(argv[1])
     preprocessScore(song)
     print(f"starting at {len(song.parts)} parts")
-    # FIXME: insert all top-level notation (title, etc.)
-    final = stream.Score()
+    # result score with top-level notation
+    final = song.template()
+    for p in final.parts:
+        final.remove(p)
 
     # run algorithm
     # run for each "part"
@@ -434,9 +436,10 @@ else:
     final.makeNotation(refStreamOrTimeRange=song, inPlace=True, bestClef=True)
 
     print(f"{len(final.parts)} parts produced")
-    # FIXME: this doesn't work for output8 for some reason (duplicate measure at the end?)
+    # FIXME: this doesn't work for output8 for some reason (something wrong with makeNotation?)
     # song.write("musicxml", argv[2] + '_labeled.musicxml')
     for n in final.flatten().notes: # lyrics take up space
         n.lyrics = []
+    # fix broken tuplets etc. 
     final.write("musicxml", argv[2] + '_separated.musicxml')
     final.write("txt", argv[2] + "_separated.txt")

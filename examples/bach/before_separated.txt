@@ -1,3 +1,6 @@
+{0.0} <music21.text.TextBox 'Sinfonia N...'>
+{0.0} <music21.text.TextBox 'J.S. Bach'>
+{0.0} <music21.metadata.Metadata object at 0x23700f75720>
 {0.0} <music21.stream.PartStaff P1-Staff1>
     {0.0} <music21.instrument.Piano 'P1: Piano: Piano'>
     {0.0} <music21.stream.Measure 1 offset=0.0>
@@ -1200,6 +1203,8 @@
 
     {83.25} <music21.stream.Measure 38 offset=83.25>
         {0.0} <music21.bar.Barline type=final>
+{0.0} <music21.layout.ScoreLayout>
+{0.0} <music21.layout.StaffGroup <music21.stream.PartStaff P1-Staff1><music21.stream.PartStaff P1-Staff2>>
 {0.0} <music21.dynamics.Diminuendo <music21.note.Note B><music21.note.Note F#>>
 {0.0} <music21.spanner.Slur <music21.note.Note B><music21.note.Note F#>>
 {0.0} <music21.spanner.Slur <music21.note.Note G><music21.note.Note F#>>
