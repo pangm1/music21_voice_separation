@@ -139,12 +139,18 @@ def updatePartFeatures(features, partdict):
 #   average
 #   range
 def distanceWithFeatures(s, d):
-    # vectors
-    dist = [interval.Interval(s["last note"], d["first note"]).generic.undirected, abs(s["average"] - d["average"]), directed_hausdorff([[p] for p in range(s["min"], s["max"] + 1)], [[p] for p in range(d["min"], d["max"] + 1)])[0]]
+    # weights for the distance vector
+    w1, w2, w3 = (1.0, 1.0, 1.0)
+
+    # use directed hausdorff to compare the ranges
+    # dist = [interval.Interval(s["last note"], d["first note"]).generic.undirected, abs(s["average"] - d["average"]), directed_hausdorff([[p] for p in range(s["min"], s["max"] + 1)], [[p] for p in range(d["min"], d["max"] + 1)])[0]]
+
+    # for comparing ranges, take the area that d falls outside s 
+    dist = [interval.Interval(s["last note"], d["first note"]).generic.undirected, abs(s["average"] - d["average"]), s["min"] - min(s["min"], d["min"]) + max(s["max"], d["max"]) - s["max"]]
 
     # calculate distance (euclidean for now)
     # TODO: change to something relative like cosine or normalize vector somehow 
-    return math.sqrt(dist[0]**2 + dist[1]**2 + dist[2]**2)
+    return math.sqrt((w1 * dist[0])**2 + (w2 * dist[1])**2 + (w3 * dist[2])**2)
 
 # assign voices in partdict to the fragments in contig
 def assignVoicesWithFeatures(contig, partdict):
@@ -322,7 +328,7 @@ def segmentContigs(part):
 # main algorithm
 # generate a new part for each group
 # FIXME: some timing (like broken tuples, etc) are broken
-# FIXME: notation for output3 messed up (notes changed octave in the crazy part)
+# FIXME: notation for output3 messed up (notes changed octave in the crazy part, might have to do with the range being super outside the staff)
 def separateVoices(part, version):
     (maxcontigs, contigs, partdict) = segmentContigs(part)
     match version:
