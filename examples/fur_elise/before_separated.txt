@@ -1,7 +1,7 @@
 {0.0} <music21.text.TextBox 'Für Elise\n...'>
 {0.0} <music21.text.TextBox 'WoO 59'>
 {0.0} <music21.text.TextBox 'Ludwig van...'>
-{0.0} <music21.metadata.Metadata object at 0x294ffd7a830>
+{0.0} <music21.metadata.Metadata object at 0x20df0a23790>
 {0.0} <music21.stream.PartStaff P1-Staff1>
     {0.0} <music21.instrument.Piano 'P1: Piano: Piano'>
     {0.0} <music21.stream.Measure 0 offset=0.0>
@@ -2462,7 +2462,6 @@
     {156.0} <music21.stream.Measure 105 offset=156.0>
         {0.0} <music21.bar.Barline type=final>
 {0.0} <music21.layout.ScoreLayout>
-{0.0} <music21.layout.StaffGroup <music21.stream.PartStaff P1-Staff1><music21.stream.PartStaff P1-Staff2>>
 {0.0} <music21.spanner.Ottava 8va non-transposing<music21.note.Note A><music21.note.Note C><music21.note.Note E><music21.note.Note A><music21.note.Note C><music21.note.Note E><music21.note.Note D><music21.note.Note C><music21.note.Note B><music21.note.Note B-><music21.note.Note A><music21.note.Note G#><music21.note.Note G>>
 {0.0} <music21.spanner.Slur <music21.note.Note E><music21.note.Note E>>
 {0.0} <music21.spanner.Slur <music21.note.Note E><music21.note.Note E>>

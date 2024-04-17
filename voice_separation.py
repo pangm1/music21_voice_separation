@@ -431,6 +431,8 @@ else:
     final = song.template()
     for p in final.parts:
         final.remove(p)
+    for s in final.getElementsByClass("StaffGroup"):
+        final.remove(s)
 
     # run algorithm
     # run for each "part"
