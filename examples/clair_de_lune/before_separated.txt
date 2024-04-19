@@ -1,6 +1,6 @@
 {0.0} <music21.text.TextBox 'Clair de L...'>
 {0.0} <music21.text.TextBox 'Debussy'>
-{0.0} <music21.metadata.Metadata object at 0x2595918d2a0>
+{0.0} <music21.metadata.Metadata object at 0x1fda4288130>
 {0.0} <music21.stream.PartStaff P1-Staff1>
     {0.0} <music21.instrument.Piano 'P1: Piano: Piano'>
     {0.0} <music21.stream.Measure 1 offset=0.0>
@@ -1707,4 +1707,3 @@
     {256.5} <music21.stream.Measure 58 offset=256.5>
         {0.0} <music21.bar.Barline type=final>
 {0.0} <music21.layout.ScoreLayout>
-{0.0} <music21.layout.StaffGroup <music21.stream.PartStaff P1-Staff1><music21.stream.PartStaff P1-Staff2>>
