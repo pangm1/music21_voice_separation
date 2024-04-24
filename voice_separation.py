@@ -453,6 +453,7 @@ else:
 
     print(f"{len(final.parts)} parts produced")
     # FIXME: this doesn't work for output8 for some reason (something wrong with makeNotation?)
+        # also find out why the three-part invention turns into 4 parts
     # song.write("musicxml", argv[2] + '_labeled.musicxml')
     for n in final.flatten().notes: # lyrics take up space
         n.lyrics = []
